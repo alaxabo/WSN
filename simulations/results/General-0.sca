@@ -1,0 +1,6208 @@
+version 2
+run General-0-20141207-12:15:30-4148
+attr configname General
+attr datetime 20141207-12:15:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4148
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957906762
+scalar Leach.sink 	(unnamed) 	9.915904322
+scalar Leach.sink 	(unnamed) 	9.873968068
+scalar Leach.sink 	(unnamed) 	9.83200804
+scalar Leach.sink 	(unnamed) 	9.789917546
+scalar Leach.sink 	(unnamed) 	9.747924786
+scalar Leach.sink 	(unnamed) 	9.705964278
+scalar Leach.sink 	(unnamed) 	9.663836288
+scalar Leach.sink 	(unnamed) 	9.621616832
+scalar Leach.sink 	(unnamed) 	9.579229538
+scalar Leach.sink 	(unnamed) 	9.537031296
+scalar Leach.sink 	(unnamed) 	9.49465892
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	13
+version 2
+run General-0-20141207-12:16:31-4148
+attr configname General
+attr datetime 20141207-12:16:31
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4148
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957906762
+scalar Leach.sink 	(unnamed) 	9.915904322
+scalar Leach.sink 	(unnamed) 	9.873968068
+scalar Leach.sink 	(unnamed) 	9.83200804
+scalar Leach.sink 	(unnamed) 	9.789917546
+scalar Leach.sink 	(unnamed) 	9.747924786
+scalar Leach.sink 	(unnamed) 	9.705964278
+scalar Leach.sink 	(unnamed) 	9.663836288
+scalar Leach.sink 	(unnamed) 	9.621616832
+scalar Leach.sink 	(unnamed) 	9.579229538
+scalar Leach.sink 	(unnamed) 	9.537031296
+scalar Leach.sink 	(unnamed) 	9.49465892
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	13
+version 2
+run General-0-20141207-12:18:19-4684
+attr configname General
+attr datetime 20141207-12:18:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4684
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957906762
+scalar Leach.sink 	(unnamed) 	9.915904322
+scalar Leach.sink 	(unnamed) 	9.873968068
+scalar Leach.sink 	(unnamed) 	9.83200804
+scalar Leach.sink 	(unnamed) 	9.789917546
+scalar Leach.sink 	(unnamed) 	9.747924786
+scalar Leach.sink 	(unnamed) 	9.705964278
+scalar Leach.sink 	(unnamed) 	9.663836288
+scalar Leach.sink 	(unnamed) 	9.621616832
+scalar Leach.sink 	(unnamed) 	9.579229538
+scalar Leach.sink 	(unnamed) 	9.537031296
+scalar Leach.sink 	(unnamed) 	9.49465892
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	13
+version 2
+run General-0-20141207-12:56:11-4788
+attr configname General
+attr datetime 20141207-12:56:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4788
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	(unnamed) 	6.8794219679999
+scalar Leach.sink 	(unnamed) 	6.8374174499999
+scalar Leach.sink 	(unnamed) 	6.795260086
+scalar Leach.sink 	(unnamed) 	6.7530886099999
+scalar Leach.sink 	(unnamed) 	6.7108814759999
+scalar Leach.sink 	(unnamed) 	6.6688666099999
+scalar Leach.sink 	(unnamed) 	6.6265926799999
+scalar Leach.sink 	(unnamed) 	6.5844911699999
+scalar Leach.sink 	(unnamed) 	6.5423320739999
+scalar Leach.sink 	(unnamed) 	6.5000132199999
+scalar Leach.sink 	(unnamed) 	6.4576755099999
+scalar Leach.sink 	(unnamed) 	6.4157765819999
+scalar Leach.sink 	(unnamed) 	6.3736810479999
+scalar Leach.sink 	(unnamed) 	6.3312179159999
+scalar Leach.sink 	(unnamed) 	6.2886286559999
+scalar Leach.sink 	(unnamed) 	6.2462088659999
+scalar Leach.sink 	(unnamed) 	6.2037610419999
+scalar Leach.sink 	(unnamed) 	6.1616971379999
+scalar Leach.sink 	(unnamed) 	6.1199443599999
+scalar Leach.sink 	(unnamed) 	6.0780451639999
+scalar Leach.sink 	(unnamed) 	6.0358552679999
+scalar Leach.sink 	(unnamed) 	5.9935901179999
+scalar Leach.sink 	(unnamed) 	5.9511854899999
+scalar Leach.sink 	(unnamed) 	5.9091713419999
+scalar Leach.sink 	(unnamed) 	5.8671236819999
+scalar Leach.sink 	(unnamed) 	5.8248379719999
+scalar Leach.sink 	(unnamed) 	5.7828314719999
+scalar Leach.sink 	(unnamed) 	5.7407809759999
+scalar Leach.sink 	(unnamed) 	5.6987623719999
+scalar Leach.sink 	(unnamed) 	5.6566205239999
+scalar Leach.sink 	(unnamed) 	5.6141575759999
+scalar Leach.sink 	(unnamed) 	5.5719267579999
+scalar Leach.sink 	(unnamed) 	5.5294493339999
+scalar Leach.sink 	(unnamed) 	5.4867778559999
+scalar Leach.sink 	(unnamed) 	5.4438526859999
+scalar Leach.sink 	(unnamed) 	5.4019892399999
+scalar Leach.sink 	(unnamed) 	5.3602054879999
+scalar Leach.sink 	(unnamed) 	5.3183294099999
+scalar Leach.sink 	(unnamed) 	5.2764025639999
+scalar Leach.sink 	(unnamed) 	5.2345049499999
+scalar Leach.sink 	(unnamed) 	5.1924970979999
+scalar Leach.sink 	(unnamed) 	5.1503218159999
+scalar Leach.sink 	(unnamed) 	5.1081442199999
+scalar Leach.sink 	(unnamed) 	5.0656945379999
+scalar Leach.sink 	(unnamed) 	5.0234543059999
+scalar Leach.sink 	(unnamed) 	4.9810998979999
+scalar Leach.sink 	(unnamed) 	4.9390298379999
+scalar Leach.sink 	(unnamed) 	4.8967373719999
+scalar Leach.sink 	(unnamed) 	4.8546545719999
+scalar Leach.sink 	(unnamed) 	4.8123619679999
+scalar Leach.sink 	(unnamed) 	4.7701587679999
+scalar Leach.sink 	(unnamed) 	4.7279903199999
+scalar Leach.sink 	(unnamed) 	4.6855468819999
+scalar Leach.sink 	(unnamed) 	4.6434392319999
+scalar Leach.sink 	(unnamed) 	4.6011926119999
+scalar Leach.sink 	(unnamed) 	4.5591461819999
+scalar Leach.sink 	(unnamed) 	4.5170803579999
+scalar Leach.sink 	(unnamed) 	4.4749752179999
+scalar Leach.sink 	(unnamed) 	4.4328895759999
+scalar Leach.sink 	(unnamed) 	4.3907009419999
+scalar Leach.sink 	(unnamed) 	4.3485963839999
+scalar Leach.sink 	(unnamed) 	4.3062404359999
+scalar Leach.sink 	(unnamed) 	4.2642628519999
+scalar Leach.sink 	(unnamed) 	4.2222635419999
+scalar Leach.sink 	(unnamed) 	4.1802647239999
+scalar Leach.sink 	(unnamed) 	4.1380414939999
+scalar Leach.sink 	(unnamed) 	4.0958013319999
+scalar Leach.sink 	(unnamed) 	4.0531587119999
+scalar Leach.sink 	(unnamed) 	4.0107190219999
+scalar Leach.sink 	(unnamed) 	3.9683788479999
+scalar Leach.sink 	(unnamed) 	3.9260275639999
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	145
+version 2
+run General-0-20141207-13:01:34-4288
+attr configname General
+attr datetime 20141207-13:01:34
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4288
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	73
+version 2
+run General-0-20141207-13:05:57-5056
+attr configname General
+attr datetime 20141207-13:05:57
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5056
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	(unnamed) 	6.8794219679999
+scalar Leach.sink 	(unnamed) 	6.8374174499999
+scalar Leach.sink 	(unnamed) 	6.795260086
+scalar Leach.sink 	(unnamed) 	6.7530886099999
+scalar Leach.sink 	(unnamed) 	6.7108814759999
+scalar Leach.sink 	(unnamed) 	6.6688666099999
+scalar Leach.sink 	(unnamed) 	6.6265926799999
+scalar Leach.sink 	(unnamed) 	6.5844911699999
+scalar Leach.sink 	(unnamed) 	6.5423320739999
+scalar Leach.sink 	(unnamed) 	6.5000132199999
+scalar Leach.sink 	(unnamed) 	6.4576755099999
+scalar Leach.sink 	(unnamed) 	6.4157765819999
+scalar Leach.sink 	(unnamed) 	6.3736810479999
+scalar Leach.sink 	(unnamed) 	6.3312179159999
+scalar Leach.sink 	(unnamed) 	6.2886286559999
+scalar Leach.sink 	(unnamed) 	6.2462088659999
+scalar Leach.sink 	(unnamed) 	6.2037610419999
+scalar Leach.sink 	(unnamed) 	6.1616971379999
+scalar Leach.sink 	(unnamed) 	6.1199443599999
+scalar Leach.sink 	(unnamed) 	6.0780451639999
+scalar Leach.sink 	(unnamed) 	6.0358552679999
+scalar Leach.sink 	(unnamed) 	5.9935901179999
+scalar Leach.sink 	(unnamed) 	5.9511854899999
+scalar Leach.sink 	(unnamed) 	5.9091713419999
+scalar Leach.sink 	(unnamed) 	5.8671236819999
+scalar Leach.sink 	(unnamed) 	5.8248379719999
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	100
+version 2
+run General-0-20141207-13:10:23-2496
+attr configname General
+attr datetime 20141207-13:10:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2496
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	(unnamed) 	6.8794219679999
+scalar Leach.sink 	(unnamed) 	6.8374174499999
+scalar Leach.sink 	(unnamed) 	6.795260086
+scalar Leach.sink 	(unnamed) 	6.7530886099999
+scalar Leach.sink 	(unnamed) 	6.7108814759999
+scalar Leach.sink 	(unnamed) 	6.6688666099999
+scalar Leach.sink 	(unnamed) 	6.6265926799999
+scalar Leach.sink 	(unnamed) 	6.5844911699999
+scalar Leach.sink 	(unnamed) 	6.5423320739999
+scalar Leach.sink 	(unnamed) 	6.5000132199999
+scalar Leach.sink 	(unnamed) 	6.4576755099999
+scalar Leach.sink 	(unnamed) 	6.4157765819999
+scalar Leach.sink 	(unnamed) 	6.3736810479999
+scalar Leach.sink 	(unnamed) 	6.3312179159999
+scalar Leach.sink 	(unnamed) 	6.2886286559999
+scalar Leach.sink 	(unnamed) 	6.2462088659999
+scalar Leach.sink 	(unnamed) 	6.2037610419999
+scalar Leach.sink 	(unnamed) 	6.1616971379999
+scalar Leach.sink 	(unnamed) 	6.1199443599999
+scalar Leach.sink 	(unnamed) 	6.0780451639999
+scalar Leach.sink 	(unnamed) 	6.0358552679999
+scalar Leach.sink 	(unnamed) 	5.9935901179999
+scalar Leach.sink 	(unnamed) 	5.9511854899999
+scalar Leach.sink 	(unnamed) 	5.9091713419999
+scalar Leach.sink 	(unnamed) 	5.8671236819999
+scalar Leach.sink 	(unnamed) 	5.8248379719999
+scalar Leach.sink 	(unnamed) 	5.7828314719999
+scalar Leach.sink 	(unnamed) 	5.7407809759999
+scalar Leach.sink 	(unnamed) 	5.6987623719999
+scalar Leach.sink 	(unnamed) 	5.6566205239999
+scalar Leach.sink 	(unnamed) 	5.6141575759999
+scalar Leach.sink 	(unnamed) 	5.5719267579999
+scalar Leach.sink 	(unnamed) 	5.5294493339999
+scalar Leach.sink 	(unnamed) 	5.4867778559999
+scalar Leach.sink 	(unnamed) 	5.4438526859999
+scalar Leach.sink 	(unnamed) 	5.4019892399999
+scalar Leach.sink 	(unnamed) 	5.3602054879999
+scalar Leach.sink 	(unnamed) 	5.3183294099999
+scalar Leach.sink 	(unnamed) 	5.2764025639999
+scalar Leach.sink 	(unnamed) 	5.2345049499999
+scalar Leach.sink 	(unnamed) 	5.1924970979999
+scalar Leach.sink 	(unnamed) 	5.1503218159999
+scalar Leach.sink 	(unnamed) 	5.1081442199999
+scalar Leach.sink 	(unnamed) 	5.0656945379999
+scalar Leach.sink 	(unnamed) 	5.0234543059999
+scalar Leach.sink 	(unnamed) 	4.9810998979999
+scalar Leach.sink 	(unnamed) 	4.9390298379999
+scalar Leach.sink 	(unnamed) 	4.8967373719999
+scalar Leach.sink 	(unnamed) 	4.8546545719999
+scalar Leach.sink 	(unnamed) 	4.8123619679999
+scalar Leach.sink 	(unnamed) 	4.7701587679999
+scalar Leach.sink 	(unnamed) 	4.7279903199999
+scalar Leach.sink 	(unnamed) 	4.6855468819999
+scalar Leach.sink 	(unnamed) 	4.6434392319999
+scalar Leach.sink 	(unnamed) 	4.6011926119999
+scalar Leach.sink 	(unnamed) 	4.5591461819999
+scalar Leach.sink 	(unnamed) 	4.5170803579999
+scalar Leach.sink 	(unnamed) 	4.4749752179999
+scalar Leach.sink 	(unnamed) 	4.4328895759999
+scalar Leach.sink 	(unnamed) 	4.3907009419999
+scalar Leach.sink 	(unnamed) 	4.3485963839999
+scalar Leach.sink 	(unnamed) 	4.3062404359999
+scalar Leach.sink 	(unnamed) 	4.2642628519999
+scalar Leach.sink 	(unnamed) 	4.2222635419999
+scalar Leach.sink 	(unnamed) 	4.1802647239999
+scalar Leach.sink 	(unnamed) 	4.1380414939999
+scalar Leach.sink 	(unnamed) 	4.0958013319999
+scalar Leach.sink 	(unnamed) 	4.0531587119999
+scalar Leach.sink 	(unnamed) 	4.0107190219999
+scalar Leach.sink 	(unnamed) 	3.9683788479999
+scalar Leach.sink 	(unnamed) 	3.9260275639999
+scalar Leach.sink 	(unnamed) 	3.8842687359999
+scalar Leach.sink 	(unnamed) 	3.8421002459999
+scalar Leach.sink 	(unnamed) 	3.8001659019999
+scalar Leach.sink 	(unnamed) 	3.7582913959999
+scalar Leach.sink 	(unnamed) 	3.7159637999999
+scalar Leach.sink 	(unnamed) 	3.6738400999999
+scalar Leach.sink 	(unnamed) 	3.6318423519999
+scalar Leach.sink 	(unnamed) 	3.5896160239999
+scalar Leach.sink 	(unnamed) 	3.5472028759999
+scalar Leach.sink 	(unnamed) 	3.5050498979999
+scalar Leach.sink 	(unnamed) 	3.4627439739999
+scalar Leach.sink 	(unnamed) 	3.4207301039999
+scalar Leach.sink 	(unnamed) 	3.3784371659999
+scalar Leach.sink 	(unnamed) 	3.3365260879999
+scalar Leach.sink 	(unnamed) 	3.2944479519999
+scalar Leach.sink 	(unnamed) 	3.2520149259999
+scalar Leach.sink 	(unnamed) 	3.2095528739999
+scalar Leach.sink 	(unnamed) 	3.1669863379999
+scalar Leach.sink 	(unnamed) 	3.1248813779999
+scalar Leach.sink 	(unnamed) 	3.0826436459999
+scalar Leach.sink 	(unnamed) 	3.0405608919999
+scalar Leach.sink 	(unnamed) 	2.9986169379999
+scalar Leach.sink 	(unnamed) 	2.9566209259999
+scalar Leach.sink 	(unnamed) 	2.9142011979999
+scalar Leach.sink 	(unnamed) 	2.8723669299999
+scalar Leach.sink 	(unnamed) 	2.8304424979999
+scalar Leach.sink 	(unnamed) 	2.7884508559999
+scalar Leach.sink 	(unnamed) 	2.7463707779999
+scalar Leach.sink 	(unnamed) 	2.7041757479999
+scalar Leach.sink 	(unnamed) 	2.6614198899999
+scalar Leach.sink 	(unnamed) 	2.6191175579999
+scalar Leach.sink 	(unnamed) 	2.5769268399999
+scalar Leach.sink 	(unnamed) 	2.5346247839999
+scalar Leach.sink 	(unnamed) 	2.4921906319999
+scalar Leach.sink 	(unnamed) 	2.4501132259999
+scalar Leach.sink 	(unnamed) 	2.4079585279999
+scalar Leach.sink 	(unnamed) 	2.3656825539999
+scalar Leach.sink 	(unnamed) 	2.3237779019999
+scalar Leach.sink 	(unnamed) 	2.2816056759999
+scalar Leach.sink 	(unnamed) 	2.2395219979999
+scalar Leach.sink 	(unnamed) 	2.1972671639999
+scalar Leach.sink 	(unnamed) 	2.1552063579999
+scalar Leach.sink 	(unnamed) 	2.1133356419999
+scalar Leach.sink 	(unnamed) 	2.0710127799999
+scalar Leach.sink 	(unnamed) 	2.0290357299999
+scalar Leach.sink 	(unnamed) 	1.9868414179999
+scalar Leach.sink 	(unnamed) 	1.9445646819999
+scalar Leach.sink 	(unnamed) 	1.9024139659999
+scalar Leach.sink 	(unnamed) 	1.8599449439999
+scalar Leach.sink 	(unnamed) 	1.8176864579999
+scalar Leach.sink 	(unnamed) 	1.7752947779999
+scalar Leach.sink 	(unnamed) 	1.7334251199999
+scalar Leach.sink 	(unnamed) 	1.6913274059999
+scalar Leach.sink 	(unnamed) 	1.6494587139999
+scalar Leach.sink 	(unnamed) 	1.6068951019999
+scalar Leach.sink 	(unnamed) 	1.5645750819999
+scalar Leach.sink 	(unnamed) 	1.5222938759999
+scalar Leach.sink 	(unnamed) 	1.4800990219999
+scalar Leach.sink 	(unnamed) 	1.4381172759999
+scalar Leach.sink 	(unnamed) 	1.3959296359999
+scalar Leach.sink 	(unnamed) 	1.3535945959999
+scalar Leach.sink 	(unnamed) 	1.3115028139999
+scalar Leach.sink 	(unnamed) 	1.2694410579999
+scalar Leach.sink 	(unnamed) 	1.2273486399999
+scalar Leach.sink 	(unnamed) 	1.1854881539999
+scalar Leach.sink 	(unnamed) 	1.1433998499999
+scalar Leach.sink 	(unnamed) 	1.1010546999999
+scalar Leach.sink 	(unnamed) 	1.0586147319999
+scalar Leach.sink 	(unnamed) 	1.0166098559999
+scalar Leach.sink 	(unnamed) 	0.97430603399993
+scalar Leach.sink 	(unnamed) 	0.93191663799993
+scalar Leach.sink 	(unnamed) 	0.88969674999993
+scalar Leach.sink 	(unnamed) 	0.84762222799993
+scalar Leach.sink 	(unnamed) 	0.80527916999993
+scalar Leach.sink 	(unnamed) 	0.76341500799993
+scalar Leach.sink 	(unnamed) 	0.72124872399993
+scalar Leach.sink 	(unnamed) 	0.67907403799993
+scalar Leach.sink 	(unnamed) 	0.63672693999993
+scalar Leach.sink 	(unnamed) 	0.59434626799993
+scalar Leach.sink 	(unnamed) 	0.55224363999993
+scalar Leach.sink 	(unnamed) 	0.51012025199993
+scalar Leach.sink 	(unnamed) 	0.46818506399993
+scalar Leach.sink 	(unnamed) 	0.42589576599993
+scalar Leach.sink 	(unnamed) 	0.38386005199993
+scalar Leach.sink 	(unnamed) 	0.34160675199993
+scalar Leach.sink 	(unnamed) 	0.29960212399993
+scalar Leach.sink 	(unnamed) 	0.25755195999993
+scalar Leach.sink 	(unnamed) 	0.21535114399993
+scalar Leach.sink 	(unnamed) 	0.17291305599993
+scalar Leach.sink 	(unnamed) 	0.13089437599993
+scalar Leach.sink 	(unnamed) 	0.088563517999931
+scalar Leach.sink 	(unnamed) 	0.046397865999931
+scalar Leach.sink 	(unnamed) 	0.0047142159999313
+scalar Leach.sink 	(unnamed) 	-0.037334338000069
+scalar Leach.sink 	(unnamed) 	-0.079149666000069
+scalar Leach.sink 	(unnamed) 	-0.12124497600007
+scalar Leach.sink 	(unnamed) 	-0.16329267000007
+scalar Leach.sink 	(unnamed) 	-0.20532224200007
+scalar Leach.sink 	(unnamed) 	-0.24719594600007
+scalar Leach.sink 	(unnamed) 	-0.28922639600007
+scalar Leach.sink 	(unnamed) 	-0.33112161800007
+scalar Leach.sink 	(unnamed) 	-0.37302986200007
+scalar Leach.sink 	(unnamed) 	-0.41499991400007
+scalar Leach.sink 	(unnamed) 	-0.45688363800007
+scalar Leach.sink 	(unnamed) 	-0.49876736200007
+version 2
+run General-0-20141207-13:18:09-5188
+attr configname General
+attr datetime 20141207-13:18:09
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5188
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	1
+version 2
+run General-0-20141207-13:21:37-2768
+attr configname General
+attr datetime 20141207-13:21:37
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2768
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	(unnamed) 	6.8794219679999
+scalar Leach.sink 	(unnamed) 	6.8374174499999
+scalar Leach.sink 	(unnamed) 	6.795260086
+scalar Leach.sink 	(unnamed) 	6.7530886099999
+scalar Leach.sink 	(unnamed) 	6.7108814759999
+scalar Leach.sink 	(unnamed) 	6.6688666099999
+scalar Leach.sink 	(unnamed) 	6.6265926799999
+scalar Leach.sink 	(unnamed) 	6.5844911699999
+scalar Leach.sink 	(unnamed) 	6.5423320739999
+scalar Leach.sink 	(unnamed) 	6.5000132199999
+scalar Leach.sink 	(unnamed) 	6.4576755099999
+scalar Leach.sink 	(unnamed) 	6.4157765819999
+scalar Leach.sink 	(unnamed) 	6.3736810479999
+scalar Leach.sink 	(unnamed) 	6.3312179159999
+scalar Leach.sink 	(unnamed) 	6.2886286559999
+scalar Leach.sink 	(unnamed) 	6.2462088659999
+scalar Leach.sink 	(unnamed) 	6.2037610419999
+scalar Leach.sink 	(unnamed) 	6.1616971379999
+scalar Leach.sink 	(unnamed) 	6.1199443599999
+scalar Leach.sink 	(unnamed) 	6.0780451639999
+scalar Leach.sink 	(unnamed) 	6.0358552679999
+scalar Leach.sink 	(unnamed) 	5.9935901179999
+scalar Leach.sink 	(unnamed) 	5.9511854899999
+scalar Leach.sink 	(unnamed) 	5.9091713419999
+scalar Leach.sink 	(unnamed) 	5.8671236819999
+scalar Leach.sink 	(unnamed) 	5.8248379719999
+scalar Leach.sink 	(unnamed) 	5.7828314719999
+scalar Leach.sink 	(unnamed) 	5.7407809759999
+scalar Leach.sink 	(unnamed) 	5.6987623719999
+scalar Leach.sink 	(unnamed) 	5.6566205239999
+scalar Leach.sink 	(unnamed) 	5.6141575759999
+scalar Leach.sink 	(unnamed) 	5.5719267579999
+scalar Leach.sink 	(unnamed) 	5.5294493339999
+scalar Leach.sink 	(unnamed) 	5.4867778559999
+scalar Leach.sink 	(unnamed) 	5.4438526859999
+scalar Leach.sink 	(unnamed) 	5.4019892399999
+scalar Leach.sink 	(unnamed) 	5.3602054879999
+scalar Leach.sink 	(unnamed) 	5.3183294099999
+scalar Leach.sink 	(unnamed) 	5.2764025639999
+scalar Leach.sink 	(unnamed) 	5.2345049499999
+scalar Leach.sink 	(unnamed) 	5.1924970979999
+scalar Leach.sink 	(unnamed) 	5.1503218159999
+scalar Leach.sink 	(unnamed) 	5.1081442199999
+scalar Leach.sink 	(unnamed) 	5.0656945379999
+scalar Leach.sink 	(unnamed) 	5.0234543059999
+scalar Leach.sink 	(unnamed) 	4.9810998979999
+scalar Leach.sink 	(unnamed) 	4.9390298379999
+scalar Leach.sink 	(unnamed) 	4.8967373719999
+scalar Leach.sink 	(unnamed) 	4.8546545719999
+scalar Leach.sink 	(unnamed) 	4.8123619679999
+scalar Leach.sink 	(unnamed) 	4.7701587679999
+scalar Leach.sink 	(unnamed) 	4.7279903199999
+scalar Leach.sink 	(unnamed) 	4.6855468819999
+scalar Leach.sink 	(unnamed) 	4.6434392319999
+scalar Leach.sink 	(unnamed) 	4.6011926119999
+scalar Leach.sink 	(unnamed) 	4.5591461819999
+scalar Leach.sink 	(unnamed) 	4.5170803579999
+scalar Leach.sink 	(unnamed) 	4.4749752179999
+scalar Leach.sink 	(unnamed) 	4.4328895759999
+scalar Leach.sink 	(unnamed) 	4.3907009419999
+scalar Leach.sink 	(unnamed) 	4.3485963839999
+scalar Leach.sink 	(unnamed) 	4.3062404359999
+scalar Leach.sink 	(unnamed) 	4.2642628519999
+scalar Leach.sink 	(unnamed) 	4.2222635419999
+scalar Leach.sink 	(unnamed) 	4.1802647239999
+scalar Leach.sink 	(unnamed) 	4.1380414939999
+scalar Leach.sink 	(unnamed) 	4.0958013319999
+scalar Leach.sink 	(unnamed) 	4.0531587119999
+scalar Leach.sink 	(unnamed) 	4.0107190219999
+scalar Leach.sink 	(unnamed) 	3.9683788479999
+scalar Leach.sink 	(unnamed) 	3.9260275639999
+scalar Leach.sink 	(unnamed) 	3.8842687359999
+scalar Leach.sink 	(unnamed) 	3.8421002459999
+scalar Leach.sink 	(unnamed) 	3.8001659019999
+scalar Leach.sink 	(unnamed) 	3.7582913959999
+scalar Leach.sink 	(unnamed) 	3.7159637999999
+scalar Leach.sink 	(unnamed) 	3.6738400999999
+scalar Leach.sink 	(unnamed) 	3.6318423519999
+scalar Leach.sink 	(unnamed) 	3.5896160239999
+scalar Leach.sink 	(unnamed) 	3.5472028759999
+scalar Leach.sink 	(unnamed) 	3.5050498979999
+scalar Leach.sink 	(unnamed) 	3.4627439739999
+scalar Leach.sink 	(unnamed) 	3.4207301039999
+scalar Leach.sink 	(unnamed) 	3.3784371659999
+scalar Leach.sink 	(unnamed) 	3.3365260879999
+scalar Leach.sink 	(unnamed) 	3.2944479519999
+scalar Leach.sink 	(unnamed) 	3.2520149259999
+scalar Leach.sink 	(unnamed) 	3.2095528739999
+scalar Leach.sink 	(unnamed) 	3.1669863379999
+scalar Leach.sink 	(unnamed) 	3.1248813779999
+scalar Leach.sink 	(unnamed) 	3.0826436459999
+scalar Leach.sink 	(unnamed) 	3.0405608919999
+scalar Leach.sink 	(unnamed) 	2.9986169379999
+scalar Leach.sink 	(unnamed) 	2.9566209259999
+scalar Leach.sink 	(unnamed) 	2.9142011979999
+scalar Leach.sink 	(unnamed) 	2.8723669299999
+scalar Leach.sink 	(unnamed) 	2.8304424979999
+scalar Leach.sink 	(unnamed) 	2.7884508559999
+scalar Leach.sink 	(unnamed) 	2.7463707779999
+scalar Leach.sink 	(unnamed) 	2.7041757479999
+scalar Leach.sink 	(unnamed) 	2.6614198899999
+scalar Leach.sink 	(unnamed) 	2.6191175579999
+scalar Leach.sink 	(unnamed) 	2.5769268399999
+scalar Leach.sink 	(unnamed) 	2.5346247839999
+scalar Leach.sink 	(unnamed) 	2.4921906319999
+scalar Leach.sink 	(unnamed) 	2.4501132259999
+scalar Leach.sink 	(unnamed) 	2.4079585279999
+scalar Leach.sink 	(unnamed) 	2.3656825539999
+scalar Leach.sink 	(unnamed) 	2.3237779019999
+scalar Leach.sink 	(unnamed) 	2.2816056759999
+scalar Leach.sink 	(unnamed) 	2.2395219979999
+scalar Leach.sink 	(unnamed) 	2.1972671639999
+scalar Leach.sink 	(unnamed) 	2.1552063579999
+scalar Leach.sink 	(unnamed) 	2.1133356419999
+scalar Leach.sink 	(unnamed) 	2.0710127799999
+scalar Leach.sink 	(unnamed) 	2.0290357299999
+scalar Leach.sink 	(unnamed) 	1.9868414179999
+scalar Leach.sink 	(unnamed) 	1.9445646819999
+scalar Leach.sink 	(unnamed) 	1.9024139659999
+scalar Leach.sink 	(unnamed) 	1.8599449439999
+scalar Leach.sink 	(unnamed) 	1.8176864579999
+scalar Leach.sink 	(unnamed) 	1.7752947779999
+scalar Leach.sink 	(unnamed) 	1.7334251199999
+scalar Leach.sink 	(unnamed) 	1.6913274059999
+scalar Leach.sink 	(unnamed) 	1.6494587139999
+scalar Leach.sink 	(unnamed) 	1.6068951019999
+scalar Leach.sink 	(unnamed) 	1.5645750819999
+scalar Leach.sink 	(unnamed) 	1.5222938759999
+scalar Leach.sink 	(unnamed) 	1.4800990219999
+scalar Leach.sink 	(unnamed) 	1.4381172759999
+scalar Leach.sink 	(unnamed) 	1.3959296359999
+scalar Leach.sink 	(unnamed) 	1.3535945959999
+scalar Leach.sink 	(unnamed) 	1.3115028139999
+scalar Leach.sink 	(unnamed) 	1.2694410579999
+scalar Leach.sink 	(unnamed) 	1.2273486399999
+scalar Leach.sink 	(unnamed) 	1.1854881539999
+scalar Leach.sink 	(unnamed) 	1.1433998499999
+scalar Leach.sink 	(unnamed) 	1.1010546999999
+scalar Leach.sink 	(unnamed) 	1.0586147319999
+scalar Leach.sink 	(unnamed) 	1.0166098559999
+scalar Leach.sink 	(unnamed) 	0.97430603399993
+scalar Leach.sink 	(unnamed) 	0.93191663799993
+scalar Leach.sink 	(unnamed) 	0.88969674999993
+scalar Leach.sink 	(unnamed) 	0.84762222799993
+scalar Leach.sink 	(unnamed) 	0.80527916999993
+scalar Leach.sink 	(unnamed) 	0.76341500799993
+scalar Leach.sink 	(unnamed) 	0.72124872399993
+scalar Leach.sink 	(unnamed) 	0.67907403799993
+scalar Leach.sink 	(unnamed) 	0.63672693999993
+scalar Leach.sink 	(unnamed) 	0.59434626799993
+scalar Leach.sink 	(unnamed) 	0.55224363999993
+scalar Leach.sink 	(unnamed) 	0.51012025199993
+scalar Leach.sink 	(unnamed) 	0.46818506399993
+scalar Leach.sink 	(unnamed) 	0.42589576599993
+scalar Leach.sink 	(unnamed) 	0.38386005199993
+scalar Leach.sink 	(unnamed) 	0.34160675199993
+scalar Leach.sink 	(unnamed) 	0.29960212399993
+scalar Leach.sink 	(unnamed) 	0.25755195999993
+scalar Leach.sink 	(unnamed) 	0.21535114399993
+scalar Leach.sink 	(unnamed) 	0.17291305599993
+scalar Leach.sink 	(unnamed) 	0.13089437599993
+scalar Leach.sink 	(unnamed) 	0.088563517999931
+scalar Leach.sink 	(unnamed) 	0.046397865999931
+scalar Leach.sink 	(unnamed) 	0.0047142159999313
+scalar Leach.sink 	(unnamed) 	-0.037334338000069
+scalar Leach.sink 	(unnamed) 	-0.079149666000069
+scalar Leach.sink 	(unnamed) 	-0.12124497600007
+scalar Leach.sink 	(unnamed) 	-0.16329267000007
+scalar Leach.sink 	(unnamed) 	-0.20532224200007
+scalar Leach.sink 	(unnamed) 	-0.24719594600007
+scalar Leach.sink 	(unnamed) 	-0.28922639600007
+scalar Leach.sink 	(unnamed) 	-0.33112161800007
+scalar Leach.sink 	(unnamed) 	-0.37302986200007
+version 2
+run General-0-20141207-13:30:47-2952
+attr configname General
+attr datetime 20141207-13:30:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2952
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	(unnamed) 	6.8794219679999
+scalar Leach.sink 	(unnamed) 	6.8374174499999
+scalar Leach.sink 	(unnamed) 	6.795260086
+scalar Leach.sink 	(unnamed) 	6.7530886099999
+scalar Leach.sink 	(unnamed) 	6.7108814759999
+scalar Leach.sink 	(unnamed) 	6.6688666099999
+scalar Leach.sink 	(unnamed) 	6.6265926799999
+scalar Leach.sink 	(unnamed) 	6.5844911699999
+scalar Leach.sink 	(unnamed) 	6.5423320739999
+scalar Leach.sink 	(unnamed) 	6.5000132199999
+scalar Leach.sink 	(unnamed) 	6.4576755099999
+scalar Leach.sink 	(unnamed) 	6.4157765819999
+scalar Leach.sink 	(unnamed) 	6.3736810479999
+scalar Leach.sink 	(unnamed) 	6.3312179159999
+scalar Leach.sink 	(unnamed) 	6.2886286559999
+scalar Leach.sink 	(unnamed) 	6.2462088659999
+scalar Leach.sink 	(unnamed) 	6.2037610419999
+scalar Leach.sink 	(unnamed) 	6.1616971379999
+scalar Leach.sink 	(unnamed) 	6.1199443599999
+scalar Leach.sink 	(unnamed) 	6.0780451639999
+scalar Leach.sink 	(unnamed) 	6.0358552679999
+scalar Leach.sink 	(unnamed) 	5.9935901179999
+scalar Leach.sink 	(unnamed) 	5.9511854899999
+scalar Leach.sink 	(unnamed) 	5.9091713419999
+scalar Leach.sink 	(unnamed) 	5.8671236819999
+scalar Leach.sink 	(unnamed) 	5.8248379719999
+scalar Leach.sink 	(unnamed) 	5.7828314719999
+scalar Leach.sink 	(unnamed) 	5.7407809759999
+scalar Leach.sink 	(unnamed) 	5.6987623719999
+scalar Leach.sink 	(unnamed) 	5.6566205239999
+scalar Leach.sink 	(unnamed) 	5.6141575759999
+scalar Leach.sink 	(unnamed) 	5.5719267579999
+scalar Leach.sink 	(unnamed) 	5.5294493339999
+scalar Leach.sink 	(unnamed) 	5.4867778559999
+scalar Leach.sink 	(unnamed) 	5.4438526859999
+scalar Leach.sink 	(unnamed) 	5.4019892399999
+scalar Leach.sink 	(unnamed) 	5.3602054879999
+scalar Leach.sink 	(unnamed) 	5.3183294099999
+scalar Leach.sink 	(unnamed) 	5.2764025639999
+scalar Leach.sink 	(unnamed) 	5.2345049499999
+scalar Leach.sink 	(unnamed) 	5.1924970979999
+scalar Leach.sink 	(unnamed) 	5.1503218159999
+scalar Leach.sink 	(unnamed) 	5.1081442199999
+scalar Leach.sink 	(unnamed) 	5.0656945379999
+scalar Leach.sink 	(unnamed) 	5.0234543059999
+scalar Leach.sink 	(unnamed) 	4.9810998979999
+scalar Leach.sink 	(unnamed) 	4.9390298379999
+scalar Leach.sink 	(unnamed) 	4.8967373719999
+scalar Leach.sink 	(unnamed) 	4.8546545719999
+scalar Leach.sink 	(unnamed) 	4.8123619679999
+scalar Leach.sink 	(unnamed) 	4.7701587679999
+scalar Leach.sink 	(unnamed) 	4.7279903199999
+scalar Leach.sink 	(unnamed) 	4.6855468819999
+scalar Leach.sink 	(unnamed) 	4.6434392319999
+scalar Leach.sink 	(unnamed) 	4.6011926119999
+scalar Leach.sink 	(unnamed) 	4.5591461819999
+scalar Leach.sink 	(unnamed) 	4.5170803579999
+scalar Leach.sink 	(unnamed) 	4.4749752179999
+scalar Leach.sink 	(unnamed) 	4.4328895759999
+scalar Leach.sink 	(unnamed) 	4.3907009419999
+scalar Leach.sink 	(unnamed) 	4.3485963839999
+scalar Leach.sink 	(unnamed) 	4.3062404359999
+scalar Leach.sink 	(unnamed) 	4.2642628519999
+scalar Leach.sink 	(unnamed) 	4.2222635419999
+scalar Leach.sink 	(unnamed) 	4.1802647239999
+scalar Leach.sink 	(unnamed) 	4.1380414939999
+scalar Leach.sink 	(unnamed) 	4.0958013319999
+scalar Leach.sink 	(unnamed) 	4.0531587119999
+scalar Leach.sink 	(unnamed) 	4.0107190219999
+scalar Leach.sink 	(unnamed) 	3.9683788479999
+scalar Leach.sink 	(unnamed) 	3.9260275639999
+scalar Leach.sink 	(unnamed) 	3.8842687359999
+scalar Leach.sink 	(unnamed) 	3.8421002459999
+scalar Leach.sink 	(unnamed) 	3.8001659019999
+scalar Leach.sink 	(unnamed) 	3.7582913959999
+scalar Leach.sink 	(unnamed) 	3.7159637999999
+scalar Leach.sink 	(unnamed) 	3.6738400999999
+scalar Leach.sink 	(unnamed) 	3.6318423519999
+scalar Leach.sink 	(unnamed) 	3.5896160239999
+scalar Leach.sink 	(unnamed) 	3.5472028759999
+scalar Leach.sink 	(unnamed) 	3.5050498979999
+scalar Leach.sink 	(unnamed) 	3.4627439739999
+scalar Leach.sink 	(unnamed) 	3.4207301039999
+scalar Leach.sink 	(unnamed) 	3.3784371659999
+scalar Leach.sink 	(unnamed) 	3.3365260879999
+scalar Leach.sink 	(unnamed) 	3.2944479519999
+scalar Leach.sink 	(unnamed) 	3.2520149259999
+scalar Leach.sink 	(unnamed) 	3.2095528739999
+scalar Leach.sink 	(unnamed) 	3.1669863379999
+scalar Leach.sink 	(unnamed) 	3.1248813779999
+scalar Leach.sink 	(unnamed) 	3.0826436459999
+scalar Leach.sink 	(unnamed) 	3.0405608919999
+scalar Leach.sink 	(unnamed) 	2.9986169379999
+scalar Leach.sink 	(unnamed) 	2.9566209259999
+scalar Leach.sink 	(unnamed) 	2.9142011979999
+scalar Leach.sink 	(unnamed) 	2.8723669299999
+scalar Leach.sink 	(unnamed) 	2.8304424979999
+scalar Leach.sink 	(unnamed) 	2.7884508559999
+scalar Leach.sink 	(unnamed) 	2.7463707779999
+scalar Leach.sink 	(unnamed) 	2.7041757479999
+scalar Leach.sink 	(unnamed) 	2.6614198899999
+scalar Leach.sink 	(unnamed) 	2.6191175579999
+scalar Leach.sink 	(unnamed) 	2.5769268399999
+scalar Leach.sink 	(unnamed) 	2.5346247839999
+scalar Leach.sink 	(unnamed) 	2.4921906319999
+scalar Leach.sink 	(unnamed) 	2.4501132259999
+scalar Leach.sink 	(unnamed) 	2.4079585279999
+scalar Leach.sink 	(unnamed) 	2.3656825539999
+scalar Leach.sink 	(unnamed) 	2.3237779019999
+scalar Leach.sink 	(unnamed) 	2.2816056759999
+scalar Leach.sink 	(unnamed) 	2.2395219979999
+scalar Leach.sink 	(unnamed) 	2.1972671639999
+scalar Leach.sink 	(unnamed) 	2.1552063579999
+scalar Leach.sink 	(unnamed) 	2.1133356419999
+scalar Leach.sink 	(unnamed) 	2.0710127799999
+scalar Leach.sink 	(unnamed) 	2.0290357299999
+scalar Leach.sink 	(unnamed) 	1.9868414179999
+scalar Leach.sink 	(unnamed) 	1.9445646819999
+scalar Leach.sink 	(unnamed) 	1.9024139659999
+scalar Leach.sink 	(unnamed) 	1.8599449439999
+scalar Leach.sink 	(unnamed) 	1.8176864579999
+scalar Leach.sink 	(unnamed) 	1.7752947779999
+scalar Leach.sink 	(unnamed) 	1.7334251199999
+scalar Leach.sink 	(unnamed) 	1.6913274059999
+scalar Leach.sink 	(unnamed) 	1.6494587139999
+scalar Leach.sink 	(unnamed) 	1.6068951019999
+scalar Leach.sink 	(unnamed) 	1.5645750819999
+scalar Leach.sink 	(unnamed) 	1.5222938759999
+scalar Leach.sink 	(unnamed) 	1.4800990219999
+scalar Leach.sink 	(unnamed) 	1.4381172759999
+scalar Leach.sink 	(unnamed) 	1.3959296359999
+scalar Leach.sink 	(unnamed) 	1.3535945959999
+scalar Leach.sink 	(unnamed) 	1.3115028139999
+scalar Leach.sink 	(unnamed) 	1.2694410579999
+scalar Leach.sink 	(unnamed) 	1.2273486399999
+scalar Leach.sink 	(unnamed) 	1.1854881539999
+scalar Leach.sink 	(unnamed) 	1.1433998499999
+scalar Leach.sink 	(unnamed) 	1.1010546999999
+scalar Leach.sink 	(unnamed) 	1.0586147319999
+scalar Leach.sink 	(unnamed) 	1.0166098559999
+scalar Leach.sink 	(unnamed) 	0.97430603399993
+scalar Leach.sink 	(unnamed) 	0.93191663799993
+scalar Leach.sink 	(unnamed) 	0.88969674999993
+scalar Leach.sink 	(unnamed) 	0.84762222799993
+scalar Leach.sink 	(unnamed) 	0.80527916999993
+scalar Leach.sink 	(unnamed) 	0.76341500799993
+scalar Leach.sink 	(unnamed) 	0.72124872399993
+scalar Leach.sink 	(unnamed) 	0.67907403799993
+scalar Leach.sink 	(unnamed) 	0.63672693999993
+scalar Leach.sink 	(unnamed) 	0.59434626799993
+scalar Leach.sink 	(unnamed) 	0.55224363999993
+scalar Leach.sink 	(unnamed) 	0.51012025199993
+scalar Leach.sink 	(unnamed) 	0.46818506399993
+scalar Leach.sink 	(unnamed) 	0.42589576599993
+scalar Leach.sink 	(unnamed) 	0.38386005199993
+scalar Leach.sink 	(unnamed) 	0.34160675199993
+scalar Leach.sink 	(unnamed) 	0.29960212399993
+scalar Leach.sink 	(unnamed) 	0.25755195999993
+scalar Leach.sink 	(unnamed) 	0.21535114399993
+scalar Leach.sink 	(unnamed) 	0.17291305599993
+scalar Leach.sink 	(unnamed) 	0.13089437599993
+scalar Leach.sink 	(unnamed) 	0.088563517999931
+scalar Leach.sink 	(unnamed) 	0.046397865999931
+scalar Leach.sink 	(unnamed) 	0.0047142159999313
+scalar Leach.sink 	(unnamed) 	-0.037334338000069
+scalar Leach.sink 	(unnamed) 	-0.079149666000069
+scalar Leach.sink 	(unnamed) 	-0.12124497600007
+scalar Leach.sink 	(unnamed) 	-0.16329267000007
+scalar Leach.sink 	(unnamed) 	-0.20532224200007
+scalar Leach.sink 	(unnamed) 	-0.24719594600007
+scalar Leach.sink 	(unnamed) 	-0.28922639600007
+scalar Leach.sink 	(unnamed) 	-0.33112161800007
+scalar Leach.sink 	(unnamed) 	-0.37302986200007
+scalar Leach.sink 	(unnamed) 	-0.41499991400007
+scalar Leach.sink 	(unnamed) 	-0.45688363800007
+scalar Leach.sink 	(unnamed) 	-0.49876736200007
+scalar Leach.sink 	(unnamed) 	-0.54065108600007
+scalar Leach.sink 	(unnamed) 	-0.58253481000007
+scalar Leach.sink 	(unnamed) 	-0.62441853400007
+scalar Leach.sink 	(unnamed) 	-0.66630225800007
+scalar Leach.sink 	(unnamed) 	-0.70818598200007
+scalar Leach.sink 	(unnamed) 	-0.75006970600007
+scalar Leach.sink 	(unnamed) 	-0.79195343000007
+scalar Leach.sink 	(unnamed) 	-0.83383715400007
+scalar Leach.sink 	(unnamed) 	-0.87572087800007
+scalar Leach.sink 	(unnamed) 	-0.91760460200007
+scalar Leach.sink 	(unnamed) 	-0.95948832600007
+scalar Leach.sink 	(unnamed) 	-1.0013720500001
+scalar Leach.sink 	(unnamed) 	-1.0432557740001
+scalar Leach.sink 	(unnamed) 	-1.0851394980001
+scalar Leach.sink 	(unnamed) 	-1.1270232220001
+scalar Leach.sink 	(unnamed) 	-1.1689069460001
+scalar Leach.sink 	(unnamed) 	-1.2107906700001
+scalar Leach.sink 	(unnamed) 	-1.2526743940001
+scalar Leach.sink 	(unnamed) 	-1.2945581180001
+scalar Leach.sink 	(unnamed) 	-1.3364418420001
+scalar Leach.sink 	(unnamed) 	-1.3783255660001
+scalar Leach.sink 	(unnamed) 	-1.4202092900001
+scalar Leach.sink 	(unnamed) 	-1.4620930140001
+scalar Leach.sink 	(unnamed) 	-1.5039767380001
+scalar Leach.sink 	(unnamed) 	-1.5458604620001
+scalar Leach.sink 	(unnamed) 	-1.5877441860001
+scalar Leach.sink 	(unnamed) 	-1.6296279100001
+scalar Leach.sink 	(unnamed) 	-1.6715116340001
+scalar Leach.sink 	(unnamed) 	-1.7133953580001
+scalar Leach.sink 	(unnamed) 	-1.7552790820001
+scalar Leach.sink 	(unnamed) 	-1.7971628060001
+scalar Leach.sink 	(unnamed) 	-1.8390465300001
+scalar Leach.sink 	(unnamed) 	-1.8809302540001
+scalar Leach.sink 	(unnamed) 	-1.9228139780001
+scalar Leach.sink 	(unnamed) 	-1.9646977020001
+scalar Leach.sink 	(unnamed) 	-2.0065814260001
+scalar Leach.sink 	(unnamed) 	-2.0484651500001
+scalar Leach.sink 	(unnamed) 	-2.0903488740001
+scalar Leach.sink 	(unnamed) 	-2.1322325980001
+scalar Leach.sink 	(unnamed) 	-2.1741163220001
+scalar Leach.sink 	(unnamed) 	-2.2160000460001
+scalar Leach.sink 	(unnamed) 	-2.2578837700001
+scalar Leach.sink 	(unnamed) 	-2.2997674940001
+scalar Leach.sink 	(unnamed) 	-2.3416512180001
+scalar Leach.sink 	(unnamed) 	-2.3835349420001
+scalar Leach.sink 	(unnamed) 	-2.4254186660001
+scalar Leach.sink 	(unnamed) 	-2.4673023900001
+scalar Leach.sink 	(unnamed) 	-2.5091861140001
+scalar Leach.sink 	(unnamed) 	-2.5510698380001
+scalar Leach.sink 	(unnamed) 	-2.5929535620001
+scalar Leach.sink 	(unnamed) 	-2.6348372860001
+scalar Leach.sink 	(unnamed) 	-2.6767210100001
+scalar Leach.sink 	(unnamed) 	-2.7186047340001
+scalar Leach.sink 	(unnamed) 	-2.7604884580001
+version 2
+run General-0-20141207-13:34:56-3820
+attr configname General
+attr datetime 20141207-13:34:56
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3820
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.95790446
+scalar Leach.sink 	(unnamed) 	9.915854352
+scalar Leach.sink 	(unnamed) 	9.873720432
+scalar Leach.sink 	(unnamed) 	9.831621236
+scalar Leach.sink 	(unnamed) 	9.789441142
+scalar Leach.sink 	(unnamed) 	9.747418976
+scalar Leach.sink 	(unnamed) 	9.705571418
+version 2
+run General-0-20141207-13:39:36-3596
+attr configname General
+attr datetime 20141207-13:39:36
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3596
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.95790446
+scalar Leach.sink 	(unnamed) 	9.915854352
+scalar Leach.sink 	(unnamed) 	9.873720432
+scalar Leach.sink 	(unnamed) 	9.831621236
+scalar Leach.sink 	(unnamed) 	9.789441142
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	6
+version 2
+run General-0-20141207-13:44:03-5220
+attr configname General
+attr datetime 20141207-13:44:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5220
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.95790446
+scalar Leach.sink 	(unnamed) 	9.915854352
+scalar Leach.sink 	(unnamed) 	9.873720432
+scalar Leach.sink 	(unnamed) 	9.831621236
+scalar Leach.sink 	(unnamed) 	9.789441142
+scalar Leach.sink 	(unnamed) 	9.747418976
+scalar Leach.sink 	(unnamed) 	9.705571418
+scalar Leach.sink 	(unnamed) 	9.663565518
+scalar Leach.sink 	(unnamed) 	9.621396462
+scalar Leach.sink 	(unnamed) 	9.579100412
+scalar Leach.sink 	(unnamed) 	9.536866644
+scalar Leach.sink 	(unnamed) 	9.494523416
+scalar Leach.sink 	(unnamed) 	9.452126052
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	14
+version 2
+run General-0-20141207-13:45:32-4792
+attr configname General
+attr datetime 20141207-13:45:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4792
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	(unnamed) 	6.8794219679999
+scalar Leach.sink 	(unnamed) 	6.8374174499999
+scalar Leach.sink 	(unnamed) 	6.795260086
+scalar Leach.sink 	(unnamed) 	6.7530886099999
+scalar Leach.sink 	(unnamed) 	6.7108814759999
+scalar Leach.sink 	(unnamed) 	6.6688666099999
+scalar Leach.sink 	(unnamed) 	6.6265926799999
+scalar Leach.sink 	(unnamed) 	6.5844911699999
+scalar Leach.sink 	(unnamed) 	6.5423320739999
+scalar Leach.sink 	(unnamed) 	6.5000132199999
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	84
+version 2
+run General-0-20141207-13:47:21-3376
+attr configname General
+attr datetime 20141207-13:47:21
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3376
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	9.957986604
+scalar Leach.sink 	(unnamed) 	9.916063376
+scalar Leach.sink 	(unnamed) 	9.874184032
+scalar Leach.sink 	(unnamed) 	9.832279654
+scalar Leach.sink 	(unnamed) 	9.79023221
+scalar Leach.sink 	(unnamed) 	9.748278762
+scalar Leach.sink 	(unnamed) 	9.706339044
+scalar Leach.sink 	(unnamed) 	9.664228694
+scalar Leach.sink 	(unnamed) 	9.621998226
+scalar Leach.sink 	(unnamed) 	9.579776492
+scalar Leach.sink 	(unnamed) 	9.537411046
+scalar Leach.sink 	(unnamed) 	9.495100434
+scalar Leach.sink 	(unnamed) 	9.453081952
+scalar Leach.sink 	(unnamed) 	9.410998072
+scalar Leach.sink 	(unnamed) 	9.369081884
+scalar Leach.sink 	(unnamed) 	9.326858624
+scalar Leach.sink 	(unnamed) 	9.284606952
+scalar Leach.sink 	(unnamed) 	9.242142278
+scalar Leach.sink 	(unnamed) 	9.200071094
+scalar Leach.sink 	(unnamed) 	9.157913636
+scalar Leach.sink 	(unnamed) 	9.11571641
+scalar Leach.sink 	(unnamed) 	9.073538854
+scalar Leach.sink 	(unnamed) 	9.031360776
+scalar Leach.sink 	(unnamed) 	8.989009836
+scalar Leach.sink 	(unnamed) 	8.94709579
+scalar Leach.sink 	(unnamed) 	8.904911724
+scalar Leach.sink 	(unnamed) 	8.862826368
+scalar Leach.sink 	(unnamed) 	8.820668472
+scalar Leach.sink 	(unnamed) 	8.77858743
+scalar Leach.sink 	(unnamed) 	8.736521726
+scalar Leach.sink 	(unnamed) 	8.694403452
+scalar Leach.sink 	(unnamed) 	8.652064972
+scalar Leach.sink 	(unnamed) 	8.609648018
+scalar Leach.sink 	(unnamed) 	8.5672637
+scalar Leach.sink 	(unnamed) 	8.52465375
+scalar Leach.sink 	(unnamed) 	8.48197403
+scalar Leach.sink 	(unnamed) 	8.44018731
+scalar Leach.sink 	(unnamed) 	8.398237994
+scalar Leach.sink 	(unnamed) 	8.355979598
+scalar Leach.sink 	(unnamed) 	8.313872816
+scalar Leach.sink 	(unnamed) 	8.271986538
+scalar Leach.sink 	(unnamed) 	8.229923822
+scalar Leach.sink 	(unnamed) 	8.187920618
+scalar Leach.sink 	(unnamed) 	8.14583672
+scalar Leach.sink 	(unnamed) 	8.10375242
+scalar Leach.sink 	(unnamed) 	8.061557936
+scalar Leach.sink 	(unnamed) 	8.019145576
+scalar Leach.sink 	(unnamed) 	7.976489622
+scalar Leach.sink 	(unnamed) 	7.934282776
+scalar Leach.sink 	(unnamed) 	7.89212318
+scalar Leach.sink 	(unnamed) 	7.849951226
+scalar Leach.sink 	(unnamed) 	7.807603044
+scalar Leach.sink 	(unnamed) 	7.765328508
+scalar Leach.sink 	(unnamed) 	7.72292777
+scalar Leach.sink 	(unnamed) 	7.68090078
+scalar Leach.sink 	(unnamed) 	7.638841154
+scalar Leach.sink 	(unnamed) 	7.596873922
+scalar Leach.sink 	(unnamed) 	7.554745216
+scalar Leach.sink 	(unnamed) 	7.512476034
+scalar Leach.sink 	(unnamed) 	7.469980924
+scalar Leach.sink 	(unnamed) 	7.428098866
+scalar Leach.sink 	(unnamed) 	7.386104432
+scalar Leach.sink 	(unnamed) 	7.34407958
+scalar Leach.sink 	(unnamed) 	7.30194285
+scalar Leach.sink 	(unnamed) 	7.259552702
+scalar Leach.sink 	(unnamed) 	7.217417048
+scalar Leach.sink 	(unnamed) 	7.175273304
+scalar Leach.sink 	(unnamed) 	7.13305573
+scalar Leach.sink 	(unnamed) 	7.0906279279999
+scalar Leach.sink 	(unnamed) 	7.04816318
+scalar Leach.sink 	(unnamed) 	7.0057000819999
+scalar Leach.sink 	(unnamed) 	6.9630228839999
+scalar Leach.sink 	(unnamed) 	6.9212467279999
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	74
+version 2
+run General-0-20141207-14:04:47-4900
+attr configname General
+attr datetime 20141207-14:04:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4900
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	7.964506852
+scalar Leach.sink 	(unnamed) 	7.928878786
+scalar Leach.sink 	(unnamed) 	7.893863796
+scalar Leach.sink 	(unnamed) 	7.858888418
+scalar Leach.sink 	(unnamed) 	7.823717588
+scalar Leach.sink 	(unnamed) 	7.788099084
+scalar Leach.sink 	(unnamed) 	7.75282225
+scalar Leach.sink 	(unnamed) 	7.717830284
+scalar Leach.sink 	(unnamed) 	7.68258207
+scalar Leach.sink 	(unnamed) 	7.647662264
+scalar Leach.sink 	(unnamed) 	7.612551084
+scalar Leach.sink 	(unnamed) 	7.576678002
+scalar Leach.sink 	(unnamed) 	7.541531512
+scalar Leach.sink 	(unnamed) 	7.505494758
+scalar Leach.sink 	(unnamed) 	7.47004275
+scalar Leach.sink 	(unnamed) 	7.433545388
+scalar Leach.sink 	(unnamed) 	7.397461802
+scalar Leach.sink 	(unnamed) 	7.361661878
+scalar Leach.sink 	(unnamed) 	7.326219772
+scalar Leach.sink 	(unnamed) 	7.29147479
+scalar Leach.sink 	(unnamed) 	7.256627638
+scalar Leach.sink 	(unnamed) 	7.22157135
+scalar Leach.sink 	(unnamed) 	7.186242944
+scalar Leach.sink 	(unnamed) 	7.150953326
+scalar Leach.sink 	(unnamed) 	7.115593102
+scalar Leach.sink 	(unnamed) 	7.079943694
+scalar Leach.sink 	(unnamed) 	7.043767796
+scalar Leach.sink 	(unnamed) 	7.008717068
+scalar Leach.sink 	(unnamed) 	6.973419012
+scalar Leach.sink 	(unnamed) 	6.938020392
+scalar Leach.sink 	(unnamed) 	6.902340176
+scalar Leach.sink 	(unnamed) 	6.866341952
+scalar Leach.sink 	(unnamed) 	6.830911986
+scalar Leach.sink 	(unnamed) 	6.795342562
+scalar Leach.sink 	(unnamed) 	6.759636446
+scalar Leach.sink 	(unnamed) 	6.723824696
+scalar Leach.sink 	(unnamed) 	6.688524902
+scalar Leach.sink 	(unnamed) 	6.652786584
+scalar Leach.sink 	(unnamed) 	6.617779374
+scalar Leach.sink 	(unnamed) 	6.582650926
+scalar Leach.sink 	(unnamed) 	6.547425424
+scalar Leach.sink 	(unnamed) 	6.512284304
+scalar Leach.sink 	(unnamed) 	6.47687819
+scalar Leach.sink 	(unnamed) 	6.441364472
+scalar Leach.sink 	(unnamed) 	6.405765056
+scalar Leach.sink 	(unnamed) 	6.37007433
+scalar Leach.sink 	(unnamed) 	6.334160196
+scalar Leach.sink 	(unnamed) 	6.297897256
+scalar Leach.sink 	(unnamed) 	6.262245764
+scalar Leach.sink 	(unnamed) 	6.226480494
+scalar Leach.sink 	(unnamed) 	6.190542698
+scalar Leach.sink 	(unnamed) 	6.154530616
+scalar Leach.sink 	(unnamed) 	6.118328848
+scalar Leach.sink 	(unnamed) 	6.081630236
+scalar Leach.sink 	(unnamed) 	6.046565702
+scalar Leach.sink 	(unnamed) 	6.011218128
+scalar Leach.sink 	(unnamed) 	5.97562943
+scalar Leach.sink 	(unnamed) 	5.940761326
+scalar Leach.sink 	(unnamed) 	5.905768628
+scalar Leach.sink 	(unnamed) 	5.870686556
+scalar Leach.sink 	(unnamed) 	5.83553817
+scalar Leach.sink 	(unnamed) 	5.800353868
+scalar Leach.sink 	(unnamed) 	5.764985422
+scalar Leach.sink 	(unnamed) 	5.729296138
+scalar Leach.sink 	(unnamed) 	5.694154364
+scalar Leach.sink 	(unnamed) 	5.658887568
+scalar Leach.sink 	(unnamed) 	5.623422302
+scalar Leach.sink 	(unnamed) 	5.587918578
+scalar Leach.sink 	(unnamed) 	5.552251554
+scalar Leach.sink 	(unnamed) 	5.516326988
+scalar Leach.sink 	(unnamed) 	5.480327362
+scalar Leach.sink 	(unnamed) 	5.444294378
+scalar Leach.sink 	(unnamed) 	5.408659678
+scalar Leach.sink 	(unnamed) 	5.372837214
+scalar Leach.sink 	(unnamed) 	5.336853852
+scalar Leach.sink 	(unnamed) 	5.300531702
+scalar Leach.sink 	(unnamed) 	5.26501362
+scalar Leach.sink 	(unnamed) 	5.229363546
+version 2
+run General-0-20141207-16:49:41-4656
+attr configname General
+attr datetime 20141207-16:49:41
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4656
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	7.964506852
+scalar Leach.sink 	(unnamed) 	7.928878786
+scalar Leach.sink 	(unnamed) 	7.893863796
+scalar Leach.sink 	(unnamed) 	7.858888418
+scalar Leach.sink 	(unnamed) 	7.823717588
+scalar Leach.sink 	(unnamed) 	7.788099084
+scalar Leach.sink 	(unnamed) 	7.75282225
+scalar Leach.sink 	(unnamed) 	7.717830284
+scalar Leach.sink 	(unnamed) 	7.68258207
+scalar Leach.sink 	(unnamed) 	7.647662264
+scalar Leach.sink 	(unnamed) 	7.612551084
+scalar Leach.sink 	(unnamed) 	7.576678002
+scalar Leach.sink 	(unnamed) 	7.541531512
+scalar Leach.sink 	(unnamed) 	7.505494758
+scalar Leach.sink 	(unnamed) 	7.47004275
+scalar Leach.sink 	(unnamed) 	7.433545388
+scalar Leach.sink 	(unnamed) 	7.397461802
+scalar Leach.sink 	(unnamed) 	7.361661878
+scalar Leach.sink 	(unnamed) 	7.326219772
+scalar Leach.sink 	(unnamed) 	7.29147479
+scalar Leach.sink 	(unnamed) 	7.256627638
+scalar Leach.sink 	(unnamed) 	7.22157135
+scalar Leach.sink 	(unnamed) 	7.186242944
+scalar Leach.sink 	(unnamed) 	7.150953326
+scalar Leach.sink 	(unnamed) 	7.115593102
+scalar Leach.sink 	(unnamed) 	7.079943694
+scalar Leach.sink 	(unnamed) 	7.043767796
+scalar Leach.sink 	(unnamed) 	7.008717068
+scalar Leach.sink 	(unnamed) 	6.973419012
+scalar Leach.sink 	(unnamed) 	6.938020392
+scalar Leach.sink 	(unnamed) 	6.902340176
+scalar Leach.sink 	(unnamed) 	6.866341952
+scalar Leach.sink 	(unnamed) 	6.830911986
+scalar Leach.sink 	(unnamed) 	6.795342562
+scalar Leach.sink 	(unnamed) 	6.759636446
+scalar Leach.sink 	(unnamed) 	6.723824696
+scalar Leach.sink 	(unnamed) 	6.688524902
+scalar Leach.sink 	(unnamed) 	6.652786584
+scalar Leach.sink 	(unnamed) 	6.617779374
+scalar Leach.sink 	(unnamed) 	6.582650926
+scalar Leach.sink 	(unnamed) 	6.547425424
+scalar Leach.sink 	(unnamed) 	6.512284304
+scalar Leach.sink 	(unnamed) 	6.47687819
+scalar Leach.sink 	(unnamed) 	6.441364472
+scalar Leach.sink 	(unnamed) 	6.405765056
+scalar Leach.sink 	(unnamed) 	6.37007433
+scalar Leach.sink 	(unnamed) 	6.334160196
+scalar Leach.sink 	(unnamed) 	6.297897256
+scalar Leach.sink 	(unnamed) 	6.262245764
+scalar Leach.sink 	(unnamed) 	6.226480494
+scalar Leach.sink 	(unnamed) 	6.190542698
+scalar Leach.sink 	(unnamed) 	6.154530616
+scalar Leach.sink 	(unnamed) 	6.118328848
+scalar Leach.sink 	(unnamed) 	6.081630236
+scalar Leach.sink 	(unnamed) 	6.046565702
+scalar Leach.sink 	(unnamed) 	6.011218128
+scalar Leach.sink 	(unnamed) 	5.97562943
+scalar Leach.sink 	(unnamed) 	5.940761326
+scalar Leach.sink 	(unnamed) 	5.905768628
+scalar Leach.sink 	(unnamed) 	5.870686556
+scalar Leach.sink 	(unnamed) 	5.83553817
+scalar Leach.sink 	(unnamed) 	5.800353868
+scalar Leach.sink 	(unnamed) 	5.764985422
+scalar Leach.sink 	(unnamed) 	5.729296138
+scalar Leach.sink 	(unnamed) 	5.694154364
+scalar Leach.sink 	(unnamed) 	5.658887568
+scalar Leach.sink 	(unnamed) 	5.623422302
+scalar Leach.sink 	(unnamed) 	5.587918578
+scalar Leach.sink 	(unnamed) 	5.552251554
+scalar Leach.sink 	(unnamed) 	5.516326988
+scalar Leach.sink 	(unnamed) 	5.480327362
+scalar Leach.sink 	(unnamed) 	5.444294378
+scalar Leach.sink 	(unnamed) 	5.408659678
+scalar Leach.sink 	(unnamed) 	5.372837214
+scalar Leach.sink 	(unnamed) 	5.336853852
+scalar Leach.sink 	(unnamed) 	5.300531702
+scalar Leach.sink 	(unnamed) 	5.26501362
+scalar Leach.sink 	(unnamed) 	5.229363546
+scalar Leach.sink 	(unnamed) 	5.19359519
+scalar Leach.sink 	(unnamed) 	5.1582015
+scalar Leach.sink 	(unnamed) 	5.122461414
+scalar Leach.sink 	(unnamed) 	5.08774862
+scalar Leach.sink 	(unnamed) 	5.0528607559999
+scalar Leach.sink 	(unnamed) 	5.017863002
+scalar Leach.sink 	(unnamed) 	4.982632972
+scalar Leach.sink 	(unnamed) 	4.946705834
+scalar Leach.sink 	(unnamed) 	4.911203184
+scalar Leach.sink 	(unnamed) 	4.875607776
+scalar Leach.sink 	(unnamed) 	4.839916264
+scalar Leach.sink 	(unnamed) 	4.804177516
+scalar Leach.sink 	(unnamed) 	4.7689513119999
+scalar Leach.sink 	(unnamed) 	4.7333742719999
+scalar Leach.sink 	(unnamed) 	4.697626886
+scalar Leach.sink 	(unnamed) 	4.661674558
+scalar Leach.sink 	(unnamed) 	4.62624631
+scalar Leach.sink 	(unnamed) 	4.591239586
+scalar Leach.sink 	(unnamed) 	4.556094432
+scalar Leach.sink 	(unnamed) 	4.520930088
+scalar Leach.sink 	(unnamed) 	4.48574827
+scalar Leach.sink 	(unnamed) 	4.450384162
+scalar Leach.sink 	(unnamed) 	4.4148988739999
+scalar Leach.sink 	(unnamed) 	4.378587488
+scalar Leach.sink 	(unnamed) 	4.34283403
+scalar Leach.sink 	(unnamed) 	4.3069918139999
+scalar Leach.sink 	(unnamed) 	4.2709407
+scalar Leach.sink 	(unnamed) 	4.2343348139999
+scalar Leach.sink 	(unnamed) 	4.198028118
+scalar Leach.sink 	(unnamed) 	4.1619482479999
+scalar Leach.sink 	(unnamed) 	4.1263444259999
+scalar Leach.sink 	(unnamed) 	4.0910730979999
+scalar Leach.sink 	(unnamed) 	4.055543186
+scalar Leach.sink 	(unnamed) 	4.0203127339999
+scalar Leach.sink 	(unnamed) 	3.9849659939999
+scalar Leach.sink 	(unnamed) 	3.9501770439999
+scalar Leach.sink 	(unnamed) 	3.9153508879999
+scalar Leach.sink 	(unnamed) 	3.8804883999999
+scalar Leach.sink 	(unnamed) 	3.845512342
+scalar Leach.sink 	(unnamed) 	3.8104496599999
+scalar Leach.sink 	(unnamed) 	3.7752098519999
+scalar Leach.sink 	(unnamed) 	3.7398447699999
+scalar Leach.sink 	(unnamed) 	3.7042828219999
+scalar Leach.sink 	(unnamed) 	3.6686143239999
+scalar Leach.sink 	(unnamed) 	3.6332389039999
+scalar Leach.sink 	(unnamed) 	3.5972608839999
+scalar Leach.sink 	(unnamed) 	3.5607769739999
+scalar Leach.sink 	(unnamed) 	3.5240456919999
+scalar Leach.sink 	(unnamed) 	3.4881587459999
+scalar Leach.sink 	(unnamed) 	3.4527816739999
+scalar Leach.sink 	(unnamed) 	3.4173282459999
+scalar Leach.sink 	(unnamed) 	3.3816446179999
+scalar Leach.sink 	(unnamed) 	3.3463745759999
+scalar Leach.sink 	(unnamed) 	3.3106338939999
+scalar Leach.sink 	(unnamed) 	3.2752254259999
+scalar Leach.sink 	(unnamed) 	3.2396734199999
+scalar Leach.sink 	(unnamed) 	3.2048910719999
+scalar Leach.sink 	(unnamed) 	3.1684058679999
+scalar Leach.sink 	(unnamed) 	3.1333770639999
+scalar Leach.sink 	(unnamed) 	3.0982282279999
+scalar Leach.sink 	(unnamed) 	3.0623123859999
+scalar Leach.sink 	(unnamed) 	3.0268839819999
+scalar Leach.sink 	(unnamed) 	2.9921508519999
+scalar Leach.sink 	(unnamed) 	2.9560727459999
+scalar Leach.sink 	(unnamed) 	2.9211212239999
+scalar Leach.sink 	(unnamed) 	2.8861094159999
+scalar Leach.sink 	(unnamed) 	2.8506605859999
+scalar Leach.sink 	(unnamed) 	2.8150702979999
+scalar Leach.sink 	(unnamed) 	2.7793164519999
+scalar Leach.sink 	(unnamed) 	2.7430552959999
+scalar Leach.sink 	(unnamed) 	2.7075231639999
+scalar Leach.sink 	(unnamed) 	2.6723581239999
+scalar Leach.sink 	(unnamed) 	2.6365972959999
+scalar Leach.sink 	(unnamed) 	2.6012922059999
+scalar Leach.sink 	(unnamed) 	2.5659085979999
+scalar Leach.sink 	(unnamed) 	2.5303848199999
+scalar Leach.sink 	(unnamed) 	2.4947162479999
+scalar Leach.sink 	(unnamed) 	2.4590060879999
+scalar Leach.sink 	(unnamed) 	2.4230156799999
+scalar Leach.sink 	(unnamed) 	2.3877948439999
+scalar Leach.sink 	(unnamed) 	2.3521005919999
+scalar Leach.sink 	(unnamed) 	2.3162244479999
+scalar Leach.sink 	(unnamed) 	2.2806207399999
+scalar Leach.sink 	(unnamed) 	2.2451267019999
+scalar Leach.sink 	(unnamed) 	2.2096004019999
+scalar Leach.sink 	(unnamed) 	2.1745950479999
+scalar Leach.sink 	(unnamed) 	2.1390972239999
+scalar Leach.sink 	(unnamed) 	2.1038444379999
+scalar Leach.sink 	(unnamed) 	2.0676430939999
+scalar Leach.sink 	(unnamed) 	2.0326942619999
+scalar Leach.sink 	(unnamed) 	1.9964026499999
+scalar Leach.sink 	(unnamed) 	1.9609148099999
+scalar Leach.sink 	(unnamed) 	1.9260573359999
+scalar Leach.sink 	(unnamed) 	1.8908255659999
+scalar Leach.sink 	(unnamed) 	1.8557467419999
+scalar Leach.sink 	(unnamed) 	1.8201409839999
+scalar Leach.sink 	(unnamed) 	1.7849609219999
+scalar Leach.sink 	(unnamed) 	1.7495422839999
+scalar Leach.sink 	(unnamed) 	1.7136655519999
+scalar Leach.sink 	(unnamed) 	1.6781084979999
+scalar Leach.sink 	(unnamed) 	1.6427123619999
+scalar Leach.sink 	(unnamed) 	1.6068503659999
+scalar Leach.sink 	(unnamed) 	1.5710318779999
+scalar Leach.sink 	(unnamed) 	1.5351388259999
+scalar Leach.sink 	(unnamed) 	1.4989803319999
+scalar Leach.sink 	(unnamed) 	1.4632785519999
+scalar Leach.sink 	(unnamed) 	1.4274569379999
+scalar Leach.sink 	(unnamed) 	1.3918033159999
+scalar Leach.sink 	(unnamed) 	1.3562281419999
+scalar Leach.sink 	(unnamed) 	1.3212373219999
+scalar Leach.sink 	(unnamed) 	1.2853990719999
+scalar Leach.sink 	(unnamed) 	1.2506552099999
+scalar Leach.sink 	(unnamed) 	1.2158391379999
+scalar Leach.sink 	(unnamed) 	1.1805663539999
+scalar Leach.sink 	(unnamed) 	1.1447588059999
+scalar Leach.sink 	(unnamed) 	1.1091344519999
+scalar Leach.sink 	(unnamed) 	1.0735891459999
+scalar Leach.sink 	(unnamed) 	1.0385566779999
+scalar Leach.sink 	(unnamed) 	1.0030744579999
+scalar Leach.sink 	(unnamed) 	0.96790847799994
+scalar Leach.sink 	(unnamed) 	0.93240226599994
+scalar Leach.sink 	(unnamed) 	0.89702859599994
+scalar Leach.sink 	(unnamed) 	0.85999404999994
+scalar Leach.sink 	(unnamed) 	0.82437294999994
+scalar Leach.sink 	(unnamed) 	0.78904518999994
+scalar Leach.sink 	(unnamed) 	0.75361702999994
+scalar Leach.sink 	(unnamed) 	0.71788493799994
+scalar Leach.sink 	(unnamed) 	0.68265836999994
+scalar Leach.sink 	(unnamed) 	0.64705054999994
+scalar Leach.sink 	(unnamed) 	0.61115419599994
+scalar Leach.sink 	(unnamed) 	0.57586389399994
+scalar Leach.sink 	(unnamed) 	0.54038883399994
+scalar Leach.sink 	(unnamed) 	0.50454210599994
+scalar Leach.sink 	(unnamed) 	0.46874979799994
+scalar Leach.sink 	(unnamed) 	0.43288242799994
+scalar Leach.sink 	(unnamed) 	0.39805496799994
+scalar Leach.sink 	(unnamed) 	0.36178336399994
+scalar Leach.sink 	(unnamed) 	0.32622769599994
+scalar Leach.sink 	(unnamed) 	0.29142408399994
+scalar Leach.sink 	(unnamed) 	0.25548524399994
+scalar Leach.sink 	(unnamed) 	0.22047838399994
+scalar Leach.sink 	(unnamed) 	0.18506246399994
+scalar Leach.sink 	(unnamed) 	0.14891327199994
+scalar Leach.sink 	(unnamed) 	0.11352787599994
+scalar Leach.sink 	(unnamed) 	0.078613925999945
+scalar Leach.sink 	(unnamed) 	0.043695113999945
+scalar Leach.sink 	(unnamed) 	0.0081629599999448
+scalar Leach.sink 	(unnamed) 	-0.027239506000055
+scalar Leach.sink 	(unnamed) 	-0.062764662000055
+scalar Leach.sink 	(unnamed) 	-0.098630752000055
+scalar Leach.sink 	(unnamed) 	-0.13400160200006
+scalar Leach.sink 	(unnamed) 	-0.16940424800006
+scalar Leach.sink 	(unnamed) 	-0.20488580400006
+scalar Leach.sink 	(unnamed) 	-0.24017353200006
+scalar Leach.sink 	(unnamed) 	-0.27579251800006
+scalar Leach.sink 	(unnamed) 	-0.31141150400006
+scalar Leach.sink 	(unnamed) 	-0.34703049000006
+scalar Leach.sink 	(unnamed) 	-0.38264947600006
+scalar Leach.sink 	(unnamed) 	-0.41826846200006
+scalar Leach.sink 	(unnamed) 	-0.45388744800006
+scalar Leach.sink 	(unnamed) 	-0.48950643400006
+scalar Leach.sink 	(unnamed) 	-0.52512542000006
+scalar Leach.sink 	(unnamed) 	-0.56074440600006
+scalar Leach.sink 	(unnamed) 	-0.59636339200006
+scalar Leach.sink 	(unnamed) 	-0.63198237800006
+scalar Leach.sink 	(unnamed) 	-0.66760136400006
+scalar Leach.sink 	(unnamed) 	-0.70322035000006
+scalar Leach.sink 	(unnamed) 	-0.73883933600006
+scalar Leach.sink 	(unnamed) 	-0.77445832200006
+scalar Leach.sink 	(unnamed) 	-0.81007730800006
+scalar Leach.sink 	(unnamed) 	-0.84569629400006
+scalar Leach.sink 	(unnamed) 	-0.88131528000006
+scalar Leach.sink 	(unnamed) 	-0.91693426600006
+scalar Leach.sink 	(unnamed) 	-0.95255325200006
+scalar Leach.sink 	(unnamed) 	-0.98817223800006
+scalar Leach.sink 	(unnamed) 	-1.0237912240001
+scalar Leach.sink 	(unnamed) 	-1.0594102100001
+scalar Leach.sink 	(unnamed) 	-1.0950291960001
+scalar Leach.sink 	(unnamed) 	-1.1306481820001
+scalar Leach.sink 	(unnamed) 	-1.1662671680001
+scalar Leach.sink 	(unnamed) 	-1.2018861540001
+scalar Leach.sink 	(unnamed) 	-1.2375051400001
+scalar Leach.sink 	(unnamed) 	-1.2731241260001
+scalar Leach.sink 	(unnamed) 	-1.3087431120001
+scalar Leach.sink 	(unnamed) 	-1.3443620980001
+scalar Leach.sink 	(unnamed) 	-1.3799810840001
+scalar Leach.sink 	(unnamed) 	-1.4156000700001
+scalar Leach.sink 	(unnamed) 	-1.4512190560001
+scalar Leach.sink 	(unnamed) 	-1.4868380420001
+scalar Leach.sink 	(unnamed) 	-1.5224570280001
+scalar Leach.sink 	(unnamed) 	-1.558076014
+scalar Leach.sink 	(unnamed) 	-1.593695
+scalar Leach.sink 	(unnamed) 	-1.629313986
+scalar Leach.sink 	(unnamed) 	-1.664932972
+scalar Leach.sink 	(unnamed) 	-1.700551958
+scalar Leach.sink 	(unnamed) 	-1.736170944
+scalar Leach.sink 	(unnamed) 	-1.77178993
+scalar Leach.sink 	(unnamed) 	-1.807408916
+scalar Leach.sink 	(unnamed) 	-1.843027902
+scalar Leach.sink 	(unnamed) 	-1.878646888
+scalar Leach.sink 	(unnamed) 	-1.914265874
+scalar Leach.sink 	(unnamed) 	-1.94988486
+scalar Leach.sink 	(unnamed) 	-1.985503846
+scalar Leach.sink 	(unnamed) 	-2.021122832
+scalar Leach.sink 	(unnamed) 	-2.056741818
+scalar Leach.sink 	(unnamed) 	-2.092360804
+scalar Leach.sink 	(unnamed) 	-2.12797979
+scalar Leach.sink 	(unnamed) 	-2.163598776
+scalar Leach.sink 	(unnamed) 	-2.199217762
+scalar Leach.sink 	(unnamed) 	-2.234836748
+scalar Leach.sink 	(unnamed) 	-2.270455734
+scalar Leach.sink 	(unnamed) 	-2.30607472
+scalar Leach.sink 	(unnamed) 	-2.341693706
+scalar Leach.sink 	(unnamed) 	-2.377312692
+scalar Leach.sink 	(unnamed) 	-2.412931678
+scalar Leach.sink 	(unnamed) 	-2.448550664
+scalar Leach.sink 	(unnamed) 	-2.48416965
+scalar Leach.sink 	(unnamed) 	-2.519788636
+scalar Leach.sink 	(unnamed) 	-2.555407622
+scalar Leach.sink 	(unnamed) 	-2.591026608
+scalar Leach.sink 	(unnamed) 	-2.626645594
+scalar Leach.sink 	(unnamed) 	-2.66226458
+scalar Leach.sink 	(unnamed) 	-2.697883566
+scalar Leach.sink 	(unnamed) 	-2.733502552
+scalar Leach.sink 	(unnamed) 	-2.769121538
+scalar Leach.sink 	(unnamed) 	-2.804740524
+scalar Leach.sink 	(unnamed) 	-2.84035951
+scalar Leach.sink 	(unnamed) 	-2.875978496
+scalar Leach.sink 	(unnamed) 	-2.911597482
+scalar Leach.sink 	(unnamed) 	-2.947216468
+scalar Leach.sink 	(unnamed) 	-2.982835454
+scalar Leach.sink 	(unnamed) 	-3.01845444
+scalar Leach.sink 	(unnamed) 	-3.054073426
+scalar Leach.sink 	(unnamed) 	-3.089692412
+scalar Leach.sink 	(unnamed) 	-3.125311398
+scalar Leach.sink 	(unnamed) 	-3.160930384
+scalar Leach.sink 	(unnamed) 	-3.19654937
+scalar Leach.sink 	(unnamed) 	-3.232168356
+scalar Leach.sink 	(unnamed) 	-3.267787342
+scalar Leach.sink 	(unnamed) 	-3.303406328
+scalar Leach.sink 	(unnamed) 	-3.339025314
+scalar Leach.sink 	(unnamed) 	-3.3746443
+scalar Leach.sink 	(unnamed) 	-3.410263286
+scalar Leach.sink 	(unnamed) 	-3.445882272
+scalar Leach.sink 	(unnamed) 	-3.481501258
+scalar Leach.sink 	(unnamed) 	-3.517120244
+scalar Leach.sink 	(unnamed) 	-3.55273923
+scalar Leach.sink 	(unnamed) 	-3.588358216
+scalar Leach.sink 	(unnamed) 	-3.623977202
+scalar Leach.sink 	(unnamed) 	-3.659596188
+scalar Leach.sink 	(unnamed) 	-3.695215174
+scalar Leach.sink 	(unnamed) 	-3.73083416
+scalar Leach.sink 	(unnamed) 	-3.766453146
+scalar Leach.sink 	(unnamed) 	-3.802072132
+scalar Leach.sink 	(unnamed) 	-3.837691118
+scalar Leach.sink 	(unnamed) 	-3.873310104
+scalar Leach.sink 	(unnamed) 	-3.90892909
+scalar Leach.sink 	(unnamed) 	-3.944548076
+scalar Leach.sink 	(unnamed) 	-3.980167062
+scalar Leach.sink 	(unnamed) 	-4.015786048
+scalar Leach.sink 	(unnamed) 	-4.051405034
+scalar Leach.sink 	(unnamed) 	-4.08702402
+scalar Leach.sink 	(unnamed) 	-4.122643006
+scalar Leach.sink 	(unnamed) 	-4.158261992
+scalar Leach.sink 	(unnamed) 	-4.193880978
+scalar Leach.sink 	(unnamed) 	-4.229499964
+scalar Leach.sink 	(unnamed) 	-4.26511895
+scalar Leach.sink 	(unnamed) 	-4.300737936
+scalar Leach.sink 	(unnamed) 	-4.336356922
+scalar Leach.sink 	(unnamed) 	-4.371975908
+scalar Leach.sink 	(unnamed) 	-4.407594894
+scalar Leach.sink 	(unnamed) 	-4.44321388
+scalar Leach.sink 	(unnamed) 	-4.478832866
+scalar Leach.sink 	(unnamed) 	-4.514451852
+scalar Leach.sink 	(unnamed) 	-4.550070838
+scalar Leach.sink 	(unnamed) 	-4.585689824
+scalar Leach.sink 	(unnamed) 	-4.62130881
+scalar Leach.sink 	(unnamed) 	-4.656927796
+scalar Leach.sink 	(unnamed) 	-4.692546782
+scalar Leach.sink 	(unnamed) 	-4.728165768
+scalar Leach.sink 	(unnamed) 	-4.763784754
+scalar Leach.sink 	(unnamed) 	-4.79940374
+scalar Leach.sink 	(unnamed) 	-4.835022726
+scalar Leach.sink 	(unnamed) 	-4.870641712
+scalar Leach.sink 	(unnamed) 	-4.906260698
+scalar Leach.sink 	(unnamed) 	-4.941879684
+scalar Leach.sink 	(unnamed) 	-4.9774986700001
+scalar Leach.sink 	(unnamed) 	-5.0131176560001
+scalar Leach.sink 	(unnamed) 	-5.0487366420001
+scalar Leach.sink 	(unnamed) 	-5.0843556280001
+scalar Leach.sink 	(unnamed) 	-5.1199746140001
+scalar Leach.sink 	(unnamed) 	-5.1555936000001
+scalar Leach.sink 	(unnamed) 	-5.1912125860001
+scalar Leach.sink 	(unnamed) 	-5.2268315720001
+scalar Leach.sink 	(unnamed) 	-5.2624505580001
+scalar Leach.sink 	(unnamed) 	-5.2980695440001
+scalar Leach.sink 	(unnamed) 	-5.3336885300001
+scalar Leach.sink 	(unnamed) 	-5.3693075160001
+scalar Leach.sink 	(unnamed) 	-5.4049265020001
+scalar Leach.sink 	(unnamed) 	-5.4405454880001
+scalar Leach.sink 	(unnamed) 	-5.4761644740001
+scalar Leach.sink 	(unnamed) 	-5.5117834600001
+scalar Leach.sink 	(unnamed) 	-5.5474024460001
+scalar Leach.sink 	(unnamed) 	-5.5830214320001
+scalar Leach.sink 	(unnamed) 	-5.6186404180001
+scalar Leach.sink 	(unnamed) 	-5.6542594040001
+scalar Leach.sink 	(unnamed) 	-5.6898783900001
+scalar Leach.sink 	(unnamed) 	-5.7254973760001
+scalar Leach.sink 	(unnamed) 	-5.7611163620001
+scalar Leach.sink 	(unnamed) 	-5.7967353480001
+scalar Leach.sink 	(unnamed) 	-5.8323543340001
+scalar Leach.sink 	(unnamed) 	-5.8679733200001
+scalar Leach.sink 	(unnamed) 	-5.9035923060001
+scalar Leach.sink 	(unnamed) 	-5.9392112920001
+scalar Leach.sink 	(unnamed) 	-5.9748302780001
+scalar Leach.sink 	(unnamed) 	-6.0104492640001
+scalar Leach.sink 	(unnamed) 	-6.0460682500001
+scalar Leach.sink 	(unnamed) 	-6.0816872360002
+scalar Leach.sink 	(unnamed) 	-6.1173062220002
+scalar Leach.sink 	(unnamed) 	-6.1529252080002
+scalar Leach.sink 	(unnamed) 	-6.1885441940002
+scalar Leach.sink 	(unnamed) 	-6.2241631800002
+scalar Leach.sink 	(unnamed) 	-6.2597821660002
+scalar Leach.sink 	(unnamed) 	-6.2954011520002
+scalar Leach.sink 	(unnamed) 	-6.3310201380002
+scalar Leach.sink 	(unnamed) 	-6.3666391240002
+scalar Leach.sink 	(unnamed) 	-6.4022581100002
+scalar Leach.sink 	(unnamed) 	-6.4378770960002
+scalar Leach.sink 	(unnamed) 	-6.4734960820002
+scalar Leach.sink 	(unnamed) 	-6.5091150680002
+scalar Leach.sink 	(unnamed) 	-6.5447340540002
+scalar Leach.sink 	(unnamed) 	-6.5803530400002
+scalar Leach.sink 	(unnamed) 	-6.6159720260002
+scalar Leach.sink 	(unnamed) 	-6.6515910120002
+scalar Leach.sink 	(unnamed) 	-6.6872099980002
+scalar Leach.sink 	(unnamed) 	-6.7228289840002
+scalar Leach.sink 	(unnamed) 	-6.7584479700002
+scalar Leach.sink 	(unnamed) 	-6.7940669560002
+scalar Leach.sink 	(unnamed) 	-6.8296859420002
+scalar Leach.sink 	(unnamed) 	-6.8653049280002
+scalar Leach.sink 	(unnamed) 	-6.9009239140002
+scalar Leach.sink 	(unnamed) 	-6.9365429000002
+scalar Leach.sink 	(unnamed) 	-6.9721618860002
+scalar Leach.sink 	(unnamed) 	-7.0077808720002
+scalar Leach.sink 	(unnamed) 	-7.0433998580002
+scalar Leach.sink 	(unnamed) 	-7.0790188440002
+scalar Leach.sink 	(unnamed) 	-7.1146378300002
+scalar Leach.sink 	(unnamed) 	-7.1502568160002
+scalar Leach.sink 	(unnamed) 	-7.1858758020003
+scalar Leach.sink 	(unnamed) 	-7.2214947880003
+scalar Leach.sink 	(unnamed) 	-7.2571137740003
+scalar Leach.sink 	(unnamed) 	-7.2927327600003
+scalar Leach.sink 	(unnamed) 	-7.3283517460003
+scalar Leach.sink 	(unnamed) 	-7.3639707320003
+scalar Leach.sink 	(unnamed) 	-7.3995897180003
+scalar Leach.sink 	(unnamed) 	-7.4352087040003
+scalar Leach.sink 	(unnamed) 	-7.4708276900003
+scalar Leach.sink 	(unnamed) 	-7.5064466760003
+scalar Leach.sink 	(unnamed) 	-7.5420656620003
+scalar Leach.sink 	(unnamed) 	-7.5776846480003
+scalar Leach.sink 	(unnamed) 	-7.6133036340003
+scalar Leach.sink 	(unnamed) 	-7.6489226200003
+scalar Leach.sink 	(unnamed) 	-7.6845416060003
+scalar Leach.sink 	(unnamed) 	-7.7201605920003
+scalar Leach.sink 	(unnamed) 	-7.7557795780003
+scalar Leach.sink 	(unnamed) 	-7.7913985640003
+scalar Leach.sink 	(unnamed) 	-7.8270175500003
+scalar Leach.sink 	(unnamed) 	-7.8626365360003
+scalar Leach.sink 	(unnamed) 	-7.8982555220003
+scalar Leach.sink 	(unnamed) 	-7.9338745080003
+scalar Leach.sink 	(unnamed) 	-7.9694934940003
+scalar Leach.sink 	(unnamed) 	-8.0051124800003
+scalar Leach.sink 	(unnamed) 	-8.0407314660003
+scalar Leach.sink 	(unnamed) 	-8.0763504520003
+scalar Leach.sink 	(unnamed) 	-8.1119694380003
+scalar Leach.sink 	(unnamed) 	-8.1475884240003
+scalar Leach.sink 	(unnamed) 	-8.1832074100003
+scalar Leach.sink 	(unnamed) 	-8.2188263960003
+scalar Leach.sink 	(unnamed) 	-8.2544453820003
+scalar Leach.sink 	(unnamed) 	-8.2900643680003
+scalar Leach.sink 	(unnamed) 	-8.3256833540003
+scalar Leach.sink 	(unnamed) 	-8.3613023400003
+scalar Leach.sink 	(unnamed) 	-8.3969213260004
+scalar Leach.sink 	(unnamed) 	-8.4325403120004
+scalar Leach.sink 	(unnamed) 	-8.4681592980004
+scalar Leach.sink 	(unnamed) 	-8.5037782840004
+scalar Leach.sink 	(unnamed) 	-8.5393972700004
+scalar Leach.sink 	(unnamed) 	-8.5750162560004
+scalar Leach.sink 	(unnamed) 	-8.6106352420004
+scalar Leach.sink 	(unnamed) 	-8.6462542280004
+scalar Leach.sink 	(unnamed) 	-8.6818732140004
+scalar Leach.sink 	(unnamed) 	-8.7174922000004
+scalar Leach.sink 	(unnamed) 	-8.7531111860004
+scalar Leach.sink 	(unnamed) 	-8.7887301720004
+scalar Leach.sink 	(unnamed) 	-8.8243491580004
+scalar Leach.sink 	(unnamed) 	-8.8599681440004
+scalar Leach.sink 	(unnamed) 	-8.8955871300004
+scalar Leach.sink 	(unnamed) 	-8.9312061160004
+scalar Leach.sink 	(unnamed) 	-8.9668251020004
+scalar Leach.sink 	(unnamed) 	-9.0024440880004
+scalar Leach.sink 	(unnamed) 	-9.0380630740004
+scalar Leach.sink 	(unnamed) 	-9.0736820600004
+scalar Leach.sink 	(unnamed) 	-9.1093010460004
+scalar Leach.sink 	(unnamed) 	-9.1449200320004
+scalar Leach.sink 	(unnamed) 	-9.1805390180004
+scalar Leach.sink 	(unnamed) 	-9.2161580040004
+scalar Leach.sink 	(unnamed) 	-9.2517769900004
+scalar Leach.sink 	(unnamed) 	-9.2873959760004
+scalar Leach.sink 	(unnamed) 	-9.3230149620004
+scalar Leach.sink 	(unnamed) 	-9.3586339480004
+scalar Leach.sink 	(unnamed) 	-9.3942529340004
+scalar Leach.sink 	(unnamed) 	-9.4298719200004
+scalar Leach.sink 	(unnamed) 	-9.4654909060004
+scalar Leach.sink 	(unnamed) 	-9.5011098920004
+scalar Leach.sink 	(unnamed) 	-9.5367288780004
+scalar Leach.sink 	(unnamed) 	-9.5723478640004
+scalar Leach.sink 	(unnamed) 	-9.6079668500004
+scalar Leach.sink 	(unnamed) 	-9.6435858360005
+scalar Leach.sink 	(unnamed) 	-9.6792048220005
+scalar Leach.sink 	(unnamed) 	-9.7148238080005
+scalar Leach.sink 	(unnamed) 	-9.7504427940005
+scalar Leach.sink 	(unnamed) 	-9.7860617800005
+scalar Leach.sink 	(unnamed) 	-9.8216807660005
+scalar Leach.sink 	(unnamed) 	-9.8572997520005
+scalar Leach.sink 	(unnamed) 	-9.8929187380005
+scalar Leach.sink 	(unnamed) 	-9.9285377240005
+scalar Leach.sink 	(unnamed) 	-9.9641567100005
+scalar Leach.sink 	(unnamed) 	-9.9997756960005
+scalar Leach.sink 	(unnamed) 	-10.035394682
+scalar Leach.sink 	(unnamed) 	-10.071013668
+scalar Leach.sink 	(unnamed) 	-10.106632654
+scalar Leach.sink 	(unnamed) 	-10.14225164
+scalar Leach.sink 	(unnamed) 	-10.177870626
+scalar Leach.sink 	(unnamed) 	-10.213489612
+scalar Leach.sink 	(unnamed) 	-10.249108598
+scalar Leach.sink 	(unnamed) 	-10.284727584
+scalar Leach.sink 	(unnamed) 	-10.32034657
+scalar Leach.sink 	(unnamed) 	-10.355965556
+scalar Leach.sink 	(unnamed) 	-10.391584542001
+scalar Leach.sink 	(unnamed) 	-10.427203528001
+scalar Leach.sink 	(unnamed) 	-10.462822514001
+scalar Leach.sink 	(unnamed) 	-10.498441500001
+scalar Leach.sink 	(unnamed) 	-10.534060486001
+scalar Leach.sink 	(unnamed) 	-10.569679472001
+scalar Leach.sink 	(unnamed) 	-10.605298458001
+scalar Leach.sink 	(unnamed) 	-10.640917444001
+scalar Leach.sink 	(unnamed) 	-10.676536430001
+scalar Leach.sink 	(unnamed) 	-10.712155416001
+scalar Leach.sink 	(unnamed) 	-10.747774402001
+scalar Leach.sink 	(unnamed) 	-10.783393388001
+scalar Leach.sink 	(unnamed) 	-10.819012374001
+scalar Leach.sink 	(unnamed) 	-10.854631360001
+scalar Leach.sink 	(unnamed) 	-10.890250346001
+scalar Leach.sink 	(unnamed) 	-10.925869332001
+scalar Leach.sink 	(unnamed) 	-10.961488318001
+scalar Leach.sink 	(unnamed) 	-10.997107304001
+scalar Leach.sink 	(unnamed) 	-11.032726290001
+scalar Leach.sink 	(unnamed) 	-11.068345276001
+scalar Leach.sink 	(unnamed) 	-11.103964262001
+scalar Leach.sink 	(unnamed) 	-11.139583248001
+scalar Leach.sink 	(unnamed) 	-11.175202234001
+scalar Leach.sink 	(unnamed) 	-11.210821220001
+scalar Leach.sink 	(unnamed) 	-11.246440206001
+scalar Leach.sink 	(unnamed) 	-11.282059192001
+scalar Leach.sink 	(unnamed) 	-11.317678178001
+scalar Leach.sink 	(unnamed) 	-11.353297164001
+scalar Leach.sink 	(unnamed) 	-11.388916150001
+scalar Leach.sink 	(unnamed) 	-11.424535136001
+scalar Leach.sink 	(unnamed) 	-11.460154122001
+scalar Leach.sink 	(unnamed) 	-11.495773108001
+scalar Leach.sink 	(unnamed) 	-11.531392094001
+scalar Leach.sink 	(unnamed) 	-11.567011080001
+scalar Leach.sink 	(unnamed) 	-11.602630066001
+scalar Leach.sink 	(unnamed) 	-11.638249052001
+scalar Leach.sink 	(unnamed) 	-11.673868038001
+scalar Leach.sink 	(unnamed) 	-11.709487024001
+version 2
+run General-0-20141207-16:52:38-4668
+attr configname General
+attr datetime 20141207-16:52:38
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4668
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	7.964506852
+scalar Leach.sink 	(unnamed) 	7.928878786
+scalar Leach.sink 	(unnamed) 	7.893863796
+scalar Leach.sink 	(unnamed) 	7.858888418
+scalar Leach.sink 	(unnamed) 	7.823717588
+scalar Leach.sink 	(unnamed) 	7.788099084
+scalar Leach.sink 	(unnamed) 	7.75282225
+scalar Leach.sink 	(unnamed) 	7.717830284
+scalar Leach.sink 	(unnamed) 	7.68258207
+scalar Leach.sink 	(unnamed) 	7.647662264
+scalar Leach.sink 	(unnamed) 	7.612551084
+scalar Leach.sink 	(unnamed) 	7.576678002
+scalar Leach.sink 	(unnamed) 	7.541531512
+scalar Leach.sink 	(unnamed) 	7.505494758
+scalar Leach.sink 	(unnamed) 	7.47004275
+scalar Leach.sink 	(unnamed) 	7.433545388
+scalar Leach.sink 	(unnamed) 	7.397461802
+scalar Leach.sink 	(unnamed) 	7.361661878
+scalar Leach.sink 	(unnamed) 	7.326219772
+scalar Leach.sink 	(unnamed) 	7.29147479
+scalar Leach.sink 	(unnamed) 	7.256627638
+scalar Leach.sink 	(unnamed) 	7.22157135
+scalar Leach.sink 	(unnamed) 	7.186242944
+scalar Leach.sink 	(unnamed) 	7.150953326
+scalar Leach.sink 	(unnamed) 	7.115593102
+scalar Leach.sink 	(unnamed) 	7.079943694
+scalar Leach.sink 	(unnamed) 	7.043767796
+scalar Leach.sink 	(unnamed) 	7.008717068
+scalar Leach.sink 	(unnamed) 	6.973419012
+scalar Leach.sink 	(unnamed) 	6.938020392
+scalar Leach.sink 	(unnamed) 	6.902340176
+scalar Leach.sink 	(unnamed) 	6.866341952
+scalar Leach.sink 	(unnamed) 	6.830911986
+scalar Leach.sink 	(unnamed) 	6.795342562
+scalar Leach.sink 	(unnamed) 	6.759636446
+scalar Leach.sink 	(unnamed) 	6.723824696
+scalar Leach.sink 	(unnamed) 	6.688524902
+scalar Leach.sink 	(unnamed) 	6.652786584
+scalar Leach.sink 	(unnamed) 	6.617779374
+scalar Leach.sink 	(unnamed) 	6.582650926
+scalar Leach.sink 	(unnamed) 	6.547425424
+scalar Leach.sink 	(unnamed) 	6.512284304
+scalar Leach.sink 	(unnamed) 	6.47687819
+scalar Leach.sink 	(unnamed) 	6.441364472
+scalar Leach.sink 	(unnamed) 	6.405765056
+scalar Leach.sink 	(unnamed) 	6.37007433
+scalar Leach.sink 	(unnamed) 	6.334160196
+scalar Leach.sink 	(unnamed) 	6.297897256
+scalar Leach.sink 	(unnamed) 	6.262245764
+scalar Leach.sink 	(unnamed) 	6.226480494
+scalar Leach.sink 	(unnamed) 	6.190542698
+scalar Leach.sink 	(unnamed) 	6.154530616
+scalar Leach.sink 	(unnamed) 	6.118328848
+scalar Leach.sink 	(unnamed) 	6.081630236
+scalar Leach.sink 	(unnamed) 	6.046565702
+scalar Leach.sink 	(unnamed) 	6.011218128
+scalar Leach.sink 	(unnamed) 	5.97562943
+scalar Leach.sink 	(unnamed) 	5.940761326
+scalar Leach.sink 	(unnamed) 	5.905768628
+scalar Leach.sink 	(unnamed) 	5.870686556
+scalar Leach.sink 	(unnamed) 	5.83553817
+scalar Leach.sink 	(unnamed) 	5.800353868
+scalar Leach.sink 	"Fist dead node: " 	0
+scalar Leach.sink 	"At round: " 	0
+scalar Leach.sink 	"Total dead node: " 	0
+scalar Leach.sink 	"TotalRound: " 	63
+version 2
+run General-0-20141207-16:55:46-5072
+attr configname General
+attr datetime 20141207-16:55:46
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5072
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	(unnamed) 	7.964506852
+scalar Leach.sink 	(unnamed) 	7.928878786
+scalar Leach.sink 	(unnamed) 	7.893863796
+scalar Leach.sink 	(unnamed) 	7.858888418
+scalar Leach.sink 	(unnamed) 	7.823717588
+scalar Leach.sink 	(unnamed) 	7.788099084
+scalar Leach.sink 	(unnamed) 	7.75282225
+scalar Leach.sink 	(unnamed) 	7.717830284
+scalar Leach.sink 	(unnamed) 	7.68258207
+scalar Leach.sink 	(unnamed) 	7.647662264
+scalar Leach.sink 	(unnamed) 	7.612551084
+scalar Leach.sink 	(unnamed) 	7.576678002
+scalar Leach.sink 	(unnamed) 	7.541531512
+scalar Leach.sink 	(unnamed) 	7.505494758
+scalar Leach.sink 	(unnamed) 	7.47004275
+scalar Leach.sink 	(unnamed) 	7.433545388
+scalar Leach.sink 	(unnamed) 	7.397461802
+scalar Leach.sink 	(unnamed) 	7.361661878
+scalar Leach.sink 	(unnamed) 	7.326219772
+scalar Leach.sink 	(unnamed) 	7.29147479
+scalar Leach.sink 	(unnamed) 	7.256627638
+scalar Leach.sink 	(unnamed) 	7.22157135
+scalar Leach.sink 	(unnamed) 	7.186242944
+scalar Leach.sink 	(unnamed) 	7.150953326
+scalar Leach.sink 	(unnamed) 	7.115593102
+scalar Leach.sink 	(unnamed) 	7.079943694
+scalar Leach.sink 	(unnamed) 	7.043767796
+scalar Leach.sink 	(unnamed) 	7.008717068
+scalar Leach.sink 	(unnamed) 	6.973419012
+scalar Leach.sink 	(unnamed) 	6.938020392
+scalar Leach.sink 	(unnamed) 	6.902340176
+scalar Leach.sink 	(unnamed) 	6.866341952
+scalar Leach.sink 	(unnamed) 	6.830911986
+scalar Leach.sink 	(unnamed) 	6.795342562
+scalar Leach.sink 	(unnamed) 	6.759636446
+scalar Leach.sink 	(unnamed) 	6.723824696
+scalar Leach.sink 	(unnamed) 	6.688524902
+scalar Leach.sink 	(unnamed) 	6.652786584
+scalar Leach.sink 	(unnamed) 	6.617779374
+scalar Leach.sink 	(unnamed) 	6.582650926
+scalar Leach.sink 	(unnamed) 	6.547425424
+scalar Leach.sink 	(unnamed) 	6.512284304
+scalar Leach.sink 	(unnamed) 	6.47687819
+scalar Leach.sink 	(unnamed) 	6.441364472
+scalar Leach.sink 	(unnamed) 	6.405765056
+scalar Leach.sink 	(unnamed) 	6.37007433
+scalar Leach.sink 	(unnamed) 	6.334160196
+scalar Leach.sink 	(unnamed) 	6.297897256
+scalar Leach.sink 	(unnamed) 	6.262245764
+scalar Leach.sink 	(unnamed) 	6.226480494
+scalar Leach.sink 	(unnamed) 	6.190542698
+scalar Leach.sink 	(unnamed) 	6.154530616
+scalar Leach.sink 	(unnamed) 	6.118328848
+scalar Leach.sink 	(unnamed) 	6.081630236
+scalar Leach.sink 	(unnamed) 	6.046565702
+scalar Leach.sink 	(unnamed) 	6.011218128
+scalar Leach.sink 	(unnamed) 	5.97562943
+scalar Leach.sink 	(unnamed) 	5.940761326
+scalar Leach.sink 	(unnamed) 	5.905768628
+scalar Leach.sink 	(unnamed) 	5.870686556
+scalar Leach.sink 	(unnamed) 	5.83553817
+scalar Leach.sink 	(unnamed) 	5.800353868
+scalar Leach.sink 	(unnamed) 	5.764985422
+scalar Leach.sink 	(unnamed) 	5.729296138
+scalar Leach.sink 	(unnamed) 	5.694154364
+scalar Leach.sink 	(unnamed) 	5.658887568
+scalar Leach.sink 	(unnamed) 	5.623422302
+scalar Leach.sink 	(unnamed) 	5.587918578
+scalar Leach.sink 	(unnamed) 	5.552251554
+version 2
+run General-0-20141210-16:43:08-4492
+attr configname General
+attr datetime 20141210-16:43:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4492
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	391135729108.96
+version 2
+run General-0-20141210-16:43:53-4492
+attr configname General
+attr datetime 20141210-16:43:53
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4492
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	429317915080.25
+version 2
+run General-0-20141210-16:55:30-4104
+attr configname General
+attr datetime 20141210-16:55:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4104
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	18380623021.672
+version 2
+run General-0-20141210-17:01:54-324
+attr configname General
+attr datetime 20141210-17:01:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 324
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	9752829023.8528
+version 2
+run General-0-20141210-17:07:47-5952
+attr configname General
+attr datetime 20141210-17:07:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5952
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	38200598192.078
+version 2
+run General-0-20141210-17:15:28-5740
+attr configname General
+attr datetime 20141210-17:15:28
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5740
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	127172580840.27
+version 2
+run General-0-20141210-17:23:07-5764
+attr configname General
+attr datetime 20141210-17:23:07
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5764
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20141210-17:25:54-5764
+attr configname General
+attr datetime 20141210-17:25:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5764
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20141210-23:01:58-3420
+attr configname General
+attr datetime 20141210-23:01:58
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3420
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	9752829023.8528
+version 2
+run General-0-20141218-10:05:18-5544
+attr configname General
+attr datetime 20141218-10:05:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5544
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2779935352.0744
+version 2
+run General-0-20151119-13:44:16-3776
+attr configname General
+attr datetime 20151119-13:44:16
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-13:59:04-3776
+attr configname General
+attr datetime 20151119-13:59:04
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-15:50:00-3776
+attr configname General
+attr datetime 20151119-15:50:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-15:51:57-3776
+attr configname General
+attr datetime 20151119-15:51:57
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-15:52:27-3776
+attr configname General
+attr datetime 20151119-15:52:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-15:54:09-3776
+attr configname General
+attr datetime 20151119-15:54:09
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-15:55:32-3776
+attr configname General
+attr datetime 20151119-15:55:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3776
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-16:00:32-1444
+attr configname General
+attr datetime 20151119-16:00:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1444
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151119-16:05:48-1444
+attr configname General
+attr datetime 20151119-16:05:48
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1444
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151126-13:47:32-7324
+attr configname General
+attr datetime 20151126-13:47:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 7324
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2822118492669
+version 2
+run General-0-20151126-13:58:06-7324
+attr configname General
+attr datetime 20151126-13:58:06
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 7324
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2822118492669
+version 2
+run General-0-20151126-15:36:25-4932
+attr configname General
+attr datetime 20151126-15:36:25
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4932
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151126-15:39:22-2492
+attr configname General
+attr datetime 20151126-15:39:22
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2492
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151126-15:42:40-4464
+attr configname General
+attr datetime 20151126-15:42:40
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4464
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151126-15:44:36-2292
+attr configname General
+attr datetime 20151126-15:44:36
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2292
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151126-15:52:25-2344
+attr configname General
+attr datetime 20151126-15:52:25
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2344
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2822118492669
+version 2
+run General-0-20151127-14:30:27-3764
+attr configname General
+attr datetime 20151127-14:30:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3764
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	32963049279357
+version 2
+run General-0-20151210-13:12:30-6080
+attr configname General
+attr datetime 20151210-13:12:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 6080
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	74746652
+version 2
+run General-0-20151216-14:31:24-4476
+attr configname General
+attr datetime 20151216-14:31:24
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4476
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151216-14:33:33-4476
+attr configname General
+attr datetime 20151216-14:33:33
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4476
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151216-14:38:40-4892
+attr configname General
+attr datetime 20151216-14:38:40
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4892
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151216-14:42:15-6116
+attr configname General
+attr datetime 20151216-14:42:15
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 6116
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20151216-15:01:56-4628
+attr configname General
+attr datetime 20151216-15:01:56
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4628
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	14654066955
+version 2
+run General-0-20151216-15:12:49-5952
+attr configname General
+attr datetime 20151216-15:12:49
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5952
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	14654066955
+version 2
+run General-0-20151222-12:09:35-2220
+attr configname General
+attr datetime 20151222-12:09:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2220
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-12:17:47-2060
+attr configname General
+attr datetime 20151222-12:17:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2060
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-12:40:12-1504
+attr configname General
+attr datetime 20151222-12:40:12
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1504
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-12:50:08-2236
+attr configname General
+attr datetime 20151222-12:50:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2236
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-12:53:57-4200
+attr configname General
+attr datetime 20151222-12:53:57
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4200
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-13:04:05-5004
+attr configname General
+attr datetime 20151222-13:04:05
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5004
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-13:51:39-2060
+attr configname General
+attr datetime 20151222-13:51:39
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2060
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-13:57:35-1772
+attr configname General
+attr datetime 20151222-13:57:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1772
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-14:11:55-876
+attr configname General
+attr datetime 20151222-14:11:55
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 876
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-14:16:54-5664
+attr configname General
+attr datetime 20151222-14:16:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5664
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20151222-14:49:18-292
+attr configname General
+attr datetime 20151222-14:49:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 292
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	17956946748
+version 2
+run General-0-20151223-09:34:16-4048
+attr configname General
+attr datetime 20151223-09:34:16
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4048
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4943422534048.8
+version 2
+run General-0-20151223-15:34:19-2008
+attr configname General
+attr datetime 20151223-15:34:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2008
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4469383640
+version 2
+run General-0-20151223-16:20:23-3148
+attr configname General
+attr datetime 20151223-16:20:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3148
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	38587737708772
+version 2
+run General-0-20151224-11:17:08-4984
+attr configname General
+attr datetime 20151224-11:17:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4984
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1086600835920
+version 2
+run General-0-20160104-13:18:59-5888
+attr configname General
+attr datetime 20160104-13:18:59
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5888
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20160104-15:34:17-4512
+attr configname General
+attr datetime 20160104-15:34:17
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4512
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4464843640
+version 2
+run General-0-20160104-15:49:35-2304
+attr configname General
+attr datetime 20160104-15:49:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2304
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4467847640
+version 2
+run General-0-20160104-15:56:08-5636
+attr configname General
+attr datetime 20160104-15:56:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5636
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20160104-16:00:55-2180
+attr configname General
+attr datetime 20160104-16:00:55
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2180
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20160104-16:04:58-5200
+attr configname General
+attr datetime 20160104-16:04:58
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5200
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4466427640
+version 2
+run General-0-20160104-16:09:03-4368
+attr configname General
+attr datetime 20160104-16:09:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4368
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20160104-16:13:33-3968
+attr configname General
+attr datetime 20160104-16:13:33
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3968
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3693833220
+version 2
+run General-0-20160106-10:24:27-1720
+attr configname General
+attr datetime 20160106-10:24:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1720
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	19015165540
+version 2
+run General-0-20160106-10:47:09-5116
+attr configname General
+attr datetime 20160106-10:47:09
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5116
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	13981311934644
+version 2
+run General-0-20160106-11:20:01-3332
+attr configname General
+attr datetime 20160106-11:20:01
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3332
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	14396715257440
+version 2
+run General-0-20160106-11:29:10-5164
+attr configname General
+attr datetime 20160106-11:29:10
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5164
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	588821479464
+version 2
+run General-0-20160107-09:57:54-5156
+attr configname General
+attr datetime 20160107-09:57:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5156
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	18158325752432
+version 2
+run General-0-20160107-11:03:18-4656
+attr configname General
+attr datetime 20160107-11:03:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4656
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	24230713674628
+version 2
+run General-0-20160107-13:37:29-4556
+attr configname General
+attr datetime 20160107-13:37:29
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4556
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	27010749319936
+version 2
+run General-0-20160113-10:45:33-4688
+attr configname General
+attr datetime 20160113-10:45:33
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4688
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	74971981927144
+version 2
+run General-0-20160113-11:19:43-4476
+attr configname General
+attr datetime 20160113-11:19:43
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4476
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	74971981927144
+version 2
+run General-0-20160113-11:32:46-5056
+attr configname General
+attr datetime 20160113-11:32:46
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5056
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	19033188084660
+version 2
+run General-0-20160113-12:02:40-2692
+attr configname General
+attr datetime 20160113-12:02:40
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2692
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	27010749319936
+version 2
+run General-0-20160113-12:43:22-656
+attr configname General
+attr datetime 20160113-12:43:22
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 656
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3.0421100255397e+014
+version 2
+run General-0-20160114-15:33:42-5340
+attr configname General
+attr datetime 20160114-15:33:42
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5340
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	53867976981752
+version 2
+run General-0-20160114-15:41:31-5760
+attr configname General
+attr datetime 20160114-15:41:31
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5760
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	18135414913048
+version 2
+run General-0-20160115-11:31:05-3472
+attr configname General
+attr datetime 20160115-11:31:05
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3472
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	18135414913048
+version 2
+run General-0-20160115-12:32:36-4424
+attr configname General
+attr datetime 20160115-12:32:36
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4424
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2308479785904
+version 2
+run General-0-20160115-12:45:48-6072
+attr configname General
+attr datetime 20160115-12:45:48
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 6072
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	411797664984
+version 2
+run General-0-20160115-13:50:49-4108
+attr configname General
+attr datetime 20160115-13:50:49
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4108
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	411797664984
+version 2
+run General-0-20160120-14:53:48-4372
+attr configname General
+attr datetime 20160120-14:53:48
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4372
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	142752305280
+version 2
+run General-0-20160120-14:56:03-2636
+attr configname General
+attr datetime 20160120-14:56:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2636
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20160120-15:02:48-5572
+attr configname General
+attr datetime 20160120-15:02:48
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5572
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	142752305280
+version 2
+run General-0-20160120-15:08:02-4284
+attr configname General
+attr datetime 20160120-15:08:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4284
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	142752305280
+version 2
+run General-0-20160120-15:12:17-5788
+attr configname General
+attr datetime 20160120-15:12:17
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5788
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	3085523077188
+version 2
+run General-0-20160120-15:19:07-2172
+attr configname General
+attr datetime 20160120-15:19:07
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2172
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	142752305280
+version 2
+run General-0-20160120-15:21:11-6072
+attr configname General
+attr datetime 20160120-15:21:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 6072
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	5118778636108
+version 2
+run General-0-20160120-15:29:29-4824
+attr configname General
+attr datetime 20160120-15:29:29
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4824
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	9333804576
+version 2
+run General-0-20160120-15:40:05-5068
+attr configname General
+attr datetime 20160120-15:40:05
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5068
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	9333804576
+version 2
+run General-0-20160120-15:49:02-5048
+attr configname General
+attr datetime 20160120-15:49:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5048
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20160120-15:52:00-5460
+attr configname General
+attr datetime 20160120-15:52:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5460
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	9333804576
+version 2
+run General-0-20160126-10:35:33-2464
+attr configname General
+attr datetime 20160126-10:35:33
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2464
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20160126-10:36:11-2464
+attr configname General
+attr datetime 20160126-10:36:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2464
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20160126-10:40:03-1052
+attr configname General
+attr datetime 20160126-10:40:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1052
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1437676776896
+version 2
+run General-0-20160126-10:45:04-2332
+attr configname General
+attr datetime 20160126-10:45:04
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2332
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1338805521600
+version 2
+run General-0-20160126-10:48:09-2728
+attr configname General
+attr datetime 20160126-10:48:09
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2728
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1338805521600
+version 2
+run General-0-20160126-10:56:37-3832
+attr configname General
+attr datetime 20160126-10:56:37
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3832
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1351548745256
+version 2
+run General-0-20160126-11:14:55-2940
+attr configname General
+attr datetime 20160126-11:14:55
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2940
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	139668712320
+version 2
+run General-0-20160126-11:18:11-1684
+attr configname General
+attr datetime 20160126-11:18:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1684
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	144131289276
+version 2
+run General-0-20160126-11:21:18-2696
+attr configname General
+attr datetime 20160126-11:21:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2696
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.5589651647378e+014
+version 2
+run General-0-20160126-11:32:48-1220
+attr configname General
+attr datetime 20160126-11:32:48
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1220
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	399090846560
+version 2
+run General-0-20160126-11:39:22-3832
+attr configname General
+attr datetime 20160126-11:39:22
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3832
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	401132018560
+version 2
+run General-0-20160126-11:42:59-3032
+attr configname General
+attr datetime 20160126-11:42:59
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3032
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	401132018560
+version 2
+run General-0-20160126-11:46:32-1196
+attr configname General
+attr datetime 20160126-11:46:32
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1196
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1330721249948
+version 2
+run General-0-20160126-12:14:05-3240
+attr configname General
+attr datetime 20160126-12:14:05
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3240
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	53272511896
+version 2
+run General-0-20160126-12:24:18-1408
+attr configname General
+attr datetime 20160126-12:24:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1408
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4467843336780
+version 2
+run General-0-20160126-12:30:35-3848
+attr configname General
+attr datetime 20160126-12:30:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3848
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	955107274636
+version 2
+run General-0-20160126-12:37:47-3052
+attr configname General
+attr datetime 20160126-12:37:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3052
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2794251849832
+version 2
+run General-0-20160126-12:43:30-2460
+attr configname General
+attr datetime 20160126-12:43:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2460
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	22073265270160
+version 2
+run General-0-20160126-12:47:11-3960
+attr configname General
+attr datetime 20160126-12:47:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3960
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4955653743320
+version 2
+run General-0-20160126-13:37:00-1120
+attr configname General
+attr datetime 20160126-13:37:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1120
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.7350291695922e+014
+version 2
+run General-0-20160126-13:54:57-1492
+attr configname General
+attr datetime 20160126-13:54:57
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1492
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2.2338271907033e+014
+version 2
+run General-0-20160126-14:24:11-2356
+attr configname General
+attr datetime 20160126-14:24:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2356
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2.1018234578378e+014
+version 2
+run General-0-20160126-14:51:54-1808
+attr configname General
+attr datetime 20160126-14:51:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1808
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	52177580322984
+version 2
+run General-0-20160129-10:26:00-5216
+attr configname General
+attr datetime 20160129-10:26:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5216
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	48970426354248
+version 2
+run General-0-20160129-10:37:23-2512
+attr configname General
+attr datetime 20160129-10:37:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2512
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	11274615929144
+version 2
+run General-0-20160129-10:53:27-584
+attr configname General
+attr datetime 20160129-10:53:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 584
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	12426330288496
+version 2
+run General-0-20160129-11:13:23-3756
+attr configname General
+attr datetime 20160129-11:13:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3756
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	10778657202456
+version 2
+run General-0-20160129-11:20:53-5644
+attr configname General
+attr datetime 20160129-11:20:53
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5644
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	540456482990.5
+version 2
+run General-0-20160129-13:30:41-5772
+attr configname General
+attr datetime 20160129-13:30:41
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5772
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1981379909920
+version 2
+run General-0-20160129-13:34:21-4956
+attr configname General
+attr datetime 20160129-13:34:21
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4956
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	11449335633064
+version 2
+run General-0-20160129-13:40:10-5900
+attr configname General
+attr datetime 20160129-13:40:10
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5900
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	50227950575640
+version 2
+run General-0-20160129-14:38:56-5516
+attr configname General
+attr datetime 20160129-14:38:56
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5516
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2.2234379943754e+014
+version 2
+run General-0-20160202-11:06:19-5292
+attr configname General
+attr datetime 20160202-11:06:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5292
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1516352117112
+version 2
+run General-0-20160202-11:09:28-4392
+attr configname General
+attr datetime 20160202-11:09:28
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4392
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	51528927505672
+version 2
+run General-0-20160202-11:22:26-6036
+attr configname General
+attr datetime 20160202-11:22:26
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 6036
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	47905521984304
+version 2
+run General-0-20160411-14:43:47-4236
+attr configname General
+attr datetime 20160411-14:43:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4236
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.3286198991069e+014
+version 2
+run General-0-20160411-15:35:41-4756
+attr configname General
+attr datetime 20160411-15:35:41
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4756
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.1217288661621e+014
+version 2
+run General-0-20160412-11:46:38-2336
+attr configname General
+attr datetime 20160412-11:46:38
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2336
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4.709449147388e+014
+version 2
+run General-0-20160412-12:19:49-4620
+attr configname General
+attr datetime 20160412-12:19:49
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4620
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	4.709449147388e+014
+version 2
+run General-0-20160412-12:30:38-5332
+attr configname General
+attr datetime 20160412-12:30:38
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5332
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	6881557490456
+version 2
+run General-0-20160412-12:35:15-4528
+attr configname General
+attr datetime 20160412-12:35:15
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4528
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	7634347463800
+version 2
+run General-0-20160412-13:06:07-3916
+attr configname General
+attr datetime 20160412-13:06:07
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 3916
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1739563076831
+version 2
+run General-0-20160412-13:32:52-5440
+attr configname General
+attr datetime 20160412-13:32:52
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5440
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	2094159475808
+version 2
+run General-0-20160412-13:35:22-5856
+attr configname General
+attr datetime 20160412-13:35:22
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5856
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1332046098714
+version 2
+run General-0-20160412-13:38:10-5856
+attr configname General
+attr datetime 20160412-13:38:10
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5856
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1332046098714
+version 2
+run General-0-20160412-13:47:21-568
+attr configname General
+attr datetime 20160412-13:47:21
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 568
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1308598428613
+version 2
+run General-0-20160412-13:50:55-568
+attr configname General
+attr datetime 20160412-13:50:55
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 568
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1308598428613
+version 2
+run General-0-20160412-13:55:20-4624
+attr configname General
+attr datetime 20160412-13:55:20
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4624
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1332046098714
+version 2
+run General-0-20160412-13:59:35-5420
+attr configname General
+attr datetime 20160412-13:59:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5420
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1296963913146
+version 2
+run General-0-20160412-14:11:28-5096
+attr configname General
+attr datetime 20160412-14:11:28
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5096
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1927500077910
+version 2
+run General-0-20160412-14:14:19-5208
+attr configname General
+attr datetime 20160412-14:14:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5208
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1927500077910
+version 2
+run General-0-20160412-14:16:33-5420
+attr configname General
+attr datetime 20160412-14:16:33
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5420
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	143705832768
+version 2
+run General-0-20160412-14:19:23-6068
+attr configname General
+attr datetime 20160412-14:19:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 6068
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	143705832768
+version 2
+run General-0-20160412-14:37:30-5992
+attr configname General
+attr datetime 20160412-14:37:30
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5992
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1585592624402
+version 2
+run General-0-20160412-15:11:04-5208
+attr configname General
+attr datetime 20160412-15:11:04
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5208
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.2772328523338e+014
+version 2
+run General-0-20160412-15:56:56-5948
+attr configname General
+attr datetime 20160412-15:56:56
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 5948
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.3410462012077e+014
+version 2
+run General-0-20160412-16:12:39-1256
+attr configname General
+attr datetime 20160412-16:12:39
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 1256
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	1.7445655642126e+014
+version 2
+run General-0-20160412-16:21:49-2308
+attr configname General
+attr datetime 20160412-16:21:49
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 2308
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	6.1828981363917e+014
+version 2
+run General-0-20160412-16:26:46-4176
+attr configname General
+attr datetime 20160412-16:26:46
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Leach
+attr processid 4176
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Leach.sink 	"TotalEnergy: " 	7.0729024249675e+014
+version 2
+run General-0-20160413-13:44:03-1264
+attr configname General
+attr datetime 20160413-13:44:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 1264
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	7.2631637575247e+014
+version 2
+run General-0-20160413-23:00:34-2368
+attr configname General
+attr datetime 20160413-23:00:34
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2368
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	7.2022731609609e+014
+version 2
+run General-0-20160415-16:35:15-4892
+attr configname General
+attr datetime 20160415-16:35:15
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4892
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.4014841024084e+014
+version 2
+run General-0-20160419-16:09:39-2868
+attr configname General
+attr datetime 20160419-16:09:39
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2868
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.1086072375321e+014
+version 2
+run General-0-20160421-14:47:14-2612
+attr configname General
+attr datetime 20160421-14:47:14
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2612
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.1867947816119e+014
+version 2
+run General-0-20160422-14:06:16-5628
+attr configname General
+attr datetime 20160422-14:06:16
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5628
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.2036239779637e+014
+version 2
+run General-0-20160425-23:27:18-5972
+attr configname General
+attr datetime 20160425-23:27:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5972
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	3.5823418258927e+014
+version 2
+run General-0-20160426-14:04:29-4340
+attr configname General
+attr datetime 20160426-14:04:29
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4340
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	2466947224679.8
+version 2
+run General-0-20160426-14:18:12-3860
+attr configname General
+attr datetime 20160426-14:18:12
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3860
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1842108311000
+version 2
+run General-0-20160426-14:22:22-2304
+attr configname General
+attr datetime 20160426-14:22:22
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2304
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	6786248233900
+version 2
+run General-0-20160426-14:26:23-4476
+attr configname General
+attr datetime 20160426-14:26:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4476
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	2.8418619600535e+014
+version 2
+run General-0-20160426-14:35:49-620
+attr configname General
+attr datetime 20160426-14:35:49
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 620
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	6786248233900
+version 2
+run General-0-20160426-14:39:37-4756
+attr configname General
+attr datetime 20160426-14:39:37
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4756
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	9.3020156861658e+014
+version 2
+run General-0-20160427-22:18:23-4372
+attr configname General
+attr datetime 20160427-22:18:23
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4372
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	26761375871545
+version 2
+run General-0-20160428-23:53:01-5988
+attr configname General
+attr datetime 20160428-23:53:01
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5988
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	35648756.8
+version 2
+run General-0-20160428-23:53:44-5988
+attr configname General
+attr datetime 20160428-23:53:44
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5988
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	35648756.8
+version 2
+run General-0-20160428-23:55:21-4572
+attr configname General
+attr datetime 20160428-23:55:21
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4572
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1103705340142.4
+version 2
+run General-0-20160428-23:59:51-408
+attr configname General
+attr datetime 20160428-23:59:51
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 408
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5093080205.6
+version 2
+run General-0-20160429-00:02:08-5092
+attr configname General
+attr datetime 20160429-00:02:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5092
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	30925857373167
+version 2
+run General-0-20160429-00:09:41-3612
+attr configname General
+attr datetime 20160429-00:09:41
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3612
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	30920714771857
+version 2
+run General-0-20160429-00:17:28-3156
+attr configname General
+attr datetime 20160429-00:17:28
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3156
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	29481492747449
+version 2
+run General-0-20160429-00:32:25-5932
+attr configname General
+attr datetime 20160429-00:32:25
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5932
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.6835691879751e+014
+version 2
+run General-0-20160429-00:51:35-5644
+attr configname General
+attr datetime 20160429-00:51:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5644
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.587751514345e+014
+version 2
+run General-0-20160430-00:06:05-3560
+attr configname General
+attr datetime 20160430-00:06:05
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3560
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	3.8618404609573e+015
+version 2
+run General-0-20160430-00:26:22-5912
+attr configname General
+attr datetime 20160430-00:26:22
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5912
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	1.0044653001923e+015
+version 2
+run General-0-20160518-17:38:24-1392
+attr configname General
+attr datetime 20160518-17:38:24
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 1392
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	32794192342303
+version 2
+run General-0-20160518-18:06:54-3692
+attr configname General
+attr datetime 20160518-18:06:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3692
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	26996710702875
+version 2
+run General-0-20160524-23:06:40-5800
+attr configname General
+attr datetime 20160524-23:06:40
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5800
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	27077735042772
+version 2
+run General-0-20160524-23:36:34-356
+attr configname General
+attr datetime 20160524-23:36:34
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 356
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	27914142323728
+version 2
+run General-0-20160524-23:39:39-2632
+attr configname General
+attr datetime 20160524-23:39:39
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2632
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	30613696549561
+version 2
+run General-0-20160524-23:42:54-5740
+attr configname General
+attr datetime 20160524-23:42:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5740
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	29333956787815
+version 2
+run General-0-20160524-23:48:03-4144
+attr configname General
+attr datetime 20160524-23:48:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4144
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	26838710727378
+version 2
+run General-0-20160524-23:51:45-2260
+attr configname General
+attr datetime 20160524-23:51:45
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2260
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	27956451983994
+version 2
+run General-0-20160525-00:22:12-5692
+attr configname General
+attr datetime 20160525-00:22:12
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5692
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	25543275720015
+version 2
+run General-0-20171201-15:15:43-2006
+attr configname General
+attr datetime 20171201-15:15:43
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2006
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	22796383809027
+version 2
+run General-0-20171201-15:19:45-2217
+attr configname General
+attr datetime 20171201-15:19:45
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2217
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	22142770633142
+version 2
+run General-0-20171201-15:22:44-2334
+attr configname General
+attr datetime 20171201-15:22:44
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2334
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21680972278574
+version 2
+run General-0-20171201-15:25:39-2422
+attr configname General
+attr datetime 20171201-15:25:39
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2422
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	24060256943079
+version 2
+run General-0-20171201-15:29:45-2598
+attr configname General
+attr datetime 20171201-15:29:45
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2598
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	16157778871.2
+version 2
+run General-0-20171201-15:54:18-2877
+attr configname General
+attr datetime 20171201-15:54:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2877
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	4515387550073.2
+version 2
+run General-0-20171201-15:57:50-2964
+attr configname General
+attr datetime 20171201-15:57:50
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2964
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	16136096164
+version 2
+run General-0-20171219-15:59:17-2304
+attr configname General
+attr datetime 20171219-15:59:17
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2304
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	16470228800.8
+version 2
+run General-0-20171219-16:00:17-2359
+attr configname General
+attr datetime 20171219-16:00:17
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 2359
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21287053884513
+version 2
+run General-0-20171219-16:52:11-3049
+attr configname General
+attr datetime 20171219-16:52:11
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3049
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	0
+version 2
+run General-0-20171219-17:03:39-3302
+attr configname General
+attr datetime 20171219-17:03:39
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3302
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21465725910344
+version 2
+run General-0-20171219-17:07:02-3352
+attr configname General
+attr datetime 20171219-17:07:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3352
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21413688625501
+version 2
+run General-0-20171219-17:28:46-3656
+attr configname General
+attr datetime 20171219-17:28:46
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3656
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21714539025333
+version 2
+run General-0-20171219-17:37:19-3953
+attr configname General
+attr datetime 20171219-17:37:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3953
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21659847671720
+version 2
+run General-0-20171219-17:41:03-4074
+attr configname General
+attr datetime 20171219-17:41:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4074
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	346458627088.8
+version 2
+run General-0-20171219-17:50:41-4391
+attr configname General
+attr datetime 20171219-17:50:41
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4391
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21534443030875
+version 2
+run General-0-20171219-17:52:24-4431
+attr configname General
+attr datetime 20171219-17:52:24
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4431
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21371087641285
+version 2
+run General-0-20171219-17:53:55-4465
+attr configname General
+attr datetime 20171219-17:53:55
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4465
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21561047201411
+version 2
+run General-0-20180104-01:41:37-3261
+attr configname General
+attr datetime 20180104-01:41:37
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3261
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21648847796898
+version 2
+run General-0-20180104-01:43:57-3261
+attr configname General
+attr datetime 20180104-01:43:57
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3261
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21370312013683
+version 2
+run General-0-20180104-21:46:00-10780
+attr configname General
+attr datetime 20180104-21:46:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 10780
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	34127429490274
+version 2
+run General-0-20180111-14:54:17-3352
+attr configname General
+attr datetime 20180111-14:54:17
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 3352
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	3412458877171.2
+version 2
+run General-0-20180111-15:02:31-6272
+attr configname General
+attr datetime 20180111-15:02:31
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 6272
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	3412458877171.2
+version 2
+run General-0-20180111-15:14:19-8664
+attr configname General
+attr datetime 20180111-15:14:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 8664
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	3438307416664
+version 2
+run General-0-20180111-15:26:04-9748
+attr configname General
+attr datetime 20180111-15:26:04
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 9748
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	3438307416664
+version 2
+run General-0-20180111-16:16:27-8616
+attr configname General
+attr datetime 20180111-16:16:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 8616
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	65566218627.2
+version 2
+run General-0-20180112-15:37:52-1432
+attr configname General
+attr datetime 20180112-15:37:52
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 1432
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	10133217226133
+version 2
+run General-0-20180112-15:41:34-5464
+attr configname General
+attr datetime 20180112-15:41:34
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5464
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	10133217226133
+version 2
+run General-0-20180112-15:55:48-7984
+attr configname General
+attr datetime 20180112-15:55:48
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 7984
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	6265161613163.7

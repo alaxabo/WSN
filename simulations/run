@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/leach_3 -n .:../src $*
+# for shared lib, use: opp_run -l ../src/leach_3 -n .:../src $*

@@ -1,0 +1,30 @@
+----------------------------------------------------------------------
+
+
+Tcl error: moduleinspector.cc#631: ptr00A390B0 not found
+    while executing
+"error "$tag not found""
+    (procedure "ModuleInspector:getSubmodCoords" line 4)
+    invoked from within
+"ModuleInspector:getSubmodCoords $c $modptr"
+    (procedure "ModuleInspector:drawNextEventMarker" line 2)
+    invoked from within
+"ModuleInspector:drawNextEventMarker .inspector2.c ptr00A390B0 2"
+
+
+----------------------------------------------------------------------
+
+
+Tcl error: tkenv.cc#970: domain error: argument not in valid range
+    while executing
+"expr int(floor(log10($fesmin)))"
+    invoked from within
+"if [expr $fesmin!=0 && $fesmax!=0] {
+        set fesminexp [expr int(floor(log10($fesmin)))]
+        set fesmaxexp [expr int(ceil(log10($fesmax)))]
+  ..."
+    (procedure "redrawTimeline" line 29)
+    invoked from within
+"redrawTimeline"
+
+
