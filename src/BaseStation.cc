@@ -194,12 +194,13 @@ void BaseStation::handleMessage(cMessage *msg) {
             for (unsigned int i = 0; i < myMsg->getDataToBSArraySize(); i++) {
                 DataMessage temp = myMsg->getDataToBS(i);
                 DataList[temp.getSource() - 2].push_back(temp.getData());
-
             }
 
             cout << "Received data from " << this->count << " cluster." << endl;
             cout << "Cluster number " << this->clusterNumber << endl;
-            if (this->count == this->clusterNumber) {
+            cout << "Sender: " << msg->getSenderModuleId() << endl;
+            this->printClusterStatus();
+            if (this->count == this->liveCluster) {
 
                 cout << "Chu ky: " << this->currentRound << endl;
                 this->currentRound += 1;
@@ -224,8 +225,10 @@ void BaseStation::handleMessage(cMessage *msg) {
                     this->totalEnergyLost += s->energyLost;
                     energyLostStats.collect(this->totalEnergyLost);
                 }
-                if (countDeadNode == 54)
+                if (countDeadNode == 54){
+                    cout << "Chet het roi ----------------" << endl;
                     endSimulation();
+                }
                 cout << "So nut chet o round " << currentRound << " la: "
                         << countDeadNode << endl;
 
@@ -276,12 +279,26 @@ void BaseStation::handleMessage(cMessage *msg) {
                     this->sendInitMessage();
                 }
             }
-//            int tmp = this->currentRound / 20;
-//            int mod = this->currentRound - 20 * tmp;
-//            this->T = 0.05 / (1 - 0.05 * mod);
-//            this->sendInitMessage();
-
         }
+    }
+}
+
+void BaseStation::printClusterStatus(){
+    for(int i = 0; i < this->clusterNumber; i++){
+        Clusters * cluster = this->myClusters[i];
+
+        cout << "Cluster " << i << ": ";
+
+        if(cluster->totalMembers == 0){
+            cout << " is dead" << endl;
+            continue;
+        }
+
+        for (int j = 0; j < cluster->totalMembers; j++){
+            cout << " " << cluster->memberNodes[j];
+        }
+
+        cout << endl;
     }
 }
 
@@ -320,7 +337,7 @@ void BaseStation::sendInitMessage() {
             }
         }
     }
-    this->clusterNumber = clusterNumber;
+    this->liveCluster = clusterNumber;
     cout << "Cluster Number :" << this->clusterNumber << endl;
 
     cout << "Send self message" << endl;
@@ -651,7 +668,7 @@ void BaseStation::removeDeadNode(int index) {
     }
 }
 void BaseStation::setUpClusterHead(int i) {
-    int countCHCluster = 0;
+    /*int countCHCluster = 0;
     for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
         Sensor *s = (Sensor*) simulation.getModule(
                 this->myClusters[i]->memberNodes[j]);
@@ -668,7 +685,19 @@ void BaseStation::setUpClusterHead(int i) {
                     this->myClusters[i]->memberNodes[j]);
             s->isCH = false;
         }
+    }*/
+    if(this->myClusters[i]->totalMembers == 0){
+        return ;
     }
+
+    for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
+        Sensor *s = (Sensor*) simulation.getModule(
+                this->myClusters[i]->memberNodes[j]);
+
+        s->isCH = false;
+    }
+
+    this->findClusterHead(i);
     cout << "Setup Cluster Head" << endl;
 }
 double BaseStation::getDistance(Sensor *s1, Sensor *s2) {
