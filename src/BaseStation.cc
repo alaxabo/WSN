@@ -358,6 +358,7 @@ void BaseStation::reClustering() {
     int nodesInGroup = 0;
     int clusterCount = 0;
     int liveNodeNumber = 0;
+    int countRaiseDelta = 0;
     double baseEntropy = 100;
     double incrementEntropy = 0.2;
     std::map<int, double> entropyList;
@@ -393,6 +394,21 @@ void BaseStation::reClustering() {
         this->myClusters[clusterCount] = new Clusters();
         Clusters * cluster = this->myClusters[clusterCount];
 
+
+        if ((countRaiseDelta >= 4) && ((liveNodeNumber - nodesInGroup) < (liveNodeNumber / 2))){
+                           for (int i = 0; i < 54; i++){
+                               Sensor *s = (Sensor *) simulation.getModule(i + 2);
+                               if(!s->isDead &&
+                                       !s->myCluster){
+                                   cluster->addNode(s->getId());
+                                   s->myCluster = cluster;
+                                   nodesInGroup++;
+                               }
+                           }
+                           clusterCount++;
+                           break;
+               }
+
         for(int i = 0; i< 54; i++){
            Sensor *s = (Sensor *) simulation.getModule(i + 2);
            if(!s->isDead &&
@@ -407,6 +423,7 @@ void BaseStation::reClustering() {
 
         if(cluster->totalMembers == 0){
             incrementEntropy += 0.2;
+            countRaiseDelta++;
             continue;
         }
 
@@ -442,7 +459,7 @@ void BaseStation::reClustering() {
 
                 int count = std::count_if(std::begin(eccList[s->getId()]),
                         std::end(eccList[s->getId()]), [](double p){
-                    return p < 0.7;
+                    return p < 0.6;
                 });
 
                 countList[s->getId()] = count;
@@ -469,9 +486,22 @@ void BaseStation::reClustering() {
                 continue;
             }
         }
+        if (cluster->totalMembers < 6){
+            incrementEntropy += 0.2;
+            countRaiseDelta++;
+            for(int i = 0; i< 54; i++){
+                            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+                            if (s->myCluster == cluster){
+                                s->myCluster = NULL;
+                                nodesInGroup--;
+                            }
+                        }
+            continue;
+        }
 
         incrementEntropy += 0.2;
         clusterCount++;
+        countRaiseDelta++;
 
         cout << "node in group " << nodesInGroup << endl;
     }
