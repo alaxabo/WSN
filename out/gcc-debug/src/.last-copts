@@ -1,1 +1,1 @@
--g -Wall   -I/usr/include -fno-stack-protector -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I.. -I. -ICompression -ID:/omnetpp-4.6/include
+-g -Wall -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I.. -I. -ICompression -I/home/alaxabo/omnetpp-4.6/include

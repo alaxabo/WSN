@@ -52,6 +52,7 @@ public:
     int xMax;
     int yMax;
     int clusterNumber;
+    int liveCluster;
     int totalMessage;
     double T;
     double totalEnergyLost;
