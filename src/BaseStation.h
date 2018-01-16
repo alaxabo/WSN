@@ -52,6 +52,7 @@ public:
     int xMax;
     int yMax;
     int clusterNumber;
+    int liveCluster;
     int totalMessage;
     double T;
     double totalEnergyLost;
@@ -71,6 +72,7 @@ public:
     std::vector<double> DataList[54];
     void setPriority();
     bool find_Node(Sensor *s, int n);
+    void printClusterStatus();
 };
 
 #endif /* BASESTATION_H_ */
