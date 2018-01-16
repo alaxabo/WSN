@@ -44,6 +44,7 @@ void Sensor::initialize() {
     this->energy = 1000000000;
     this->energyLost = 0;
     this->timeslot = 100;
+    this->connect = 0;
     HandleDataMessage s;
         this->messageList = s.createDataMsgList(this->getId()-1);
     if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
