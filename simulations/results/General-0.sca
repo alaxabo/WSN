@@ -6206,3 +6206,417 @@ attr runnumber 0
 attr seedset 0
 
 scalar HCR.sink 	"TotalEnergy: " 	6265161613163.7
+version 2
+run General-0-20180112-16:57:00-23575
+attr configname General
+attr datetime 20180112-16:57:00
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 23575
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5694934588660.8
+version 2
+run General-0-20180112-17:22:47-25475
+attr configname General
+attr datetime 20180112-17:22:47
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 25475
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5703429153695.3
+version 2
+run General-0-20180112-17:27:27-25726
+attr configname General
+attr datetime 20180112-17:27:27
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 25726
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5703376464004.8
+version 2
+run General-0-20180112-17:30:19-25832
+attr configname General
+attr datetime 20180112-17:30:19
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 25832
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5691215613980
+version 2
+run General-0-20180115-14:58:26-4810
+attr configname General
+attr datetime 20180115-14:58:26
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 4810
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5704816508122.4
+version 2
+run General-0-20180115-15:01:54-5011
+attr configname General
+attr datetime 20180115-15:01:54
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5011
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5704965863177.6
+version 2
+run General-0-20180115-15:30:08-5011
+attr configname General
+attr datetime 20180115-15:30:08
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 5011
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5701173915574
+version 2
+run General-0-20180115-15:37:12-6440
+attr configname General
+attr datetime 20180115-15:37:12
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 6440
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5702071387991.2
+version 2
+run General-0-20180115-15:48:35-6998
+attr configname General
+attr datetime 20180115-15:48:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 6998
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5698348101834
+version 2
+run General-0-20180115-15:51:06-7184
+attr configname General
+attr datetime 20180115-15:51:06
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 7184
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5691470320307.7
+version 2
+run General-0-20180115-16:08:01-7922
+attr configname General
+attr datetime 20180115-16:08:01
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 7922
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5700145800652.4
+version 2
+run General-0-20180115-16:11:37-8135
+attr configname General
+attr datetime 20180115-16:11:37
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 8135
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5699106762301.3
+version 2
+run General-0-20180115-16:22:02-8858
+attr configname General
+attr datetime 20180115-16:22:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 8858
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5698024079978.5
+version 2
+run General-0-20180115-16:24:51-9324
+attr configname General
+attr datetime 20180115-16:24:51
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 9324
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5698898222284.1
+version 2
+run General-0-20180115-16:27:02-9520
+attr configname General
+attr datetime 20180115-16:27:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 9520
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5702348211342.1
+version 2
+run General-0-20180115-16:28:56-9638
+attr configname General
+attr datetime 20180115-16:28:56
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 9638
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5700702209362.3
+version 2
+run General-0-20180115-16:48:52-10988
+attr configname General
+attr datetime 20180115-16:48:52
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 10988
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5687175171427.3
+version 2
+run General-0-20180115-16:57:03-11691
+attr configname General
+attr datetime 20180115-16:57:03
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 11691
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5701614403503.2
+version 2
+run General-0-20180115-17:01:13-12017
+attr configname General
+attr datetime 20180115-17:01:13
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 12017
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5701922084164.8
+version 2
+run General-0-20180115-17:08:04-12399
+attr configname General
+attr datetime 20180115-17:08:04
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 12399
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	5704746757006.8
+version 2
+run General-0-20180115-17:13:18-12972
+attr configname General
+attr datetime 20180115-17:13:18
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 12972
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	20484072490853
+version 2
+run General-0-20180115-17:20:29-13297
+attr configname General
+attr datetime 20180115-17:20:29
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 13297
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21151094782623
+version 2
+run General-0-20180115-17:24:02-13659
+attr configname General
+attr datetime 20180115-17:24:02
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network HCR
+attr processid 13659
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar HCR.sink 	"TotalEnergy: " 	21160639596509

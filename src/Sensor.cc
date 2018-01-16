@@ -33,6 +33,7 @@ Sensor::Sensor() {
     this->isLiveThisRound = true;
     this->totalMessage = 0;
     this->priority = 1;
+    this->roundDead = 0;
 
 }
 
@@ -48,7 +49,7 @@ void Sensor::initialize() {
         this->messageList = s.createDataMsgList(this->getId()-1);
     if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
         this->isDead = true;
-        this->roundDead = 0;
+
     }
 }
 
