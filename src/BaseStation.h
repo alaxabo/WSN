@@ -70,7 +70,7 @@ public:
     void finish();
     void reClustering();
     std::vector<double> DataList[54];
-    void setPriority();
+    void setPriority(int groupNumber);
     bool find_Node(Sensor *s, int n);
     void printClusterStatus();
 };
