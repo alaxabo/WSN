@@ -29,7 +29,7 @@
 #include "HandleDataMessage.h"
 #include "Message_m.h"
 
-#define max 56
+#define maxNode 56
 
 class BaseStation: public cSimpleModule {
 public:
@@ -42,8 +42,8 @@ public:
     void resetAllCluster();
     Clusters **myClusters;
   protected:
-    int posX[max];
-    int posY[max];
+    int posX[maxNode];
+    int posY[maxNode];
     int k;
     int count;
 

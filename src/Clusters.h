@@ -35,6 +35,7 @@ public:
     void clearTree_Step(TreeNode *tree);
     void clearTree();
     bool hasMember(int id);
+    void removeAllNode();
 };
 
 #endif /* CLUSTERS_H_ */
