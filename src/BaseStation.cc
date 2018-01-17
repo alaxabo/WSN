@@ -358,11 +358,13 @@ void BaseStation::reClustering() {
     int nodesInGroup = 0;
     int clusterCount = 0;
     int liveNodeNumber = 0;
-    int countRaiseDelta = 0;
+    double baseECC = 0.7;
     double baseEntropy = 100;
+    double maxEntropy = 0;
     double incrementEntropy = 0.2;
     std::map<int, double> entropyList;
 
+    // Kiem tra nhung node chet
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
        Sensor *s = (Sensor*) simulation.getModule(i);
 
@@ -374,6 +376,7 @@ void BaseStation::reClustering() {
        energyLostStats.collect(this->totalEnergyLost);
    }
 
+    // Tinh toan entropy cua tung nut va tinh so nut con song
     for (int i = 0; i < 54; i++) {
         Sensor *s = (Sensor *) simulation.getModule(i + 2);
         s->isCH = false;
@@ -381,7 +384,9 @@ void BaseStation::reClustering() {
 
         if (!s->isDead) {
             double entropy = ex.entropy(this->DataList[i]);
+            maxEntropy = max(entropy, maxEntropy);
             baseEntropy = min(entropy, baseEntropy);
+
             entropyList[s->getId()] = entropy;
             liveNodeNumber++;
         }
@@ -394,21 +399,7 @@ void BaseStation::reClustering() {
         this->myClusters[clusterCount] = new Clusters();
         Clusters * cluster = this->myClusters[clusterCount];
 
-
-        if ((countRaiseDelta >= 4) && ((liveNodeNumber - nodesInGroup) < (liveNodeNumber / 2))){
-                           for (int i = 0; i < 54; i++){
-                               Sensor *s = (Sensor *) simulation.getModule(i + 2);
-                               if(!s->isDead &&
-                                       !s->myCluster){
-                                   cluster->addNode(s->getId());
-                                   s->myCluster = cluster;
-                                   nodesInGroup++;
-                               }
-                           }
-                           clusterCount++;
-                           break;
-               }
-
+        // Add nhung nut co entropy trong khoang [baseEntropy, baseEntropy + deltaH] vao nhom
         for(int i = 0; i< 54; i++){
            Sensor *s = (Sensor *) simulation.getModule(i + 2);
            if(!s->isDead &&
@@ -421,24 +412,32 @@ void BaseStation::reClustering() {
            }
         }
 
-        if(cluster->totalMembers == 0){
-            incrementEntropy += 0.2;
-            countRaiseDelta++;
+        // Neu so nut trong nhom nho hon 6 thi tang deltaH va thu lai
+        if(cluster->totalMembers < 6){
+            cout << "Max: " << maxEntropy << " Min: " << baseEntropy << "Incre: " << incrementEntropy << endl;
+            if(incrementEntropy > maxEntropy - baseEntropy){
+                break;
+            } else {
+                incrementEntropy += 0.2;
+            }
+            // Loai cac nut ra khoi nhom
+            for (int i = 0; i < cluster->totalMembers; i++){
+                Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
+                s->myCluster = NULL;
+            }
+            nodesInGroup -= cluster->totalMembers;
+            cluster->removeAllNode();
             continue;
         }
 
         while(1) {
-            if(cluster->totalMembers == 0){
-                cout << "Total member 0" << endl;
-                break;
-            }
-
             std::map<int, int> countList;
             std::map<int, std::vector<double>> eccList;
             cout << "Total members: " << this->myClusters[clusterCount]->totalMembers << endl;
             cout << "Node in group: " << nodesInGroup << endl;
             cout << "Cluster count: " << clusterCount << endl;
 
+            // Tinh toan do tuong quan du lieu cua cac nut trong nhom
             for (int i = 0; i < cluster->totalMembers; i++) {
                Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
                for (int j = 0; j < cluster->totalMembers; j++) {
@@ -449,6 +448,7 @@ void BaseStation::reClustering() {
                }
            }
 
+            // Voi moi nut trong nhom, dem so nut co do tuong quan KHONG thoa man voi nut dang xet
             for(int i = 0; i < cluster->totalMembers; i++){
                 Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
 
@@ -457,14 +457,21 @@ void BaseStation::reClustering() {
                cout << " Cluster: " << s->myCluster;
                cout << " Entropy " << entropyList[s->getId()] << endl;
 
-                int count = std::count_if(std::begin(eccList[s->getId()]),
-                        std::end(eccList[s->getId()]), [](double p){
-                    return p < 0.6;
-                });
+                /*int count = std::count(std::begin(eccList[s->getId()]),
+                        std::end(eccList[s->getId()]), baseECC);*/
+
+                int count = 0;
+
+                for (int i = 0; i < eccList[s->getId()].size(); i++){
+                    if(eccList[s->getId()][i] < baseECC){
+                        count++;
+                    }
+                }
 
                 countList[s->getId()] = count;
             }
 
+            // Tim ra nut nao KHONG tuong quan nhat voi cac nut con lai trong nhom va loai nut do ra
             auto maxCount = std::max_element
             (
                 std::begin(countList), std::end(countList),
@@ -474,9 +481,32 @@ void BaseStation::reClustering() {
             );
             cout << maxCount->first << " : " << maxCount->second << endl;
 
+            // Khi tat ca cac nut trong nhom thoa man dieu kien
             if(maxCount->second == 0){
+                cout << "Tong so nut trong nhom: " << cluster->totalMembers << endl;
+                // Neu so nut nho hon 6 thi tang deltaH hoac giam p va thu lai
+                if(cluster->totalMembers < 6){
+                    if(baseECC > 0.5){
+                        baseECC -= 0.1;
+                    } else {
+                        incrementEntropy += 0.2;
+                    }
+
+                    // Loai cac nut ra khoi nhom
+                    for (int i = 0; i < cluster->totalMembers; i++){
+                        Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
+                        s->myCluster = NULL;
+                    }
+                    nodesInGroup -= cluster->totalMembers;
+                    cluster->removeAllNode();
+                } else {
+                    // Khi so nut lon hon 6 thi tao nhom tiep theo
+                    baseECC = 0.7;
+                    clusterCount++;
+                }
                 break;
             } else {
+                // Kick nut KHONG thoa man dieu kien nhat
                 cout << "Removing node " << maxCount->first << "from cluster" << endl;
                 cluster->removeNode(maxCount->first);
                 Sensor * s = (Sensor *) simulation.getModule(maxCount->first);
@@ -486,23 +516,6 @@ void BaseStation::reClustering() {
                 continue;
             }
         }
-        if (cluster->totalMembers < 6){
-            incrementEntropy += 0.2;
-            countRaiseDelta++;
-            for(int i = 0; i< 54; i++){
-                            Sensor *s = (Sensor *) simulation.getModule(i + 2);
-                            if (s->myCluster == cluster){
-                                s->myCluster = NULL;
-                                nodesInGroup--;
-                            }
-                        }
-            continue;
-        }
-
-        incrementEntropy += 0.2;
-        clusterCount++;
-        countRaiseDelta++;
-
         cout << "node in group " << nodesInGroup << endl;
     }
 
@@ -515,129 +528,13 @@ void BaseStation::reClustering() {
         for (int j = 0; j < cluster->totalMembers; j++){
             Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
             s->getDisplayString().setTagArg("i", 1, cluster->color);
+            s->priority = 3;
         }
 
         this->findClusterHead(i);
     }
-
-
-
-
-
-
-
-    /*std::vector<std::pair<int, double>> entropyList;
-    std::pair<int, double> temp;
-    for (int i = 0; i < 4; i++) {
-        this->myClusters[i]->totalMembers = 0;
-        this->myClusters[i]->clusterhead = -1;
-        for (int j = 0; j < 64; j++) {
-            this->myClusters[i]->memberNodes[j] = -1;
-        }
-    }
-    cout << "Reset Clusters" << endl;
-    for (int i = 0; i < 54; i++) {
-        Sensor *s = (Sensor *) simulation.getModule(i + 2);
-        s->isCH = false;
-        if (s->isDead == false) {
-            entropyList.push_back(
-                    std::pair<int, double>(i, ex.entropy(this->DataList[i])));
-        }
-    }
-    for (unsigned int i = 0; i < entropyList.size(); i++) {
-        for (unsigned int j = i + 1; j < entropyList.size(); j++) {
-            if (entropyList[i].second < entropyList[j].second) {
-                temp = entropyList[i];
-                entropyList[i] = entropyList[j];
-                entropyList[j] = temp;
-            }
-        }
-    }
-
-    int count = 0;
-    for (unsigned int i = 0; i < entropyList.size(); i++) {
-//        for (int j = 0; j < this->clusterNumber; j++) {
-//            if (((j * entropyList.size())/this->clusterNumber) < i && i < (((j + 1) * entropyList.size()) / this->clusterNumber)) {
-//        count++;
-//        Sensor *s = (Sensor*) simulation.getModule(entropyList[i].first + 2);
-//        if (s->isDead == false) {
-//            this->myClusters[j]->addNode(s->getId());
-//            s->getDisplayString().setTagArg("i", 1, this->myClusters[0]->color);
-//            cout << "Cluster " << j + 1 << " : Node " << s->getId() - 2 << endl;
-////                }
-////            }
-//        }
-        if (i < entropyList.size() / 4) {
-            Sensor *s = (Sensor*) simulation.getModule(
-                    entropyList[i].first + 2);
-            //cout << s->getFullName() << " " << i << " " << entropyList[i].first << endl;
-            if (s->isDead == false) {
-                this->myClusters[0]->addNode(s->getId());
-                s->getDisplayString().setTagArg("i", 1,
-                        this->myClusters[0]->color);
-                cout << "Cluster 1 : Node " << s->getId() - 2 << endl;
-            }
-        } else if (entropyList.size() / 4 <= i && i < entropyList.size() / 2) {
-            Sensor *s = (Sensor*) simulation.getModule(
-                    entropyList[i].first + 2);
-            //cout << s->getFullName() << " " << i << " " << entropyList[i].first << endl;
-            if (s->isDead == false) {
-                this->myClusters[1]->addNode(s->getId());
-                s->getDisplayString().setTagArg("i", 1,
-                        this->myClusters[1]->color);
-                cout << "Cluster 2 : Node " << s->getId() - 2 << endl;
-            }
-        } else if (entropyList.size() / 2 <= i
-                && i < 3 * entropyList.size() / 4) {
-            Sensor *s = (Sensor*) simulation.getModule(
-                    entropyList[i].first + 2);
-            if (s->isDead == false) {
-                this->myClusters[2]->addNode(s->getId());
-                s->getDisplayString().setTagArg("i", 1,
-                        this->myClusters[2]->color);
-                cout << "Cluster 3 : Node " << s->getId() - 2 << endl;
-            }
-        } else if (3 * entropyList.size() / 4 <= i && i < entropyList.size()) {
-            Sensor *s = (Sensor*) simulation.getModule(
-                    entropyList[i].first + 2);
-            if (s->isDead == false) {
-                this->myClusters[3]->addNode(s->getId());
-                s->getDisplayString().setTagArg("i", 1,
-                        this->myClusters[3]->color);
-                cout << "Cluster 4 : Node " << s->getId() - 2 << endl;
-            }
-        }
-
-    }
-    for (int i = 0; i < this->k; i++) {
-        if (this->myClusters[i]->totalMembers == 0)
-            continue;
-        this->findClusterHead(i);
-    }
-    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-        Sensor *s = (Sensor*) simulation.getModule(i);
-        EV << "Nang luong nut " << i - 2 << " la: " << s->energy - s->energyLost
-                  << endl;
-        if ((s->energy - s->energyLost) <= 201000.0 || s->isDead == true) {
-//            countDeadNode += 1;
-            s->isDead = true;
-
-            s->getDisplayString().setTagArg("i", 1, "black");
-            EV << "Nut " << s->getId() - 2 << " da chet: " << s->isDead << endl;
-            //Loai bo nut chet ra khoi cum
-            removeDeadNode(i);
-
-        }
-        this->totalEnergyLost += s->energyLost;
-        energyLostStats.collect(this->totalEnergyLost);
-    }
-
-    this->setPriority();
-    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-        Sensor *s = (Sensor*) simulation.getModule(i);
-        cout << "Priority node " << i - 2 << ": " << s->priority << endl;
-    }*/
 }
+
 //Chon cluster head dua tren muc nang luong
 void BaseStation::findClusterHead(int index) {
     std::vector<double> ed;
@@ -698,24 +595,6 @@ void BaseStation::removeDeadNode(int index) {
     }
 }
 void BaseStation::setUpClusterHead(int i) {
-    /*int countCHCluster = 0;
-    for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
-        Sensor *s = (Sensor*) simulation.getModule(
-                this->myClusters[i]->memberNodes[j]);
-
-        if (!s->isCH) {
-            break;
-        } else {
-            countCHCluster++;
-        }
-    }
-    if (countCHCluster == this->myClusters[i]->totalMembers) {
-        for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
-            Sensor *s = (Sensor*) simulation.getModule(
-                    this->myClusters[i]->memberNodes[j]);
-            s->isCH = false;
-        }
-    }*/
     if(this->myClusters[i]->totalMembers == 0){
         return ;
     }
