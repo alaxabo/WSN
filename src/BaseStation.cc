@@ -412,14 +412,20 @@ void BaseStation::reClustering() {
            }
         }
 
+        if(incrementEntropy > maxEntropy - baseEntropy){
+            clusterCount++;
+            break;
+        }
+
+        if (nodesInGroup >=  liveNodeNumber){
+           clusterCount++;
+           break;
+        }
+
         // Neu so nut trong nhom nho hon 6 thi tang deltaH va thu lai
         if(cluster->totalMembers < 6){
             cout << "Max: " << maxEntropy << " Min: " << baseEntropy << "Incre: " << incrementEntropy << endl;
-            if(incrementEntropy > maxEntropy - baseEntropy){
-                break;
-            } else {
-                incrementEntropy += 0.2;
-            }
+            incrementEntropy += 0.2;
             // Loai cac nut ra khoi nhom
             for (int i = 0; i < cluster->totalMembers; i++){
                 Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
@@ -429,6 +435,8 @@ void BaseStation::reClustering() {
             cluster->removeAllNode();
             continue;
         }
+
+
 
         while(1) {
             std::map<int, int> countList;
