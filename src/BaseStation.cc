@@ -525,12 +525,21 @@ void BaseStation::reClustering() {
         Clusters *cluster = this->myClusters[i];
         cluster->color = color[i];
 
-        for (int j = 0; j < cluster->totalMembers; j++){
-            Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
-            s->getDisplayString().setTagArg("i", 1, cluster->color);
-            s->priority = 3;
+//        if (i == 0){
+//            for (int j = 0; j < cluster->totalMembers; j++){
+//                Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+//                s->getDisplayString().setTagArg("i", 1, cluster->color);
+//                s->priority = 3;
+//            }
+//        }
+//        else
+        {
+            this->setPriority(i);
+            for (int j = 0; j < cluster->totalMembers; j++){
+                Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+                cout << "Node " << i + 1 << "Priority " << s->priority << endl;
+            }
         }
-
         this->findClusterHead(i);
     }
 }
@@ -614,6 +623,68 @@ double BaseStation::getDistance(Sensor *s1, Sensor *s2) {
     double ylength = abs(s1->ypos - s2->ypos);
     double distance = sqrt(xlength * xlength + ylength * ylength);
     return distance / 4;
+}
+
+void BaseStation::setPriority(int groupNumber){
+    lib ex;
+    Clusters *cluster = this->myClusters[groupNumber];
+
+    // Tinh toan do tuong quan du lieu cua cac nut trong nhom
+    for (int i = 0; i < cluster->totalMembers; i++) {
+       int count1 = 0;
+       int count2 = 0;
+       int count3 = 0;
+       Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
+       for (int j = 0; j < cluster->totalMembers; j++) {
+           Sensor *s2 = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+           double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+           cout << "Node " << s->getId() << " va Node " << s2->getId() << " : " << ecc << endl;
+           this->EntropyCorrCoeff[i][j] = ecc;
+           if (ecc >= 0.7)
+               count1++;
+           if (0.6 <= ecc && ecc < 0.7)
+               count2++;
+           if (ecc < 0.6)
+               count3++;
+       }
+       if (count1 >= cluster->totalMembers / 2)
+           s->priority = 3;
+       if (count2 >= cluster->totalMembers / 2)
+           s->priority = 2;
+       if (count3 >= cluster->totalMembers / 2)
+           s->priority = 1;
+    }
+
+    //Tinh do tuong quan trung binh cua cac node trong nhom
+//    for (int i = 0; i < cluster->totalMembers; i++) {
+//        this->AvgEntropyCorrCoeff[i] = 0;
+//        for (int j = 0; j < cluster->totalMembers; j++){
+//            if (i == j)
+//                continue;
+//            this->AvgEntropyCorrCoeff[i] += this->EntropyCorrCoeff[i][j];
+//        }
+//        this->AvgEntropyCorrCoeff[i] = this->AvgEntropyCorrCoeff[i]/cluster->totalMembers;
+//    }
+
+//    //Set Priority
+//    for (int i = 0; i < cluster->totalMembers; i++) {
+//       int count = 0;
+//       Sensor *s1 = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
+//       for (int j = 0; j < cluster->totalMembers; j++){
+//           //Sensor *s2 = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+//           if (i == j)
+//               continue;
+//           if (this->EntropyCorrCoeff[i][j] >= this->AvgEntropyCorrCoeff[i])
+//               count++;
+//       }
+//       if (count >= 0.8 * cluster->totalMembers)
+//           s1->priority = 3;
+//       if (0.5 * cluster->totalMembers <= count && count < 0.8 * cluster->totalMembers)
+//           s1->priority = 2;
+//       if (0.5 * cluster->totalMembers > count)
+//           s1->priority = 1;
+//    }
+
 }
 
 /*void BaseStation::setPriority() {
