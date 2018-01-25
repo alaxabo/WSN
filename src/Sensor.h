@@ -38,6 +38,7 @@ class Sensor: public cSimpleModule
         double getDistance(Sensor *s1, Sensor *s2);
 
         Clusters *myCluster;
+        int name;
         int xpos;
         int ypos;
         int totalMessage;

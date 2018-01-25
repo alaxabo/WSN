@@ -72,14 +72,14 @@ void BaseStation::createConnection(cModule *c1, cModule *c2) {
 void BaseStation::initNode() {
 
     std::ifstream Position("../xy.txt");
-    float temp[3][54];
+    float temp[4][54];
     int j = 0;
     std::string s;
     cout << "Read position file." << endl;
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 4; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
         }
@@ -90,18 +90,22 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
+        name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
+            s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
+            s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
+
         }
     }
     double distance;
@@ -116,6 +120,7 @@ void BaseStation::initNode() {
             }
         }
     }
+
 
 }
 
@@ -154,6 +159,7 @@ void BaseStation::initialize() {
             this->myClusters[3]->addNode(s->getId());
             s->getDisplayString().setTagArg("i", 1, color[3]);
         }
+
     }
 
     for(int i = 0; i < this->clusterNumber; i++){
@@ -354,6 +360,7 @@ void BaseStation::sendInitMessage() {
 }
 
 void BaseStation::reClustering() {
+    //std::cin.get();
     lib ex;
     int nodesInGroup = 0;
     int clusterCount = 0;
@@ -550,6 +557,7 @@ void BaseStation::reClustering() {
         }
         this->findClusterHead(i);
     }
+   // std::cin.get();
 }
 
 //Chon cluster head dua tren muc nang luong
@@ -657,9 +665,9 @@ void BaseStation::setPriority(int groupNumber){
        }
        if (count1 >= cluster->totalMembers / 2)
            s->priority = 3;
-       if (count2 >= cluster->totalMembers / 2)
+       else if (count2 >= cluster->totalMembers / 2)
            s->priority = 2;
-       if (count3 >= cluster->totalMembers / 2)
+       else
            s->priority = 1;
     }
 
@@ -695,140 +703,7 @@ void BaseStation::setPriority(int groupNumber){
 
 }
 
-/*void BaseStation::setPriority() {
-    lib ex;
-//    cout << "Reset priority" << endl;
-    //reset do uu tien cua cac sensor
-    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-        Sensor *s = (Sensor*) simulation.getModule(i);
-        s->priority = 1;
-    }
-//    cout << "Calculate entropy correlation coefficient" << endl;
-    //tinh tung cap do tuong quan
 
-    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-        for (int j = 2; j < simulation.getLastModuleId(); j++) {
-            Sensor *s1 = (Sensor *) simulation.getModule(i);
-            Sensor *s2 = (Sensor *) simulation.getModule(j);
-            if (s1->isDead == true || s2->isDead == true)
-                continue;
-//            cout << "Entropy " << i-2 << ": " <<ex.entropy(this->DataList[i-2]) << endl;
-//            cout << "Entropy " << j-2 << ": " << ex.entropy(this->DataList[j-2]) << endl;
-//            cout << "Joint entropy " << i-2 << "," << j-2 << ": " << ex.jEntropy(this->DataList[i-2], this->DataList[j-2]) << endl;
-//            cout << "Correlation coefficient " << i-2 << "," << j-2 << ": " << ex.EntropyCorrelationCoefficient(this->DataList[i-2],this->DataList[j-2]) << endl;
-            this->EntropyCorrCoeff[i - 2][j - 2] =
-                    ex.EntropyCorrelationCoefficient(this->DataList[i - 2],
-                            this->DataList[j - 2]);
-        }
-    }
-
-    cout << "Calculate Avg coeff" << endl;
-    //tinh do tuong quan trung binh cua cac node
-    for (int n = 0; n < 4; n++) {
-        cout << "Cluster : " << n << endl;
-        for (int i = 0; i < this->myClusters[n]->totalMembers; i++) {
-            cout << "Node : " << this->myClusters[n]->memberNodes[i] - 2
-                    << endl;
-            this->AvgEntropyCorrCoeff[this->myClusters[n]->memberNodes[i] - 2] =
-                    0;
-            for (int j = 0; j < this->myClusters[n]->totalMembers; j++) {
-                if (j == i)
-                    continue;
-                this->AvgEntropyCorrCoeff[this->myClusters[n]->memberNodes[i]
-                        - 2] +=
-                        this->EntropyCorrCoeff[this->myClusters[n]->memberNodes[i]
-                                - 2][this->myClusters[n]->memberNodes[j] - 2];
-                cout << "EntropyCorrCoeff : "
-                        << this->myClusters[n]->memberNodes[i] - 2 << " "
-                        << this->myClusters[n]->memberNodes[j] - 2
-                        << this->EntropyCorrCoeff[this->myClusters[n]->memberNodes[i]
-                                - 2][this->myClusters[n]->memberNodes[j] - 2]
-                        << endl;
-            }
-            this->AvgEntropyCorrCoeff[this->myClusters[n]->memberNodes[i] - 2] =
-                    this->AvgEntropyCorrCoeff[this->myClusters[n]->memberNodes[i]
-                            - 2] / this->myClusters[n]->totalMembers;
-            cout << "Avg Correlation Coefficient: "
-                    << AvgEntropyCorrCoeff[this->myClusters[n]->memberNodes[i]
-                            - 2] << endl;
-        }
-    }
-    cout << "Calculate and set priority" << endl;
-    //tinh do uu tien cua tung node
-    cout << "thiet lap myCluster cua tung node" << endl;
-    for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
-            Sensor *s = (Sensor *) simulation.getModule(
-                    this->myClusters[i]->memberNodes[j]);
-            s->myCluster = this->myClusters[i];
-        }
-    }
-
-    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-        int count = 0;
-        Sensor *s = (Sensor*) simulation.getModule(i);
-        cout << "Set priority nodeID: " << i << endl;
-//            cout << "My cluster:" << s->myCluster->clusterhead << " " << s->myCluster->totalMembers << endl;
-        if (s->isDead == true || i == 6) {
-            cout << "Node dead" << endl;
-            s->priority = 0;
-            continue;
-        } else {
-            for (int j = 0; j < s->myCluster->totalMembers; j++) {
-                Sensor *s2 = (Sensor*) simulation.getModule(
-                        s->myCluster->memberNodes[j]);
-                if (s->isDead == true || s2->isDead == true
-                        || i == s->myCluster->memberNodes[j]) {
-                    cout << "Continue" << endl;
-                    continue;
-                }
-                cout << "Compare" << endl;
-                if (this->EntropyCorrCoeff[i - 2][s->myCluster->memberNodes[j]
-                        - 2] >= this->AvgEntropyCorrCoeff[i - 2]) {
-                    cout << "Compare corr between " << i - 2 << " and "
-                            << s->myCluster->memberNodes[j] - 2 << ": "
-                            << EntropyCorrCoeff[i - 2][s->myCluster->memberNodes[j]
-                                    - 2] << " , " << AvgEntropyCorrCoeff[i - 2]
-                            << endl;
-                    count += 1;
-                    cout << "Count priority at this step: " << count << endl;
-                }
-            }
-            if (count >= (4 * s->myCluster->totalMembers) / 5) {
-                s->priority = 3;
-            }
-            if (s->myCluster->totalMembers / 2 <= count
-                    && count < (4 * s->myCluster->totalMembers) / 5)
-                s->priority = 2;
-            if (count < s->myCluster->totalMembers / 2)
-                s->priority = 1;
-            cout << "Priority: " << s->priority << endl;
-        }
-
-    }
-
-    cout << "Set max correlation coefficient node." << endl;
-    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-        Sensor *s1 = (Sensor *) simulation.getModule(i);
-        cout << "Max corr node: " << s1->getId() - 2 << endl;
-        double max_corr = 0;
-        for (int j = 0; j < 54; j++) {
-            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
-            if (j == i - 2 || s2->isDead == true || s1->isDead == true)
-                continue;
-            else {
-
-                if (max_corr < EntropyCorrCoeff[i - 2][j]) {
-                    if (find_Node(s1, j)) {
-                        max_corr = EntropyCorrCoeff[i - 2][j];
-                        s1->max_corr_node = j;
-                    }
-                }
-            }
-        }
-        cout << s1->max_corr_node << endl;
-    }
-}*/
 
 bool BaseStation::find_Node(Sensor *s, int n) {
     for (int i = 0; i < s->myCluster->totalMembers; i++) {
@@ -838,19 +713,7 @@ bool BaseStation::find_Node(Sensor *s, int n) {
     }
     return false;
 }
-//double BaseStation::CalculateAvgCoeff(double *EntropyCorrCoeff){
-//    double result = 0;
-//    int count = 0;
-//    std::pair<pair<int, int>, double> temp;
-//    for(unsigned_int i = 0; i < EntropyCorrCoeff.size(); i++){
-//        temp = EntropyCorrCoeff[i];
-//        if(temp.first.first == n){
-//            result += temp.second;
-//            count++;
-//        }
-//    }
-//    return result/count;
-//}
+
 
 void BaseStation::finish() {
     cout << "Total Energy Lost: " << this->totalEnergyLost << endl;
@@ -859,13 +722,15 @@ void BaseStation::finish() {
     cout << "Init Energy:" << s2->energy << endl;
     cout << "Round: " << this->currentRound << endl;
     recordScalar("TotalEnergy: ", this->totalEnergyLost);
-
+    int first_dead = 1000;
     std::ofstream deadNode;
     deadNode.open("DeadNode.txt");
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor *) simulation.getModule(i);
         deadNode << i - 1 << " " << s->roundDead << endl;
+        first_dead = min(first_dead, s->roundDead );
     }
     deadNode.close();
+    cout << "vong dau tien chet: " << first_dead << endl;
 }
 
