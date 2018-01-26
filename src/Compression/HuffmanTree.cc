@@ -129,11 +129,11 @@ std::string HuffmanTree::suffixCode(float diff) {
         //cout << g->difference.size() + index << endl;
         suffixCode = ConvertToBinary(g->difference.size() + index);
     }
-    string zero = "0000000000000000000000";
-    suffixCode = zero + suffixCode;
-    suffixCode = suffixCode.substr(
-            suffixCode.size() - log2(g->difference.size()) - 1,
-            suffixCode.size());
+//    string zero = "0000000000000000000000";
+//    suffixCode = zero + suffixCode;
+//    suffixCode = suffixCode.substr(
+//            suffixCode.size() - log2(g->difference.size()) - 1,
+//            suffixCode.size());
     return suffixCode;
 }
 
@@ -160,8 +160,8 @@ std::string HuffmanTree::ConvertToBCD(float diff) {
         BCDcode = symbol + BCDcode;
         n = n / 10;
     }
-    BCDcode = zero + BCDcode;
-    BCDcode = BCDcode.substr(BCDcode.size() - 16, 16);
+//    BCDcode = zero + BCDcode;
+//    BCDcode = BCDcode.substr(BCDcode.size() - 16, 16);
     if(diff < 0){
         BCDcode[0] = '1';
     }

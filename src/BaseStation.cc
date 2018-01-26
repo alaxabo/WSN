@@ -72,14 +72,14 @@ void BaseStation::createConnection(cModule *c1, cModule *c2) {
 void BaseStation::initNode() {
 
     std::ifstream Position("../xy.txt");
-    float temp[3][54];
+    float temp[4][54];
     int j = 0;
     std::string s;
     cout << "Read position file." << endl;
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 4; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
         }
@@ -90,18 +90,22 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
+        name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
+            s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
+            s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
+
         }
     }
     double distance;
@@ -116,6 +120,7 @@ void BaseStation::initNode() {
             }
         }
     }
+
 
 }
 
@@ -390,6 +395,90 @@ void BaseStation::reClustering() {
             entropyList[s->getId()] = entropy;
             liveNodeNumber++;
         }
+    }
+
+    if (this->currentRound == 256)
+    {
+    std::ofstream entropyNode;
+    entropyNode.open("EntropyNode.txt");
+//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//        Sensor *s = (Sensor *) simulation.getModule(i);
+    for (int i = 0; i < 54; i++) {
+            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+            double entropy = ex.entropy(this->DataList[i]);
+            entropyNode << "Entropy cua Node " << s->name << ": " << entropy << endl;
+    }
+    entropyNode.close();
+
+    std::ofstream jointEntropyNode;
+    jointEntropyNode.open("jointEntropyNode.txt");
+//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//        Sensor *s = (Sensor *) simulation.getModule(i);
+    for (int i = 0; i < 54; i++) {
+        Sensor *s = (Sensor *) simulation.getModule(i + 2);
+        for (int j = 0; j < 54; j++) {
+            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+            double jEntro = ex.jEntropy(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+            jointEntropyNode << "Node " << s->name << " va Node " << s2->name << " : " << jEntro << endl;
+       }
+    }
+    jointEntropyNode.close();
+
+    std::ofstream eccNode;
+    eccNode.open("eccNode.txt");
+//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//        Sensor *s = (Sensor *) simulation.getModule(i);
+    for (int i = 0; i < 54; i++) {
+        Sensor *s = (Sensor *) simulation.getModule(i + 2);
+        for (int j = 0; j < 54; j++) {
+            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+            double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+            eccNode << "Node " << s->name << " va Node " << s2->name << " : " << ecc << endl;
+       }
+    }
+    eccNode.close();
+    }
+
+    if (this->currentRound == 512)
+        {
+        std::ofstream entropyNode;
+        entropyNode.open("EntropyNode512.txt");
+    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+    //        Sensor *s = (Sensor *) simulation.getModule(i);
+        for (int i = 0; i < 54; i++) {
+                Sensor *s = (Sensor *) simulation.getModule(i + 2);
+                double entropy = ex.entropy(this->DataList[i]);
+                entropyNode << "Entropy cua Node " << s->name << ": " << entropy << endl;
+        }
+        entropyNode.close();
+
+        std::ofstream jointEntropyNode;
+        jointEntropyNode.open("jointEntropyNode512.txt");
+    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+    //        Sensor *s = (Sensor *) simulation.getModule(i);
+        for (int i = 0; i < 54; i++) {
+            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+            for (int j = 0; j < 54; j++) {
+                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+                double jEntro = ex.jEntropy(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+                jointEntropyNode << "Node " << s->name << " va Node " << s2->name << " : " << jEntro << endl;
+           }
+        }
+        jointEntropyNode.close();
+
+        std::ofstream eccNode;
+        eccNode.open("eccNode512.txt");
+    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+    //        Sensor *s = (Sensor *) simulation.getModule(i);
+        for (int i = 0; i < 54; i++) {
+            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+            for (int j = 0; j < 54; j++) {
+                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+                eccNode << "Node " << s->name << " va Node " << s2->name << " : " << ecc << endl;
+           }
+        }
+        eccNode.close();
     }
 
     cout << "Live nodes: " << liveNodeNumber << endl;

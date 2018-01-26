@@ -44,6 +44,7 @@ public:
   protected:
     int posX[maxNode];
     int posY[maxNode];
+    int name[maxNode];
     int k;
     int count;
 
