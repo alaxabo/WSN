@@ -53,6 +53,7 @@ class Sensor: public cSimpleModule
         bool isLiveThisRound;
         int priority;
         int random;
+        double CH_random;
         int number_Msg_To_CH;
         double distance_To_BS;
         std::vector<DataMessage> messageList;

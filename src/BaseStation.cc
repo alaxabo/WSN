@@ -397,96 +397,104 @@ void BaseStation::reClustering() {
         }
     }
 
-    if (this->currentRound == 256)
-    {
-    std::ofstream entropyNode;
-    entropyNode.open("EntropyNode.txt");
-//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-//        Sensor *s = (Sensor *) simulation.getModule(i);
-    for (int i = 0; i < 54; i++) {
-            Sensor *s = (Sensor *) simulation.getModule(i + 2);
-            double entropy = ex.entropy(this->DataList[i]);
-            entropyNode << "Entropy cua Node " << s->name << ": " << entropy << endl;
-    }
-    entropyNode.close();
 
-    std::ofstream jointEntropyNode;
-    jointEntropyNode.open("jointEntropyNode.txt");
-//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-//        Sensor *s = (Sensor *) simulation.getModule(i);
-    for (int i = 0; i < 54; i++) {
-        Sensor *s = (Sensor *) simulation.getModule(i + 2);
-        for (int j = 0; j < 54; j++) {
-            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
-            double jEntro = ex.jEntropy(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
-            jointEntropyNode << "Node " << s->name << " va Node " << s2->name << " : " << jEntro << endl;
-       }
-    }
-    jointEntropyNode.close();
-
-    std::ofstream eccNode;
-    eccNode.open("eccNode.txt");
-//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-//        Sensor *s = (Sensor *) simulation.getModule(i);
-    for (int i = 0; i < 54; i++) {
-        Sensor *s = (Sensor *) simulation.getModule(i + 2);
-        for (int j = 0; j < 54; j++) {
-            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
-            double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
-            eccNode << "Node " << s->name << " va Node " << s2->name << " : " << ecc << endl;
-       }
-    }
-    eccNode.close();
-    }
-
-    if (this->currentRound == 512)
-        {
-        std::ofstream entropyNode;
-        entropyNode.open("EntropyNode512.txt");
-    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-    //        Sensor *s = (Sensor *) simulation.getModule(i);
-        for (int i = 0; i < 54; i++) {
-                Sensor *s = (Sensor *) simulation.getModule(i + 2);
-                double entropy = ex.entropy(this->DataList[i]);
-                entropyNode << "Entropy cua Node " << s->name << ": " << entropy << endl;
-        }
-        entropyNode.close();
-
-        std::ofstream jointEntropyNode;
-        jointEntropyNode.open("jointEntropyNode512.txt");
-    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-    //        Sensor *s = (Sensor *) simulation.getModule(i);
-        for (int i = 0; i < 54; i++) {
-            Sensor *s = (Sensor *) simulation.getModule(i + 2);
-            for (int j = 0; j < 54; j++) {
-                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
-                double jEntro = ex.jEntropy(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
-                jointEntropyNode << "Node " << s->name << " va Node " << s2->name << " : " << jEntro << endl;
-           }
-        }
-        jointEntropyNode.close();
-
-        std::ofstream eccNode;
-        eccNode.open("eccNode512.txt");
-    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
-    //        Sensor *s = (Sensor *) simulation.getModule(i);
-        for (int i = 0; i < 54; i++) {
-            Sensor *s = (Sensor *) simulation.getModule(i + 2);
-            for (int j = 0; j < 54; j++) {
-                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
-                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
-                eccNode << "Node " << s->name << " va Node " << s2->name << " : " << ecc << endl;
-           }
-        }
-        eccNode.close();
-    }
+    // Print Data
+//    if (this->currentRound == 256)
+//    {
+//    std::ofstream entropyNode;
+//    entropyNode.open("EntropyNode.txt");
+////    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+////        Sensor *s = (Sensor *) simulation.getModule(i);
+//    for (int i = 0; i < 54; i++) {
+//            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//            double entropy = ex.entropy(this->DataList[i]);
+//            entropyNode << "Entropy cua Node " << s->name << ": " << entropy << endl;
+//    }
+//    entropyNode.close();
+//
+//    std::ofstream jointEntropyNode;
+//    jointEntropyNode.open("jointEntropyNode.txt");
+////    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+////        Sensor *s = (Sensor *) simulation.getModule(i);
+//    for (int i = 0; i < 54; i++) {
+//        Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//        for (int j = 0; j < 54; j++) {
+//            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+//            double jEntro = ex.jEntropy(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+//            jointEntropyNode << "Node " << s->name << " va Node " << s2->name << " : " << jEntro << endl;
+//       }
+//    }
+//    jointEntropyNode.close();
+//
+//    std::ofstream eccNode;
+//    eccNode.open("eccNode.txt");
+////    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+////        Sensor *s = (Sensor *) simulation.getModule(i);
+//    for (int i = 0; i < 54; i++) {
+//        Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//        for (int j = 0; j < 54; j++) {
+//            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+//            double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+//            eccNode << "Node " << s->name << " va Node " << s2->name << " : " << ecc << endl;
+//       }
+//    }
+//    eccNode.close();
+//    }
+//
+//    if (this->currentRound == 512)
+//        {
+//        std::ofstream entropyNode;
+//        entropyNode.open("EntropyNode512.txt");
+//    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//    //        Sensor *s = (Sensor *) simulation.getModule(i);
+//        for (int i = 0; i < 54; i++) {
+//                Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//                double entropy = ex.entropy(this->DataList[i]);
+//                entropyNode << "Entropy cua Node " << s->name << ": " << entropy << endl;
+//        }
+//        entropyNode.close();
+//
+//        std::ofstream jointEntropyNode;
+//        jointEntropyNode.open("jointEntropyNode512.txt");
+//    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//    //        Sensor *s = (Sensor *) simulation.getModule(i);
+//        for (int i = 0; i < 54; i++) {
+//            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//            for (int j = 0; j < 54; j++) {
+//                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+//                double jEntro = ex.jEntropy(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+//                jointEntropyNode << "Node " << s->name << " va Node " << s2->name << " : " << jEntro << endl;
+//           }
+//        }
+//        jointEntropyNode.close();
+//
+//        std::ofstream eccNode;
+//        eccNode.open("eccNode512.txt");
+//    //    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//    //        Sensor *s = (Sensor *) simulation.getModule(i);
+//        for (int i = 0; i < 54; i++) {
+//            Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//            for (int j = 0; j < 54; j++) {
+//                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+//                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+//                eccNode << "Node " << s->name << " va Node " << s2->name << " : " << ecc << endl;
+//           }
+//        }
+//        eccNode.close();
+//    }
 
     cout << "Live nodes: " << liveNodeNumber << endl;
     cout << "base entropy: " << baseEntropy << endl;
 
     while(nodesInGroup < liveNodeNumber){
+
+        if(incrementEntropy > maxEntropy - baseEntropy){
+            break;
+        }
         this->myClusters[clusterCount] = new Clusters();
         Clusters * cluster = this->myClusters[clusterCount];
+
+
 
         // Add nhung nut co entropy trong khoang [baseEntropy, baseEntropy + deltaH] vao nhom
         for(int i = 0; i< 54; i++){
@@ -501,15 +509,10 @@ void BaseStation::reClustering() {
            }
         }
 
-        if(incrementEntropy > maxEntropy - baseEntropy){
-            clusterCount++;
-            break;
-        }
-
-        if (nodesInGroup >=  liveNodeNumber){
-           clusterCount++;
-           break;
-        }
+//        if(incrementEntropy > maxEntropy - baseEntropy){
+//            clusterCount++;
+//            break;
+//        }
 
         // Neu so nut trong nhom nho hon 6 thi tang deltaH va thu lai
         if(cluster->totalMembers < 6){
@@ -615,31 +618,216 @@ void BaseStation::reClustering() {
         }
         cout << "node in group " << nodesInGroup << endl;
     }
-
-    this->clusterNumber = clusterCount;
-
     for (int i = 0; i < clusterCount; i++){
         Clusters *cluster = this->myClusters[i];
         cluster->color = color[i];
-
-//        if (i == 0){
-//            for (int j = 0; j < cluster->totalMembers; j++){
-//                Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
-//                s->getDisplayString().setTagArg("i", 1, cluster->color);
-//                s->priority = 3;
-//            }
-//        }
-//        else
         {
             this->setPriority(i);
             for (int j = 0; j < cluster->totalMembers; j++){
                 Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
-                cout << "Node " << i + 1 << "Priority " << s->priority << endl;
+                cout << "Node " << s->getId() - 2 << "Priority " << s->priority << endl;
             }
         }
         this->findClusterHead(i);
     }
+
+    cout << "Cluster Number Before Leach Is: " << clusterCount << endl;
+
+// Other node that not in any group will be reclustering by leach, Now got clusterCount group
+    double T;
+    double p = 0.07;
+    int count = 0;
+    int mod = this->currentRound % 14;
+
+    T = p / (1 - p * mod);
+    cout << "T:" << T << endl;
+
+    //With T, now find cluster in that group, the number of cluster  = 2
+    //clusterCount++;
+
+
+       for (int i = 0; i < 54; i++)
+       {
+           if (count == 2)
+               break;
+           this->myClusters[clusterCount] = new Clusters();
+           Sensor *s = (Sensor*) simulation.getModule(i + 2);
+           if (s->isCH == true || s->isDead == true || s->myCluster != NULL)
+               continue;
+           s->CH_random = uniform(0, 1);
+           cout << "Node " << i << " :" << s->CH_random << " " << T
+                   << endl;
+           if (s->CH_random < T) {
+               this->myClusters[clusterCount]->clusterhead = s->getId();
+               s->isCH = true;
+               s->getDisplayString().setTagArg("i", 1, color[13]);
+               clusterCount++;
+               count++;
+           }
+       }
+
+    this->clusterNumber = clusterCount;
+
+    for (int i = 0; i < clusterCount; i++){
+            Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->clusterhead);
+            cout << "Cluster " << i << " Is Node" << s->getId() - 2 << endl;
+        }
+
+
+    cout << "Cluster NUmber:" << this->clusterNumber << endl;
+
+    // Got 2 leach CH, now set CH to remain nodes
+    for (int i = 0; i < 54; i++) {
+            Sensor *s1 = (Sensor *) simulation.getModule(i + 2);
+            if (s1->isCH )
+                continue;
+            if (s1->myCluster == NULL){
+//                int tem1p = 0;
+//                for (int j = clusterCount - 1; j <= clusterCount; j++) {
+//                    if (s1->getId() == this->myClusters[j]->clusterhead)
+//                        tem1p = 1;
+//                }
+//                if (tem1p == 1)
+//                    continue;
+               // cout << "Truoc check CH" << endl;
+                double temp = 999999;
+                //cout << "Sau check Ch" << endl;
+                int minDistanceCluster;
+                for (int n = 1; n < 3; n++){
+                    Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[n]->clusterhead);
+                    cout << i  << " " << s2->getId() - 2 << endl;
+                    cout << "Check Distance" << endl;
+                    cout << getDistance(s1, s2) << " " << temp << " " << n << endl;
+
+                    if (getDistance(s1, s2) <= temp) {
+                        temp = getDistance(s1, s2);
+                        minDistanceCluster = n;
+                        cout << getDistance(s1, s2) << " " << temp  << " " << minDistanceCluster << endl;
+                    }
+                }
+                // Choose CH got Min Distance
+                cout << "Node " << i << "Belong To Cluster: " << minDistanceCluster << endl;
+               // this->myClusters[minDistanceCluster]->addNode(s1->getId());
+                Clusters * cluster = this->myClusters[minDistanceCluster];
+                cluster->addNode(s1->getId());
+                s1->myCluster = cluster;
+              //  s1->getDisplayString().setTagArg("i", 1, cluster->color);
+
+                cout << "Add To Cluster Done" << endl;
+            }
+    }
+
+    //his->clusterNumber = clusterCount;
+
+//    for (int i = 0; i < clusterCount; i++){
+//        Clusters *cluster = this->myClusters[i];
+//        cluster->color = color[i];
+//
+//        {
+//            this->setPriority(i);
+//            for (int j = 0; j < cluster->totalMembers; j++){
+//                Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+//                cout << "Node " << i + 1 << "Priority " << s->priority << endl;
+//            }
+//        }
+//        this->findClusterHead(i);
+//    }
 }
+
+//void BaseStation::reClustering() {
+//    lib ex;
+//    int nodesInGroup = 0;
+//    int clusterCount = 0;
+//    int liveNodeNumber = 0;
+//    double baseECC = 0.7;
+//    double baseEntropy = 100;
+//    double maxEntropy = 0;
+//    double incrementEntropy = 0.2;
+//    std::map<int, double> entropyList;
+//    std::vector<int> nodeArray;
+//
+//    // Kiem tra nhung node chet
+//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//       Sensor *s = (Sensor*) simulation.getModule(i);
+//
+//       if ((s->energy - s->energyLost) <= 201000.0 || s->isDead == true) {
+//           s->isDead = true;
+//           s->getDisplayString().setTagArg("i", 1, "black");
+//       }
+//       this->totalEnergyLost += s->energyLost;
+//       energyLostStats.collect(this->totalEnergyLost);
+//    }
+//
+//    // Tinh toan entropy cua tung nut va tinh so nut con song
+//    for (int i = 0; i < 54; i++) {
+//        Sensor *s = (Sensor *) simulation.getModule(i + 2);
+//        s->isCH = false;
+//        s->myCluster = NULL;
+//
+//        if (!s->isDead) {
+//            double entropy = ex.entropy(this->DataList[i]);
+//            maxEntropy = max(entropy, maxEntropy);
+//            baseEntropy = min(entropy, baseEntropy);
+//            entropyList[s->getId()] = entropy;
+//            liveNodeNumber++;
+//        }
+//    }
+//
+//// Other node that not in any group will be reclustering by leach, Now got clusterCount group
+//    double T;
+//    double p = 0.07;
+//    int mod = this->currentRound % 14;
+//
+//    T = p / (1 - p * mod);
+//
+//    //With T, now find cluster in that group, the number of cluster  = 2
+//    for (j = 0; j < 2; j++) {
+//       clusterCount++;
+//       for (int i = 2; i < simulation.getLastModuleId(); i++)
+//       {
+//           Sensor *s = (Sensor*) simulation.getModule(i);
+//           if (s->isCH == true || s->isDead == true || s->myCluster != NULL)
+//               continue;
+//           s->CH_random = uniform(0, 1);
+//           cout << "Node " << s->getId() << " :" << s->CH_random << " " << T
+//                   << endl;
+//           if (s->CH_random < T) {
+//               this->myClusters[clusterCount]->clusterhead = s->getId();
+//               s->isCH = true;
+//               s->getDisplayString().setTagArg("i", 1, color[13]);
+//               break;
+//           }
+//       }
+//    }
+//
+//    this->clusterNumber = clusterCount;
+//
+//    // Got 2 leach CH, now set CH to remain nodes
+//    for (int i = 2; i < simulation.getLastModuleId(); i++) {
+//            Sensor *s1 = (Sensor *) simulation.getModule(i);
+//            if (s1->myCluster != NULL){
+//                int tem1p = 0;
+//                for (int j = 0; j < k; j++) {
+//                    if (s1->getId() == this->myClusters[j]->clusterhead)
+//                        tem1p = 1;
+//                }
+//                if (tem1p == 1)
+//                    continue;
+//                double temp = 999999;
+//                int minDistanceCLuster;
+//                for (int n = clusterCount - 1; n <= clusterCount; n++){
+//                    Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[n]->clusterhead);
+//                    if (this->getDistance(s1, s2) <= temp) {
+//                        temp = this->getDistance(s1, s2);
+//                        minDistanceCluster = n;
+//                    }
+//                }
+//                // Choose CH got Min Distance
+//                this->myClusters[minDistanceCluster]->addNode(i);
+//                s1->getDisplayString().setTagArg("i", 1, this->myClusters[minDistanceCluster]->color);
+//            }
+//    }
+//}
 
 //Chon cluster head dua tren muc nang luong
 void BaseStation::findClusterHead(int index) {
