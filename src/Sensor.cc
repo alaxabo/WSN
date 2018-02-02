@@ -244,9 +244,7 @@ void Sensor::handleMessage(cMessage *msg) {
                     this->isDead = true;
                     this->roundDead = currentRound;
                 }
-
                 sendMessage(temp, bsID);
-
             }
 
         } else if (msg->getKind() == TDMA_INIT) {

@@ -70,6 +70,7 @@ public:
     void setUpClusterHead(int i);
     void finish();
     void reClustering();
+    int leach_Clustering(int clusterCount);
     std::vector<double> DataList[54];
     void setPriority(int groupNumber);
     bool find_Node(Sensor *s, int n);
