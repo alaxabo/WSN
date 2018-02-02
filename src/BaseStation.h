@@ -65,6 +65,7 @@ public:
     void sendInitMessage();
     void findClusterHead(int index);
     double getDistance(Sensor *s1, Sensor *s2);
+    int leach_Clustering(int clusterCount);
     void removeDeadNode(int index);
     void removeCluster(int index);
     void setUpClusterHead(int i);
