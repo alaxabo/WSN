@@ -62,8 +62,8 @@ network HCR
 
         sink: BaseStation {
             parameters:
-                xpos = 40;
-                ypos = 1200;
+                xpos = 400;
+                ypos = 1800;
                 k = k;
                 trRange = trRange;
                 xMax = xMax;

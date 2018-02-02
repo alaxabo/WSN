@@ -70,6 +70,7 @@ public:
     void removeCluster(int index);
     void setUpClusterHead(int i);
     void finish();
+    void leach();
     void reClustering();
     std::vector<double> DataList[54];
     void setPriority(int groupNumber);
