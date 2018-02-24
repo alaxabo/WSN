@@ -45,6 +45,7 @@ void Sensor::initialize() {
     this->energyLost = 0;
     this->timeslot = 100;
     this->connect = 0;
+    this->DataMsg_Length=4000;
     HandleDataMessage s;
         this->messageList = s.createDataMsgList(this->getId()-1);
     if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
@@ -59,8 +60,8 @@ void Sensor::handleMessage(cMessage *msg) {
     if (msg->isSelfMessage()) {
         if (msg->getKind() == SELF_DATA_TO_CH) {
             double distance = this->getDistance(this, this->clusterhead);
-            //this->energySend(DataMsgLength, distance);
-            this->energyLostIn_NonCH(DataMsgLength, distance); //Nang luong tieu thu khi truyen tin toi CH cua non-CH
+            //this->energySend(DataMsg_Length, distance);
+            this->energyLostIn_NonCH(DataMsg_Length, distance); //Nang luong tieu thu khi truyen tin toi CH cua non-CH
             DataMessage *temp = new DataMessage("Data to CH");
             temp->setKind(DATA_TO_CH);
             temp->setSource(this->getId());
@@ -238,8 +239,8 @@ void Sensor::handleMessage(cMessage *msg) {
                 double xlength = abs(this->xpos - BS->xpos);
                 double ylength = abs(this->ypos - BS->ypos);
                 double distanceToBS = sqrt(xlength * xlength + ylength * ylength);
-                //this->energySend(DataMsgLength, distance);DataMsgLength * (this->connect+1)
-                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, size);
+                //this->energySend(DataMsg_Length, distance);DataMsg_Length * (this->connect+1)
+                this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, size);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
                     this->roundDead = currentRound;
@@ -257,7 +258,7 @@ void Sensor::handleMessage(cMessage *msg) {
             cmsg->setKind(SELF_DATA_TO_CH);
             scheduleAt(simTime() + frame * this->timeslot, cmsg);
         } else if (msg->getKind() == DATA_TO_CH) {
-            //this->energyReceive(DataMsgLength);
+            //this->energyReceive(DataMsg_Length);
             this->count += 1;
             DataMessage *temp1 = (DataMessage*) msg;
             this->messageListToBS.push_back(*temp1);
@@ -319,8 +320,8 @@ void Sensor::handleMessage(cMessage *msg) {
                 double xlength = abs(this->xpos - BS->xpos);
                 double ylength = abs(this->ypos - BS->ypos);
                 double distanceToBS = sqrt(xlength * xlength + ylength * ylength);
-                //this->energySend(DataMsgLength, distance);DataMsgLength * (this->connect+1)
-                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, size);
+                //this->energySend(DataMsg_Length, distance);DataMsg_Length * (this->connect+1)
+                this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, size);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
                     this->roundDead = currentRound;
@@ -382,7 +383,7 @@ void Sensor::sendMessage(cMessage *cmsg, int destination) {
     }
 }
 
-void Sensor::energyLostIn_CH(int l_receive, double dToBS, int l_send) {
+void Sensor::energyLostIn_CH(double l_receive, double dToBS, int l_send) {
     Enter_Method_Silent
     ("energyLostIn_CH");
     // l bit
@@ -392,7 +393,7 @@ void Sensor::energyLostIn_CH(int l_receive, double dToBS, int l_send) {
 }
 
 
-void Sensor::energyLostIn_NonCH(int l, double dToCH) {
+void Sensor::energyLostIn_NonCH(double l, double dToCH) {
     Enter_Method_Silent
     ("energyLostIn_NonCH");
     // l bit

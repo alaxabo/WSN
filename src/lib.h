@@ -30,6 +30,8 @@ class lib {
         double log2(double number);
         double jEntropy(vector<double> arr1, vector<double> arr2);
         double EntropyCorrelationCoefficient(vector<double> arr1, vector<double> arr2);
+        vector<double> extractColumn(vector<vector<double>> data, int column);
+        double jEntropyGroup(vector<vector<double>> data);
 };
 
 

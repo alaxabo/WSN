@@ -87,3 +87,36 @@ double lib::EntropyCorrelationCoefficient(vector<double> arr1, vector<double> ar
     return 2-(2*jEntropy(arr1,arr2)/(entropy(arr1)+entropy(arr2)));
 }
 
+vector<double> lib::extractColumn(vector<vector<double>> data, int column){
+  vector<double> result;
+
+  for(vector<double> v : data){
+    result.push_back(v[column]);
+  }
+
+  return result;
+}
+
+double lib::jEntropyGroup(vector<vector<double>> data){
+  map<vector<double>, int> frequencies;
+  if (data.empty()) return 0;
+  double size = data[0].size();
+  double result = 0;
+
+  for(int i = 0; i < size; i++){
+    vector<double> tmp = extractColumn(data, i);
+    frequencies[tmp]++;
+  }
+
+  for (const auto& kv : frequencies) {
+    /*for (auto i = kv.first.begin(); i != kv.first.end(); ++i)
+      std::cout << *i << ' ';
+    cout << " has value " << kv.second << endl;*/
+    double freq = kv.second / size;
+    cout << freq << endl;
+    result += freq * log2( freq );
+  }
+
+  return -result;
+}
+

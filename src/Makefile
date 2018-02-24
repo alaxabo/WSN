@@ -143,7 +143,8 @@ $O/Clusters.o: Clusters.cc \
 	Compression/Group.h \
 	Compression/HuffmanTree.h \
 	Compression/TreeNode.h \
-	Definition.h
+	Definition.h \
+	lib.h
 $O/HandleDataMessage.o: HandleDataMessage.cc \
 	HandleDataMessage.h \
 	Message_m.h

@@ -34,7 +34,6 @@ Define_Module(BaseStation);
 char color[32][15] =
         { "green", "gold", "blue", "red", "yellow", "brown", "cyan", "gray",
                 "coral", "navy", "chocolate", "orange", "pink", "purple" };
-int track[100];
 BaseStation::BaseStation() {
     // TODO Auto-generated constructor stub
     //  this->firstDeadNode = 0;
@@ -120,8 +119,6 @@ void BaseStation::initNode() {
             }
         }
     }
-    for (int i=0; i<=99; i++) track[i]=-1;
-
 }
 
 //Khoi tao clusters
@@ -171,6 +168,7 @@ void BaseStation::initialize() {
     cout << "Init BS, Cluster." << endl;
     this->sendInitMessage();
 }
+
 
 void BaseStation::handleMessage(cMessage *msg) {
     if (msg->isSelfMessage()) {
@@ -264,6 +262,7 @@ void BaseStation::handleMessage(cMessage *msg) {
                     }
                     cout << "Reclustering" << endl;
                     reClustering();
+                    update_DataMsgLength();
                     cout << "Finding Cluster Head" << endl;
                     for (unsigned int i = 0; i < 54; i++) {
                         this->DataList[i].clear();
@@ -275,9 +274,11 @@ void BaseStation::handleMessage(cMessage *msg) {
                     cout << "Send init message" << endl;
                     this->sendInitMessage();
                 } else {
+
                     for (int i = 0; i < this->clusterNumber; i++) {
                         setUpClusterHead(i);
                     }
+                    update_DataMsgLength();
                     int tmp = this->currentRound / 20;
                     int mod = this->currentRound - 20 * tmp;
                     this->T = 0.05 / (1 - 0.05 * mod);
@@ -359,6 +360,26 @@ void BaseStation::sendInitMessage() {
     }
 }
 
+void BaseStation::update_DataMsgLength(){
+    lib ex;
+//    std::ofstream testJentropy;
+//    testJentropy.open("JEntropyGr.txt");
+    for(int i = 0; i < this->clusterNumber; i++) {
+        vector<vector<double>> data;
+        for (int j = 2; j < simulation.getLastModuleId(); j++){
+            Sensor *s = (Sensor*) simulation.getModule(j);
+            if (this->myClusters[i]->hasMember(s->getId())) data.push_back(this->DataList[j-2]);
+        }
+
+        double temp_je = ex.jEntropyGroup(data);
+        for (int j = 2; j < simulation.getLastModuleId(); j++){
+                    Sensor *s = (Sensor*) simulation.getModule(j);
+                    if (this->myClusters[i]->hasMember(s->getId())) s->DataMsg_Length = temp_je*1000;
+                }
+       }
+//    testJentropy.close();
+}
+
 void BaseStation::reClustering() {
     lib ex;
     int clusterCount = 0;
@@ -367,7 +388,6 @@ void BaseStation::reClustering() {
     double baseEntropy = 0;
     double incrementEntropy = 0.2;
     std::vector<double> entropyList;
-
     // Kiem tra nhung node chet
     cout << "Kiem tra nhung node chet" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
@@ -435,7 +455,6 @@ void BaseStation::reClustering() {
                   // Add cac nut
                   cluster->addNode(s->getId());
                   s->myCluster = cluster;
-                  track[s->getId()]=clusterCount;
                }
             }
 
@@ -493,8 +512,6 @@ void BaseStation::reClustering() {
                     cluster->removeNode(maxCount->first);
                     Sensor * s = (Sensor *) simulation.getModule(maxCount->first);
                     s->myCluster = NULL;
-                    track[s->getId()]=-1;
-
                     continue;
                 }
             }
@@ -554,8 +571,6 @@ int BaseStation::leach_Clustering(int clusterCount) {
 
             Sensor *s2 = (Sensor*) simulation.getModule(j);
             if (!s1->isDead && !s2->isDead && s1->myCluster == NULL && s2->myCluster == NULL && i!=j){
-
-
                 dis[i][j]= getDistance(s1, s2);
                 if (dis[i][j] > max){
                     max = dis[i][j];
@@ -567,12 +582,12 @@ int BaseStation::leach_Clustering(int clusterCount) {
         }
         }
     cout << imax << " " << jmax << " " << count << endl;
-    if (count==0 || (imax ==0 && jmax ==0)) return clusterC;
+    if (count==0) return clusterC;
     for (int i = 2; i < simulation.getLastModuleId(); i++){
         tmp[i].first=dis[imax][i];
         tmp[i].second=i;
     }
-    //sort(temp+2, temp+simulation.getLastModuleId());
+
     sort(tmp+2, tmp+simulation.getLastModuleId());
     for (int i = 2; i < simulation.getLastModuleId(); i++){
             cout << tmp[i].first << " " << tmp[i].second << endl;
@@ -719,37 +734,6 @@ void BaseStation::setPriority(int groupNumber){
        else
            s->priority = 1;
     }
-
-    //Tinh do tuong quan trung binh cua cac node trong nhom
-//    for (int i = 0; i < cluster->totalMembers; i++) {
-//        this->AvgEntropyCorrCoeff[i] = 0;
-//        for (int j = 0; j < cluster->totalMembers; j++){
-//            if (i == j)
-//                continue;
-//            this->AvgEntropyCorrCoeff[i] += this->EntropyCorrCoeff[i][j];
-//        }
-//        this->AvgEntropyCorrCoeff[i] = this->AvgEntropyCorrCoeff[i]/cluster->totalMembers;
-//    }
-
-//    //Set Priority
-//    for (int i = 0; i < cluster->totalMembers; i++) {
-//       int count = 0;
-//       Sensor *s1 = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
-//       for (int j = 0; j < cluster->totalMembers; j++){
-//           //Sensor *s2 = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
-//           if (i == j)
-//               continue;
-//           if (this->EntropyCorrCoeff[i][j] >= this->AvgEntropyCorrCoeff[i])
-//               count++;
-//       }
-//       if (count >= 0.8 * cluster->totalMembers)
-//           s1->priority = 3;
-//       if (0.5 * cluster->totalMembers <= count && count < 0.8 * cluster->totalMembers)
-//           s1->priority = 2;
-//       if (0.5 * cluster->totalMembers > count)
-//           s1->priority = 1;
-//    }
-
 }
 
 

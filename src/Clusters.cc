@@ -77,3 +77,4 @@ bool Clusters::hasMember(int id){
 void Clusters::removeAllNode(){
     this->totalMembers = 0;
 }
+

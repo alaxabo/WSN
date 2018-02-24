@@ -75,6 +75,7 @@ public:
     void setPriority(int groupNumber);
     bool find_Node(Sensor *s, int n);
     void printClusterStatus();
+    void update_DataMsgLength();
 };
 
 #endif /* BASESTATION_H_ */

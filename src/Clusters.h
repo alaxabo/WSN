@@ -17,6 +17,7 @@
 #define CLUSTERS_H_
 
 #include "Compression/HuffmanTree.h"
+#include "lib.h"
 
 class Clusters {
 public:
@@ -36,6 +37,7 @@ public:
     void clearTree();
     bool hasMember(int id);
     void removeAllNode();
+    double ClusterJentropy();
 };
 
 #endif /* CLUSTERS_H_ */
