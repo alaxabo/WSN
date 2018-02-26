@@ -527,6 +527,24 @@ void BaseStation::reClustering() {
         this->findClusterHead(i);
     }
 
+    for (int i = 0; i < this->clusterNumber; i++){
+        double groupECC = 0;
+        double groupEntropy = 0;
+        Clusters *cluster = this->myClusters[i];
+        for (int j = 0; j < cluster->totalMembers; j++){
+            if (j == 0){
+                continue;
+            }
+            if (j == 1){
+                Sensor *s0 = (Sensor *) simulation.getModule(cluster->memberNodes[0]);
+                Sensor *s1 = (Sensor *) simulation.getModule(cluster->memberNodes[1]);
+                groupEntropy = ex.jEntropy(this->DataList[s0->getId()], this->DataList[s1->getId()]);
+            }
+            int k = j;
+
+        }
+
+    }
 }
 
 void BaseStation::leach(){
