@@ -362,22 +362,35 @@ void BaseStation::sendInitMessage() {
 
 void BaseStation::update_DataMsgLength(){
     lib ex;
-//    std::ofstream testJentropy;
-//    testJentropy.open("JEntropyGr.txt");
+    std::ofstream testJentropy;
+    int round;
+    testJentropy.open("JEntropyGr1.txt", ios::app);
+    testJentropy << "Round: " << this->currentRound
     for(int i = 0; i < this->clusterNumber; i++) {
         vector<vector<double>> data;
         for (int j = 2; j < simulation.getLastModuleId(); j++){
             Sensor *s = (Sensor*) simulation.getModule(j);
             if (this->myClusters[i]->hasMember(s->getId())) data.push_back(this->DataList[j-2]);
+            round = s->currentRound;
         }
-
         double temp_je = ex.jEntropyGroup(data);
+        testJentropy << "Round: " << round << endl << i << "\t" << temp_je << endl;
         for (int j = 2; j < simulation.getLastModuleId(); j++){
+                    double entropy = ex.entropy(this->DataList[j-2]);
                     Sensor *s = (Sensor*) simulation.getModule(j);
-                    if (this->myClusters[i]->hasMember(s->getId())) s->DataMsg_Length = temp_je*1000;
+                    if (s->isCH && this->myClusters[i]->hasMember(s->getId())) s->DataMsg_Length = temp_je*1000;
+                    else {
+
+                        s->DataMsg_Length = entropy*1000;
+                        cout << entropy << "  " << "--";
+                    }
+                    if (this->myClusters[i]->hasMember(s->getId()))
+                        testJentropy << j-2 << "\t" << entropy << endl;
+                    cout << endl;
+
                 }
        }
-//    testJentropy.close();
+    testJentropy.close();
 }
 
 void BaseStation::reClustering() {
