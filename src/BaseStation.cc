@@ -261,8 +261,8 @@ void BaseStation::handleMessage(cMessage *msg) {
                         this->myClusters[i]->root = root;
                     }
                     cout << "Reclustering" << endl;
-                    reClustering();
                     update_DataMsgLength();
+                    reClustering();
                     cout << "Finding Cluster Head" << endl;
                     for (unsigned int i = 0; i < 54; i++) {
                         this->DataList[i].clear();
@@ -362,35 +362,52 @@ void BaseStation::sendInitMessage() {
 
 void BaseStation::update_DataMsgLength(){
     lib ex;
-    std::ofstream testJentropy;
-    int round;
-    testJentropy.open("JEntropyGr1.txt", ios::app);
-    testJentropy << "Round: " << this->currentRound
+    std::ofstream file;
+    int clusterHeadId;
+
     for(int i = 0; i < this->clusterNumber; i++) {
         vector<vector<double>> data;
-        for (int j = 2; j < simulation.getLastModuleId(); j++){
-            Sensor *s = (Sensor*) simulation.getModule(j);
-            if (this->myClusters[i]->hasMember(s->getId())) data.push_back(this->DataList[j-2]);
-            round = s->currentRound;
+        Clusters * cluster = this->myClusters[i];
+
+        for (int j = 0; j < cluster->totalMembers; j++){
+            Sensor *s = (Sensor*) simulation.getModule(cluster->memberNodes[j]);
+
+            if (s->isCH){
+                clusterHeadId = s->getId();
+            }
+
+            data.push_back(this->DataList[s->getId() - 2]);
+
+            double entropy = ex.entropy(this->DataList[s->getId() - 2]);
+            s->DataMsg_Length = entropy*1000;
+            cout << entropy << "  " << "--";
+
+            std::stringstream ss;
+            ss << "../Entropy/" << s->getId() - 1 << ".txt";
+            string fileName = ss.str();
+            cout << "file name: " << fileName << endl;
+
+            ofstream file;
+            if (this->currentRound == 1){
+                file.open (fileName);
+            } else {
+                file.open (fileName, ios::app);
+            }
+
+            if(file.is_open()){
+                file << entropy << endl;
+                file.close();
+            } else {
+                cout << "khong mo dc file" << endl;
+            }
+            cout << endl;
         }
-        double temp_je = ex.jEntropyGroup(data);
-        testJentropy << "Round: " << round << endl << i << "\t" << temp_je << endl;
-        for (int j = 2; j < simulation.getLastModuleId(); j++){
-                    double entropy = ex.entropy(this->DataList[j-2]);
-                    Sensor *s = (Sensor*) simulation.getModule(j);
-                    if (s->isCH && this->myClusters[i]->hasMember(s->getId())) s->DataMsg_Length = temp_je*1000;
-                    else {
 
-                        s->DataMsg_Length = entropy*1000;
-                        cout << entropy << "  " << "--";
-                    }
-                    if (this->myClusters[i]->hasMember(s->getId()))
-                        testJentropy << j-2 << "\t" << entropy << endl;
-                    cout << endl;
+        double jEntropy = ex.jEntropyGroup(data);
 
-                }
-       }
-    testJentropy.close();
+        Sensor * s = (Sensor*) simulation.getModule(clusterHeadId);
+        s->DataMsg_Length = jEntropy * 1000;
+    }
 }
 
 void BaseStation::reClustering() {
