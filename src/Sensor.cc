@@ -41,7 +41,7 @@ Sensor::~Sensor() {
 }
 
 void Sensor::initialize() {
-    this->energy = 1000000000;
+    this->energy = 1500000000;
     this->energyLost = 0;
     this->timeslot = 100;
     this->connect = 0;

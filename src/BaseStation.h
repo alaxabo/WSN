@@ -76,6 +76,7 @@ public:
     bool find_Node(Sensor *s, int n);
     void printClusterStatus();
     void update_DataMsgLength();
+    void printLimit();
 };
 
 #endif /* BASESTATION_H_ */

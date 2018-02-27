@@ -263,6 +263,7 @@ void BaseStation::handleMessage(cMessage *msg) {
                     cout << "Reclustering" << endl;
                     reClustering();
                     update_DataMsgLength();
+                    printLimit();
                     cout << "Finding Cluster Head" << endl;
                     for (unsigned int i = 0; i < 54; i++) {
                         this->DataList[i].clear();
@@ -365,7 +366,7 @@ void BaseStation::update_DataMsgLength(){
     std::ofstream testJentropy;
     int round;
     testJentropy.open("JEntropyGr1.txt", ios::app);
-    testJentropy << "Round: " << this->currentRound
+    testJentropy << "Round: " << this->currentRound;
     for(int i = 0; i < this->clusterNumber; i++) {
         vector<vector<double>> data;
         for (int j = 2; j < simulation.getLastModuleId(); j++){
@@ -391,6 +392,73 @@ void BaseStation::update_DataMsgLength(){
                 }
        }
     testJentropy.close();
+}
+
+void BaseStation::printLimit(){
+    lib ex;
+    std::ofstream limitJentropy;
+    if (this->currentRound == 256){
+        limitJentropy.open("limitJentropy.txt");
+        limitJentropy << "Round 256:" << endl;
+
+    }
+    else{
+        limitJentropy.open("limitJentropy.txt", ios::app);
+        limitJentropy << "Round " << this->currentRound << ":" << endl;
+    }
+    for (int i = 0; i < this->clusterNumber; i++){
+        double rMax = 0;
+        double rMin = 9999;
+        double hMax;
+        double hMin;
+
+        vector<vector<double>> data;
+
+        Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->clusterhead);
+        hMax = ex.entropy(this->DataList[s->getId() - 2]);
+        hMin = hMax;
+        for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
+            Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
+            double nodeH = ex.entropy(this->DataList[s2->getId() - 2]);
+            if (hMax < nodeH)
+                hMax = nodeH;
+            if (hMin > nodeH)
+                hMin = nodeH;
+        }
+        limitJentropy << "Group " << i + 1 << " Got Hmax: " << hMax << " And Hmin: " << hMin <<endl;
+        for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+            Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+            for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
+               Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
+               double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
+               if (ecc == 1)
+                   continue;
+               if (rMax < ecc)
+                   rMax = ecc;
+               if (rMin > ecc)
+                   rMin = ecc;
+            }
+        }
+        limitJentropy << "Group " << i + 1 << " Got Rmax: " << rMax << " And Rmin: " << rMin <<endl;
+
+        int n = this->myClusters[i]->totalMembers;
+        double bMin = 2 - rMax;
+        double kMin;
+        kMin =  (pow(bMin/2,n) - 1) / ((bMin/2) - 1) + pow(bMin/2,n-1) - 1;
+        double bMax = 2 - rMin;
+        double kMax =  (pow(bMax/2,n) - 1) / ((bMax/2) - 1) + pow(bMax/2,n-1) - 1;
+
+        limitJentropy << "Group " << i + 1 << " Got Down Limit: " << kMin * hMin << " And Up Limit: " << kMax * hMax <<endl;
+
+        for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
+            Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
+            data.push_back(this->DataList[s1->getId() - 2]);
+        }
+        double temp_je = ex.jEntropyGroup(data);
+        limitJentropy << "Group " << i + 1 << " Got Joint Entropy: " << temp_je << endl;
+
+    }
+    limitJentropy.close();
 }
 
 void BaseStation::reClustering() {

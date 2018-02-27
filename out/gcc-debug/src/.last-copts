@@ -1,1 +1,1 @@
--g -Wall -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I.. -I. -ICompression -I/home/xuantho/omnetpp-4.6/include
+-g -Wall -fPIC  -fno-stack-protector -DHAVE_SWAPCONTEXT -DXMLPARSER=libxml -DWITH_PARSIM -DWITH_NETBUILDER  -I.. -I. -ICompression -I/home/alaxabo/omnetpp-4.6/include
