@@ -71,14 +71,16 @@ void BaseStation::createConnection(cModule *c1, cModule *c2) {
 void BaseStation::initNode() {
 
     std::ifstream Position("../xy.txt");
-    float temp[4][54];
+    //float temp[4][54];
+    float temp[3][54];
     int j = 0;
     std::string s;
     cout << "Read position file." << endl;
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-        for (int i = 0; i < 4; i++) {
+       // for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
         }
@@ -89,19 +91,19 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
-        name[i + 2] = temp[3][i];
+       // name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
-            s->name = name[i];
+          //  s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
-            s->getDisplayString().setTagArg("t", 0, s->name);
+          //  s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
 
@@ -361,37 +363,87 @@ void BaseStation::sendInitMessage() {
     }
 }
 
+//void BaseStation::update_DataMsgLength(){
+//    lib ex;
+//    std::ofstream testJentropy;
+//    int round;
+//    testJentropy.open("JEntropyGr1.txt", ios::app);
+//    testJentropy << "Round: " << this->currentRound;
+//    for(int i = 0; i < this->clusterNumber; i++) {
+//        vector<vector<double>> data;
+//        for (int j = 2; j < simulation.getLastModuleId(); j++){
+//            Sensor *s = (Sensor*) simulation.getModule(j);
+//            if (this->myClusters[i]->hasMember(s->getId())) data.push_back(this->DataList[j-2]);
+//            round = s->currentRound;
+//        }
+//        double temp_je = ex.jEntropyGroup(data);
+//        testJentropy << "Round: " << round << endl << i << "\t" << temp_je << endl;
+//        for (int j = 2; j < simulation.getLastModuleId(); j++){
+//                    double entropy = ex.entropy(this->DataList[j-2]);
+//                    Sensor *s = (Sensor*) simulation.getModule(j);
+//                    if (s->isCH && this->myClusters[i]->hasMember(s->getId())) s->DataMsg_Length = temp_je*1000;
+//                    else {
+//
+//                        s->DataMsg_Length = entropy*1000;
+//                        cout << entropy << "  " << "--";
+//                    }
+//                    if (this->myClusters[i]->hasMember(s->getId()))
+//                        testJentropy << j-2 << "\t" << entropy << endl;
+//                    cout << endl;
+//
+//                }
+//       }
+//    testJentropy.close();
+//}
+
 void BaseStation::update_DataMsgLength(){
     lib ex;
-    std::ofstream testJentropy;
-    int round;
-    testJentropy.open("JEntropyGr1.txt", ios::app);
-    testJentropy << "Round: " << this->currentRound;
+    std::ofstream file;
+    int clusterHeadId;
+
     for(int i = 0; i < this->clusterNumber; i++) {
         vector<vector<double>> data;
-        for (int j = 2; j < simulation.getLastModuleId(); j++){
-            Sensor *s = (Sensor*) simulation.getModule(j);
-            if (this->myClusters[i]->hasMember(s->getId())) data.push_back(this->DataList[j-2]);
-            round = s->currentRound;
+        Clusters * cluster = this->myClusters[i];
+
+        for (int j = 0; j < cluster->totalMembers; j++){
+            Sensor *s = (Sensor*) simulation.getModule(cluster->memberNodes[j]);
+
+            if (s->isCH){
+                clusterHeadId = s->getId();
+            }
+
+            data.push_back(this->DataList[s->getId() - 2]);
+
+            double entropy = ex.entropy(this->DataList[s->getId() - 2]);
+            s->DataMsg_Length = entropy*1000;
+            cout << entropy << "  " << "--";
+
+            std::stringstream ss;
+            ss << "../Entropy/" << s->getId() - 1 << ".txt";
+            string fileName = ss.str();
+            cout << "file name: " << fileName << endl;
+
+            ofstream file;
+            if (this->currentRound == 1){
+                file.open (fileName);
+            } else {
+                file.open (fileName, ios::app);
+            }
+
+            if(file.is_open()){
+                file << entropy << endl;
+                file.close();
+            } else {
+                cout << "Can not open file" << endl;
+            }
+            cout << endl;
         }
-        double temp_je = ex.jEntropyGroup(data);
-        testJentropy << "Round: " << round << endl << i << "\t" << temp_je << endl;
-        for (int j = 2; j < simulation.getLastModuleId(); j++){
-                    double entropy = ex.entropy(this->DataList[j-2]);
-                    Sensor *s = (Sensor*) simulation.getModule(j);
-                    if (s->isCH && this->myClusters[i]->hasMember(s->getId())) s->DataMsg_Length = temp_je*1000;
-                    else {
 
-                        s->DataMsg_Length = entropy*1000;
-                        cout << entropy << "  " << "--";
-                    }
-                    if (this->myClusters[i]->hasMember(s->getId()))
-                        testJentropy << j-2 << "\t" << entropy << endl;
-                    cout << endl;
+        double jEntropy = ex.jEntropyGroup(data);
 
-                }
-       }
-    testJentropy.close();
+        Sensor * s = (Sensor*) simulation.getModule(clusterHeadId);
+        s->DataMsg_Length = jEntropy * 1000;
+    }
 }
 
 void BaseStation::printLimit(){
@@ -411,6 +463,14 @@ void BaseStation::printLimit(){
         double rMin = 9999;
         double hMax;
         double hMin;
+
+        limitJentropy << "Group "<< i + 1 <<" Got Member: " << endl;
+
+        for(int m = 0; m < this->myClusters[i]->totalMembers; m++){
+            Sensor *sm = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[m]);
+            limitJentropy << sm->getId() - 2 << " ";
+        }
+        limitJentropy << endl;
 
         vector<vector<double>> data;
 
@@ -448,7 +508,9 @@ void BaseStation::printLimit(){
         double bMax = 2 - rMin;
         double kMax =  (pow(bMax/2,n) - 1) / ((bMax/2) - 1) + pow(bMax/2,n-1) - 1;
 
-        limitJentropy << "Group " << i + 1 << " Got Down Limit: " << kMin * hMin << " And Up Limit: " << kMax * hMax <<endl;
+
+
+        limitJentropy << "Group " << i + 1 << " Got Down Limit: " << kMin * hMin << " And Up Limit: " << kMax * hMax << endl;
 
         for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
             Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
@@ -796,24 +858,25 @@ void BaseStation::setPriority(int groupNumber){
        int count2 = 0;
        int count3 = 0;
        Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[i]);
-       for (int j = 0; j < cluster->totalMembers; j++) {
-           Sensor *s2 = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
-           double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
-           cout << "Node " << s->getId() << " va Node " << s2->getId() << " : " << ecc << endl;
-           this->EntropyCorrCoeff[i][j] = ecc;
-           if (ecc >= 0.7)
-               count1++;
-           if (0.6 <= ecc && ecc < 0.7)
-               count2++;
-           if (ecc < 0.6)
-               count3++;
-       }
-       if (count1 >= cluster->totalMembers / 2)
-           s->priority = 3;
-       else if (count2 >= cluster->totalMembers / 2)
-           s->priority = 2;
-       else
-           s->priority = 1;
+       s->priority = 1;
+//       for (int j = 0; j < cluster->totalMembers; j++) {
+//           Sensor *s2 = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+//           double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s->getId() - 2], this->DataList[s2->getId()-2]);
+//           cout << "Node " << s->getId() << " va Node " << s2->getId() << " : " << ecc << endl;
+//           this->EntropyCorrCoeff[i][j] = ecc;
+//           if (ecc >= 0.7)
+//               count1++;
+//           if (0.6 <= ecc && ecc < 0.7)
+//               count2++;
+//           if (ecc < 0.6)
+//               count3++;
+//       }
+//       if (count1 >= cluster->totalMembers / 2)
+//           s->priority = 3;
+//       else if (count2 >= cluster->totalMembers / 2)
+//           s->priority = 2;
+//       else
+//           s->priority = 1;
     }
 }
 

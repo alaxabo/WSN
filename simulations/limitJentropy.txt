@@ -1,51 +1,86 @@
 Round 256:
-Group 1 Got Hmax: 2.74131 And Hmin: 1.69982
-Group 1 Got Rmax: 0.626703 And Rmin: 0.124194
-Group 1 Got Down Limit: 3.72471 And Up Limit: 34.1029
-Group 1 Got Joint Entropy: 7.99219
-Group 2 Got Hmax: 2.42961 And Hmin: 1.35029
-Group 2 Got Rmax: 0.604435 And Rmin: 0.185434
-Group 2 Got Down Limit: 3.11749 And Up Limit: 22.0743
-Group 2 Got Joint Entropy: 7.85156
+Group 1 Got Member: 
+39 44 46 3 9 30 51 
+Group 1 Got Hmax: 3.40816 And Hmin: 3.20886
+Group 1 Got Rmax: 0.780984 And Rmin: 0.60042
+Group 1 Got Down Limit: 4.91634 And Up Limit: 7.41169
+Group 1 Got Joint Entropy: 6.35013
+Group 1 Got Member: 
+7 21 27 40 41 8 50 
+Group 2 Got Hmax: 3.52207 And Hmin: 3.3473
+Group 2 Got Rmax: 0.796314 And Rmin: 0.629496
+Group 2 Got Down Limit: 4.9783 And Up Limit: 7.23878
+Group 2 Got Joint Entropy: 6.38503
+Group 1 Got Member: 
+20 22 23 43 49 37 
+Group 3 Got Hmax: 3.64637 And Hmin: 3.53289
+Group 3 Got Rmax: 0.794969 And Rmin: 0.672918
+Group 3 Got Down Limit: 5.21053 And Up Limit: 6.73515
+Group 3 Got Joint Entropy: 6.15245
+Group 1 Got Member: 
+5 24 28 29 31 34 36 53 
+Group 4 Got Hmax: 3.96195 And Hmin: 3.83276
+Group 4 Got Rmax: 0.81941 And Rmin: 0.710069
+Group 4 Got Down Limit: 5.47997 And Up Limit: 7.04717
+Group 4 Got Joint Entropy: 6.71132
+Group 1 Got Member: 
+0 1 4 12 25 26 32 42 
+Group 5 Got Hmax: 4.09717 And Hmin: 4.01335
+Group 5 Got Rmax: 0.820942 And Rmin: 0.74351
+Group 5 Got Down Limit: 5.72075 And Up Limit: 6.8148
+Group 5 Got Joint Entropy: 6.82326
+Group 1 Got Member: 
+11 13 18 10 16 15 
+Group 6 Got Hmax: 4.37674 And Hmin: 4.2257
+Group 6 Got Rmax: 0.750433 And Rmin: 0.592559
+Group 6 Got Down Limit: 6.76875 And Up Limit: 9.35683
+Group 6 Got Joint Entropy: 7.42811
+Group 1 Got Member: 
+48 47 52 45 6 38 
+Group 7 Got Hmax: 5.37424 And Hmin: 3.00866
+Group 7 Got Rmax: 0.755843 And Rmin: 0.605853
+Group 7 Got Down Limit: 4.77134 And Up Limit: 11.2159
+Group 7 Got Joint Entropy: 6.77088
+Group 1 Got Member: 
+2 35 33 14 17 19 
+Group 8 Got Hmax: 5.05957 And Hmin: 3.67023
+Group 8 Got Rmax: 0.751945 And Rmin: 0.681425
+Group 8 Got Down Limit: 5.86259 And Up Limit: 9.20113
+Group 8 Got Joint Entropy: 7.25034
 Round 512:
-Group 1 Got Hmax: 2.3832 And Hmin: 2.18785
-Group 1 Got Rmax: 0.655883 And Rmin: 0.519305
-Group 1 Got Down Limit: 4.27209 And Up Limit: 6.06868
-Group 1 Got Joint Entropy: 5.91501
-Group 2 Got Hmax: 2.52193 And Hmin: 2.42126
-Group 2 Got Rmax: 0.672649 And Rmin: 0.5322
-Group 2 Got Down Limit: 4.57653 And Up Limit: 6.2627
-Group 2 Got Joint Entropy: 5.74778
-Group 3 Got Hmax: 2.56285 And Hmin: 2.42821
-Group 3 Got Rmax: 0.684091 And Rmin: 0.533862
-Group 3 Got Down Limit: 4.39434 And Up Limit: 6.09086
-Group 3 Got Joint Entropy: 5.62792
-Group 4 Got Hmax: 2.67722 And Hmin: 2.52475
-Group 4 Got Rmax: 0.661006 And Rmin: 0.50617
-Group 4 Got Down Limit: 4.95824 And Up Limit: 7.22364
-Group 4 Got Joint Entropy: 6.73304
-Group 5 Got Hmax: 2.77003 And Hmin: 2.65047
-Group 5 Got Rmax: 0.700941 And Rmin: 0.533882
-Group 5 Got Down Limit: 4.65067 And Up Limit: 6.58301
-Group 5 Got Joint Entropy: 6.17132
-Group 6 Got Hmax: 2.85808 And Hmin: 2.78554
-Group 6 Got Rmax: 0.662968 And Rmin: 0.539737
-Group 6 Got Down Limit: 5.23953 And Up Limit: 6.72114
-Group 6 Got Joint Entropy: 6.38839
-Group 7 Got Hmax: 2.94788 And Hmin: 2.0422
-Group 7 Got Rmax: 0.597565 And Rmin: 0.321433
-Group 7 Got Down Limit: 4.46588 And Up Limit: 11.0442
-Group 7 Got Joint Entropy: 6.0391
-Group 8 Got Hmax: 2.64128 And Hmin: 2.04795
-Group 8 Got Rmax: 0.586869 And Rmin: 0.303537
-Group 8 Got Down Limit: 4.57252 And Up Limit: 10.2475
-Group 8 Got Joint Entropy: 6.64234
-Round 768:
-Group 1 Got Hmax: 1.4845 And Hmin: 1.42995
-Group 1 Got Rmax: 0.308297 And Rmin: 0.263621
-Group 1 Got Down Limit: 3.25568 And Up Limit: 3.52672
-Group 1 Got Joint Entropy: 3.40442
-Group 2 Got Hmax: 1.4141 And Hmin: 1.25623
-Group 2 Got Rmax: 0.466147 And Rmin: 0.27538
-Group 2 Got Down Limit: 2.4412 And Up Limit: 3.32238
-Group 2 Got Joint Entropy: 2.95914
+Group 1 Got Member: 
+22 27 30 44 46 47 
+Group 1 Got Hmax: 3.23517 And Hmin: 3.03569
+Group 1 Got Rmax: 0.7902 And Rmin: 0.712898
+Group 1 Got Down Limit: 4.51711 And Up Limit: 5.5533
+Group 1 Got Joint Entropy: 5.49954
+Group 1 Got Member: 
+17 20 23 24 45 39 
+Group 2 Got Hmax: 3.35556 And Hmin: 3.15971
+Group 2 Got Rmax: 0.849034 And Rmin: 0.645017
+Group 2 Got Down Limit: 4.21244 And Up Limit: 6.52185
+Group 2 Got Joint Entropy: 5.62235
+Group 1 Got Member: 
+5 15 26 29 42 38 
+Group 3 Got Hmax: 5.12063 And Hmin: 4.99143
+Group 3 Got Rmax: 0.82704 And Rmin: 0.600539
+Group 3 Got Down Limit: 6.9343 And Up Limit: 10.7901
+Group 3 Got Joint Entropy: 7.76754
+Group 1 Got Member: 
+0 1 4 11 32 34 36 
+Group 4 Got Hmax: 5.59055 And Hmin: 5.4502
+Group 4 Got Rmax: 0.81747 And Rmin: 0.72154
+Group 4 Got Down Limit: 7.78012 And Up Limit: 9.61121
+Group 4 Got Joint Entropy: 7.81441
+Group 1 Got Member: 
+49 50 48 51 52 53 7 8 6 9 43 3 10 2 
+Group 5 Got Hmax: 4.75743 And Hmin: 2.19927
+Group 5 Got Rmax: 0.741188 And Rmin: 0.302659
+Group 5 Got Down Limit: 3.73144 And Up Limit: 24.083
+Group 5 Got Joint Entropy: 7.55901
+Group 1 Got Member: 
+12 41 40 13 37 35 14 33 28 31 18 16 19 21 25 
+Group 6 Got Hmax: 5.57735 And Hmin: 2.94464
+Group 6 Got Rmax: 0.786579 And Rmin: 0.395426
+Group 6 Got Down Limit: 4.5411 And Up Limit: 21.8513
+Group 6 Got Joint Entropy: 7.97656
