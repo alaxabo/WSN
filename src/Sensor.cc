@@ -46,6 +46,8 @@ void Sensor::initialize() {
     this->timeslot = 100;
     this->connect = 0;
     this->DataMsg_Length=4000;
+    this->CHrecvDataMsg_Length = 4000;
+    this->repreNum = 0;
     HandleDataMessage s;
         this->messageList = s.createDataMsgList(this->getId()-1);
     if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
@@ -100,21 +102,11 @@ void Sensor::handleMessage(cMessage *msg) {
             for(int i = 0; i < this->myCluster->totalMembers; i++){
                 Sensor *s = (Sensor *)simulation.getModule(this->myCluster->memberNodes[i]);
                 //cout << "Priority node " << s->getId()-2 << ": " << s->priority << endl;
-                s->random = rand();
+                //s->random = rand();
                 if(s->getId() != this->getId()){
-                    cout << "Id: " << s->getId() << " Priority: " << s->priority << endl;
-                    if(s->priority == 1){
-                        this->connect += 1;
-                        s->getDisplayString().setTagArg("i",1,this->myCluster->color);
-                        //this->getDisplayString().setTagArg("i",1,"brown");
-                        //cout << s->random << " Node " << s->getId()-2 << " connect to header " << this->getId()-2 <<" in round " << this->currentRound << " with priority " << s->priority << endl;
-                        s->isLiveThisRound = true;
-                    }
-                    else if(s->priority == 2){
-                        int length = sizeof(clusterMembersEnergy)/sizeof(double);
-                        double threshold = clusterMembersEnergy[length/3];
+                    if (this->repreNum != 0){
+                        double threshold = clusterMembersEnergy[this->repreNum - 1];
                         double energy = s->energy - s->energyLost;
-
                         if(energy < threshold){
                             this->connect += 0;
                             this->notConnect.push_back(s->getId());
@@ -125,53 +117,56 @@ void Sensor::handleMessage(cMessage *msg) {
                             s->getDisplayString().setTagArg("i",1,this->myCluster->color);
                             s->isLiveThisRound = true;
                         }
-
-//                        if(s->random % 3 == 0){
-//                            this->connect += 0;
-//                            this->notConnect.push_back(s->getId());
-//                            s->getDisplayString().setTagArg("i",1,"gray");
-//                            //cout << s->random << " Node " << s->getId()-2 << " not connect to header " << this->getId()-2 <<" in round " << this->currentRound <<  " with priority " << s->priority << endl;
-//                            s->isLiveThisRound = false;
-//                        }
-//                        else{
-//                            this->connect += 1;
-//                            s->getDisplayString().setTagArg("i",1,this->myCluster->color);
-//                            //cout << s->random << " Node " << s->getId()-2 << " connect to header " << this->getId()-2 <<" in round " << this->currentRound <<  " with priority " << s->priority << endl;
-//                            s->isLiveThisRound = true;
-//                        }
                     }
-                    else if(s->priority == 3){
-                       int length = sizeof(clusterMembersEnergy)/sizeof(double);
-                       double threshold = clusterMembersEnergy[length/2];
-                       double energy = s->energy - s->energyLost;
-
-                       if(energy < threshold){
-                           this->connect += 0;
-                           this->notConnect.push_back(s->getId());
-                           s->getDisplayString().setTagArg("i",1,"gray");
-                           s->isLiveThisRound = false;
-                       } else {
-                           this->connect += 1;
-                           s->getDisplayString().setTagArg("i",1,this->myCluster->color);
-                           s->isLiveThisRound = true;
-                       }
-
-//                        if(s->random % 2 == 0){
-//                            this->connect += 0;
-//                            this->notConnect.push_back(s->getId());
-//                            s->getDisplayString().setTagArg("i",1,"gray");
-//                            //cout << s->random << " Node " << s->getId()-2 << " not connect to header " << this->getId()-2 <<" in round " << this->currentRound <<  " with priority " << s->priority <<endl;
-//                            s->isLiveThisRound = false;
-//                        }
-//                        else{
-//                            this->connect += 1;
-//                            s->getDisplayString().setTagArg("i",1,this->myCluster->color);
-//                            //cout << s->random << " Node " << s->getId()-2 << " connect to header " << this->getId()-2 <<" in round " << this->currentRound <<  " with priority " << s->priority << endl;
-//                            s->isLiveThisRound = true;
-//                        }
+                    else{
+                        this->connect += 1;
+                        s->getDisplayString().setTagArg("i",1,this->myCluster->color);
+                        s->isLiveThisRound = true;
                     }
                 }
             }
+//                    cout << "Id: " << s->getId() << " Priority: " << s->priority << endl;
+//                    if(s->priority == 1){
+//                        this->connect += 1;
+//                        s->getDisplayString().setTagArg("i",1,this->myCluster->color);
+//                        //this->getDisplayString().setTagArg("i",1,"brown");
+//                        //cout << s->random << " Node " << s->getId()-2 << " connect to header " << this->getId()-2 <<" in round " << this->currentRound << " with priority " << s->priority << endl;
+//                        s->isLiveThisRound = true;
+//                    }
+//                    else if(s->priority == 2){
+//                        int length = sizeof(clusterMembersEnergy)/sizeof(double);
+//                        double threshold = clusterMembersEnergy[length/3];
+//                        double energy = s->energy - s->energyLost;
+//
+//                        if(energy < threshold){
+//                            this->connect += 0;
+//                            this->notConnect.push_back(s->getId());
+//                            s->getDisplayString().setTagArg("i",1,"gray");
+//                            s->isLiveThisRound = false;
+//                        } else {
+//                            this->connect += 1;
+//                            s->getDisplayString().setTagArg("i",1,this->myCluster->color);
+//                            s->isLiveThisRound = true;
+//                        }
+//                    }
+//                    else if(s->priority == 3){
+//                       int length = sizeof(clusterMembersEnergy)/sizeof(double);
+//                       double threshold = clusterMembersEnergy[length/2];
+//                       double energy = s->energy - s->energyLost;
+//
+//                       if(energy < threshold){
+//                           this->connect += 0;
+//                           this->notConnect.push_back(s->getId());
+//                           s->getDisplayString().setTagArg("i",1,"gray");
+//                           s->isLiveThisRound = false;
+//                       } else {
+//                           this->connect += 1;
+//                           s->getDisplayString().setTagArg("i",1,this->myCluster->color);
+//                           s->isLiveThisRound = true;
+//                       }
+//                    }
+//                  }
+//                }
             cout << this->connect << " nodes connect to header " << this->getId() << endl;
             this->setupCluster();
             DataMessage *tmp = new DataMessage();
@@ -224,8 +219,9 @@ void Sensor::handleMessage(cMessage *msg) {
                 if(this->currentRound % ROUND_TO_RECLUSTER == 0){
                     this->previousData = curData.front();
                 }
-                int size = code.size() + sizeof(curData);
+
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
+                int size = code.size() + sizeof(curData);
                 encodeMsg->setCode(code.c_str());
 
                 encodeMsg->setKind(DATA_TO_BS);
@@ -240,7 +236,8 @@ void Sensor::handleMessage(cMessage *msg) {
                 double ylength = abs(this->ypos - BS->ypos);
                 double distanceToBS = sqrt(xlength * xlength + ylength * ylength);
                 //this->energySend(DataMsg_Length, distance);DataMsg_Length * (this->connect+1)
-                this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, size);
+                this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, size); //Encode On
+                //this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, DataMsg_Length);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
                     this->roundDead = currentRound;
@@ -308,6 +305,12 @@ void Sensor::handleMessage(cMessage *msg) {
                 }
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
                 int size = code.size() + sizeof(curData);
+
+//                std::ofstream sizeEncode;
+//                sizeEncode.open("sizeEncode.txt", ios::app);
+//                sizeEncode << size << endl;
+//                sizeEncode.close();
+
                 encodeMsg->setCode(code.c_str());
                 this->previousData = curData.back();
                 encodeMsg->setKind(DATA_TO_BS);
@@ -321,7 +324,8 @@ void Sensor::handleMessage(cMessage *msg) {
                 double ylength = abs(this->ypos - BS->ypos);
                 double distanceToBS = sqrt(xlength * xlength + ylength * ylength);
                 //this->energySend(DataMsg_Length, distance);DataMsg_Length * (this->connect+1)
-                this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, size);
+                this->energyLostIn_CH(CHrecvDataMsg_Length, distanceToBS, size); // Encode On
+                //this->energyLostIn_CH(CHrecvDataMsg_Length, distanceToBS, DataMsg_Length);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
                     this->roundDead = currentRound;
@@ -383,7 +387,7 @@ void Sensor::sendMessage(cMessage *cmsg, int destination) {
     }
 }
 
-void Sensor::energyLostIn_CH(double l_receive, double dToBS, int l_send) {
+void Sensor::energyLostIn_CH(double l_receive, double dToBS, double l_send) {
     Enter_Method_Silent
     ("energyLostIn_CH");
     // l bit

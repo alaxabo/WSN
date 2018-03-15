@@ -77,6 +77,7 @@ public:
     void printClusterStatus();
     void update_DataMsgLength();
     void printLimit();
+    void distortion();
 };
 
 #endif /* BASESTATION_H_ */

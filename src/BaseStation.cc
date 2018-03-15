@@ -79,7 +79,7 @@ void BaseStation::initNode() {
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-       // for (int i = 0; i < 4; i++) {
+        //for (int i = 0; i < 4; i++) {
         for (int i = 0; i < 3; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
@@ -91,19 +91,19 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
-       // name[i + 2] = temp[3][i];
+        //name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
-          //  s->name = name[i];
+            //s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
-          //  s->getDisplayString().setTagArg("t", 0, s->name);
+            //s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
 
@@ -266,6 +266,7 @@ void BaseStation::handleMessage(cMessage *msg) {
                     reClustering();
                     update_DataMsgLength();
                     printLimit();
+                    distortion();
                     cout << "Finding Cluster Head" << endl;
                     for (unsigned int i = 0; i < 54; i++) {
                         this->DataList[i].clear();
@@ -403,6 +404,8 @@ void BaseStation::update_DataMsgLength(){
 
     for(int i = 0; i < this->clusterNumber; i++) {
         vector<vector<double>> data;
+        double sumEntropy = 0;
+
         Clusters * cluster = this->myClusters[i];
 
         for (int j = 0; j < cluster->totalMembers; j++){
@@ -415,7 +418,13 @@ void BaseStation::update_DataMsgLength(){
             data.push_back(this->DataList[s->getId() - 2]);
 
             double entropy = ex.entropy(this->DataList[s->getId() - 2]);
-            s->DataMsg_Length = entropy*1000;
+            if (entropy == 0){
+                s->DataMsg_Length = 4000;
+            }
+            else{
+                s->DataMsg_Length = entropy*100;
+            }
+            sumEntropy += entropy;
             cout << entropy << "  " << "--";
 
             std::stringstream ss;
@@ -440,9 +449,14 @@ void BaseStation::update_DataMsgLength(){
         }
 
         double jEntropy = ex.jEntropyGroup(data);
-
         Sensor * s = (Sensor*) simulation.getModule(clusterHeadId);
-        s->DataMsg_Length = jEntropy * 1000;
+        s->CHrecvDataMsg_Length = sumEntropy;
+        if (jEntropy == 0){
+            s->DataMsg_Length = 4000;
+        }
+        else{
+            s->DataMsg_Length = jEntropy*100;
+        }
     }
 }
 
@@ -461,8 +475,8 @@ void BaseStation::printLimit(){
     for (int i = 0; i < this->clusterNumber; i++){
         double rMax = 0;
         double rMin = 9999;
-        double hMax;
-        double hMin;
+        double hMax = 0;
+        double hMin = 9999;
 
         limitJentropy << "Group "<< i + 1 <<" Got Member: " << endl;
 
@@ -474,9 +488,6 @@ void BaseStation::printLimit(){
 
         vector<vector<double>> data;
 
-        Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->clusterhead);
-        hMax = ex.entropy(this->DataList[s->getId() - 2]);
-        hMin = hMax;
         for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
             Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
             double nodeH = ex.entropy(this->DataList[s2->getId() - 2]);
@@ -490,9 +501,9 @@ void BaseStation::printLimit(){
             Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
             for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
                Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
-               double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
-               if (ecc == 1)
+               if (s1->getId() == s2->getId())
                    continue;
+               double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
                if (rMax < ecc)
                    rMax = ecc;
                if (rMin > ecc)
@@ -503,12 +514,9 @@ void BaseStation::printLimit(){
 
         int n = this->myClusters[i]->totalMembers;
         double bMin = 2 - rMax;
-        double kMin;
-        kMin =  (pow(bMin/2,n) - 1) / ((bMin/2) - 1) + pow(bMin/2,n-1) - 1;
+        double kMin = ex.findK(bMin, n);
         double bMax = 2 - rMin;
-        double kMax =  (pow(bMax/2,n) - 1) / ((bMax/2) - 1) + pow(bMax/2,n-1) - 1;
-
-
+        double kMax =  ex.findK(bMax, n);
 
         limitJentropy << "Group " << i + 1 << " Got Down Limit: " << kMin * hMin << " And Up Limit: " << kMax * hMax << endl;
 
@@ -685,13 +693,55 @@ void BaseStation::reClustering() {
         Clusters *cluster = this->myClusters[i];
         cluster->color = color[i];
 
-        this->setPriority(i);
-        for (int j = 0; j < cluster->totalMembers; j++){
-            Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
-            cout << "Node " << i + 1 << "Priority " << s->priority << endl;
-        }
+//        this->setPriority(i);
+//        for (int j = 0; j < cluster->totalMembers; j++){
+//            Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
+//            cout << "Node " << i + 1 << "Priority " << s->priority << endl;
+//        }
 
         this->findClusterHead(i);
+    }
+
+}
+
+void BaseStation::distortion(){
+    lib ex;
+    for (int i = 0; i < this->clusterNumber; i++){
+        double r0 = 9999;
+        int repreNum;
+
+        for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+            Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+
+            for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
+               Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
+               if (s1->getId() == s2->getId())
+                   continue;
+               double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
+               if (r0 > ecc)
+                   r0 = ecc;
+            }
+        }
+        int n = this->myClusters[i]->totalMembers;
+        double kN = ex.findK(2 - r0, n);
+
+        cout << "Group " << i + 1 << ": " << endl;
+
+        for (int m = 1; m <= this->myClusters[i]->totalMembers; m++){
+            double kM = ex.findK(2 - r0, m);
+            double D = 1 - (kM/kN);
+            cout << "If m = " << m << "Then " << endl;
+            cout << "D is: " << D << endl;
+            if (D >= 0.15){
+                repreNum = m;
+                break;
+            }
+        }
+
+        for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+            Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+            s->repreNum = repreNum;
+        }
     }
 }
 

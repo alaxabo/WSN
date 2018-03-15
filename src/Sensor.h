@@ -33,7 +33,7 @@ class Sensor: public cSimpleModule
         void setupPhase();
         void setupCluster();
         void sendMessage(cMessage *cmsg, int destination);
-        void energyLostIn_CH(double l_receive, double dToBS, int l_send);
+        void energyLostIn_CH(double l_receive, double dToBS, double l_send);
         void energyLostIn_NonCH(double l, double dToCH);
         double getDistance(Sensor *s1, Sensor *s2);
 
@@ -65,6 +65,8 @@ class Sensor: public cSimpleModule
         int roundDead;
         float previousData;
         double DataMsg_Length;
+        double CHrecvDataMsg_Length;
+        int repreNum;
 };
 
 #endif /* SENSOR_H_ */

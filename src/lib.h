@@ -28,6 +28,7 @@ class lib {
         vector<string> splitString_C(string input, string delimiter);
         double entropy(vector<double> arr);
         double log2(double number);
+        double findK(double b, double n);
         double jEntropy(vector<double> arr1, vector<double> arr2);
         double EntropyCorrelationCoefficient(vector<double> arr1, vector<double> arr2);
         vector<double> extractColumn(vector<vector<double>> data, int column);

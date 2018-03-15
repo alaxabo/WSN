@@ -47,6 +47,10 @@ double lib::log2(double number){
     return log( number ) / log( 2 );
 }
 
+double lib::findK(double b, double n){
+    return (pow(b/2,n) - 1) / ((b/2) - 1) + pow(b/2,n-1) - 1;
+}
+
 double lib::entropy(vector<double> arr){
 
     std::map<double,double> frequencies;
