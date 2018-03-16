@@ -452,7 +452,6 @@ void BaseStation::printLimit(){
     if (this->currentRound == 256){
         limitJentropy.open("limitJentropy.txt");
         limitJentropy << "Round 256:" << endl;
-
     }
     else{
         limitJentropy.open("limitJentropy.txt", ios::app);
@@ -464,7 +463,7 @@ void BaseStation::printLimit(){
         double hMax;
         double hMin;
 
-        limitJentropy << "Group "<< i + 1 <<" Got Member: " << endl;
+        limitJentropy << "Group "<< i + 1 <<" Got Member: ";
 
         for(int m = 0; m < this->myClusters[i]->totalMembers; m++){
             Sensor *sm = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[m]);
@@ -472,25 +471,65 @@ void BaseStation::printLimit(){
         }
         limitJentropy << endl;
 
-        vector<vector<double>> data;
-
         Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->clusterhead);
         hMax = ex.entropy(this->DataList[s->getId() - 2]);
         hMin = hMax;
         for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
             Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
             double nodeH = ex.entropy(this->DataList[s2->getId() - 2]);
+            limitJentropy << nodeH << "\t";
             if (hMax < nodeH)
                 hMax = nodeH;
             if (hMin > nodeH)
                 hMin = nodeH;
         }
-        limitJentropy << "Group " << i + 1 << " Got Hmax: " << hMax << " And Hmin: " << hMin <<endl;
+
+        limitJentropy << endl;
+        for (int j = 2; j <= this->myClusters[i]->totalMembers; j++){
+            double hMax = 0, hMin = 999;
+            double rMax = 0, rMin = 999;
+            double JEntropy, UpBound, LowBound;
+            vector<vector<double>> data;
+
+            for (int k = 0; k < j; k++){
+                Sensor * s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+                double entropy = ex.entropy(this->DataList[s1->getId()-2]);
+                limitJentropy << s1->getId() - 2 << ", ";
+
+                data.push_back(this->DataList[s1->getId() - 2]);
+                hMax = max(hMax, entropy);
+                hMin = min(hMin, entropy);
+
+                for (int l = k+1; l < j; l++){
+                    Sensor * s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[l]);
+                    double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId()-2], this->DataList[s2->getId()-2]);
+                    rMax = max(rMax, ecc);
+                    rMin = min(rMin, ecc);
+                }
+            }
+
+            limitJentropy << "\t";
+
+            double bMin = 2 - rMax;
+            double kMin = (pow(bMin/2,j) - 1) / ((bMin/2) - 1) + pow(bMin/2,j-1) - 1;
+            double bMax = 2 - rMin;
+            double kMax =  (pow(bMax/2,j) - 1) / ((bMax/2) - 1) + pow(bMax/2,j-1) - 1;
+
+            JEntropy = ex.jEntropyGroup(data);
+            UpBound = kMax * hMax;
+            LowBound = kMin * hMin;
+
+            limitJentropy << hMin << "\t" << hMax << "\t" << rMin << "\t" << rMax << "\t";
+            limitJentropy << JEntropy << "\t" << UpBound << "\t" << LowBound << endl;
+
+        }
+        //limitJentropy << "Group " << i + 1 << " Got Hmax: " << hMax << " And Hmin: " << hMin <<endl;
         for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
             Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
             for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
                Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
+               limitJentropy << ecc << "\t" ;
                if (ecc == 1)
                    continue;
                if (rMax < ecc)
@@ -498,10 +537,11 @@ void BaseStation::printLimit(){
                if (rMin > ecc)
                    rMin = ecc;
             }
+            limitJentropy << endl;
         }
-        limitJentropy << "Group " << i + 1 << " Got Rmax: " << rMax << " And Rmin: " << rMin <<endl;
+        //limitJentropy << "Group " << i + 1 << " Got Rmax: " << rMax << " And Rmin: " << rMin <<endl;
 
-        int n = this->myClusters[i]->totalMembers;
+        /*int n = this->myClusters[i]->totalMembers;
         double bMin = 2 - rMax;
         double kMin;
         kMin =  (pow(bMin/2,n) - 1) / ((bMin/2) - 1) + pow(bMin/2,n-1) - 1;
@@ -512,13 +552,13 @@ void BaseStation::printLimit(){
 
         limitJentropy << "Group " << i + 1 << " Got Down Limit: " << kMin * hMin << " And Up Limit: " << kMax * hMax << endl;
 
+        vector<vector<double>> data;
         for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
             Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
             data.push_back(this->DataList[s1->getId() - 2]);
         }
         double temp_je = ex.jEntropyGroup(data);
-        limitJentropy << "Group " << i + 1 << " Got Joint Entropy: " << temp_je << endl;
-
+        limitJentropy << "Group " << i + 1 << " Got Joint Entropy: " << temp_je << endl << endl;*/
     }
     limitJentropy.close();
 }
