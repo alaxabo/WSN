@@ -732,15 +732,49 @@ void BaseStation::distortion(){
             double D = 1 - (kM/kN);
             cout << "If m = " << m << "Then " << endl;
             cout << "D is: " << D << endl;
-            if (D >= 0.15){
+            if (D <= 0.15){
                 repreNum = m;
                 break;
             }
         }
 
-        for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
-            Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
-            s->repreNum = repreNum;
+        //print distortion
+        if (i == 0){
+            std::ofstream distortion;
+            if (this->currentRound == 256){
+                distortion.open("distortion.txt");
+                distortion << "Round 256:" << endl;
+                distortion << "Group " << i + 1 << " Got Member: ";
+                for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+                    Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+                    distortion <<  s->getId() - 1 << " ";
+                }
+                distortion << "Node Energy Remain: " << endl;
+                for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+                    Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+                    distortion <<  s->getId() - 1 << " ";
+                    distortion << s->energy - s->energyLost << endl;
+                }
+                distortion << "" << endl;
+                for (int m = 1; m <= this->myClusters[i]->totalMembers; m++){
+                    double kM = ex.findK(2 - r0, m);
+                    double D = 1 - (kM/kN);
+                    distortion << "If m = " << m << "Then " << endl;
+                    distortion << "D is: " << D << endl;
+                }
+                distortion << "representative nodes numbers: " << repreNum << endl;
+                distortion.close();
+            }
+            for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+                Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+                s->repreNum = repreNum;
+            }
+        }
+        else{
+            for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+                Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+                s->repreNum = repreNum;
+            }
         }
     }
 }

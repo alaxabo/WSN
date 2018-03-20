@@ -105,18 +105,27 @@ void Sensor::handleMessage(cMessage *msg) {
                 //s->random = rand();
                 if(s->getId() != this->getId()){
                     if (this->repreNum != 0){
-                        double threshold = clusterMembersEnergy[this->repreNum - 1];
-                        double energy = s->energy - s->energyLost;
-                        if(energy < threshold){
-                            this->connect += 0;
-                            this->notConnect.push_back(s->getId());
-                            s->getDisplayString().setTagArg("i",1,"gray");
-                            s->isLiveThisRound = false;
-                        } else {
-                            this->connect += 1;
-                            s->getDisplayString().setTagArg("i",1,this->myCluster->color);
-                            s->isLiveThisRound = true;
-                        }
+//                        if (this->myCluster->totalMembers < this->repreNum){
+//                            this->connect += 1;
+//                            s->getDisplayString().setTagArg("i",1,this->myCluster->color);
+//                            s->isLiveThisRound = true;
+//                        }
+//                        else
+//                        {
+
+                            double threshold = clusterMembersEnergy[this->myCluster->totalMembers - this->repreNum - 1];
+                            double energy = s->energy - s->energyLost;
+                            if(energy <= threshold){
+                                this->connect += 0;
+                                this->notConnect.push_back(s->getId());
+                                s->getDisplayString().setTagArg("i",1,"gray");
+                                s->isLiveThisRound = false;
+                            } else {
+                                this->connect += 1;
+                                s->getDisplayString().setTagArg("i",1,this->myCluster->color);
+                                s->isLiveThisRound = true;
+                            }
+//                        }
                     }
                     else{
                         this->connect += 1;

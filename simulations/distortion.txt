@@ -1,0 +1,25 @@
+Round 256:
+Group 1 Got Member: 40 45 47 4 10 31 52 Node Energy Remain: 
+40 5.33363e+08
+45 7.35016e+08
+47 9.94571e+08
+4 9.96401e+08
+10 9.96487e+08
+31 6.65613e+08
+52 3.32799e+08
+
+If m = 1Then 
+D is: 0.540165
+If m = 2Then 
+D is: 0.356424
+If m = 3Then 
+D is: 0.227844
+If m = 4Then 
+D is: 0.137865
+If m = 5Then 
+D is: 0.0748983
+If m = 6Then 
+D is: 0.030835
+If m = 7Then 
+D is: 0
+representative nodes numbers: 4
