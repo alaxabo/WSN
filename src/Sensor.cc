@@ -224,11 +224,24 @@ void Sensor::handleMessage(cMessage *msg) {
                 if(this->currentRound % ROUND_TO_RECLUSTER == 0){
                     this->previousData = curData.front();
                 }
-                int size = code.size() + sizeof(curData);
+
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
                 encodeMsg->setCode(code.c_str());
 
                 encodeMsg->setKind(DATA_TO_BS);
+
+                int size = code.size() + sizeof(curData);
+
+                if(this->currentRound % 256 == 0){
+                    ofstream file;
+                    file.open("Compression.txt", ios::app);
+                    file << this->currentRound << "\t" << this->getId() -1 << "\t"
+                            << this->myCluster->totalMembers << "\t" << size << endl;
+                    /*file << "Round: " << this->currentRound << endl;
+                    file << "HEAD: " << this->getId() -1 << endl;
+                    file << "So thanh vien: " << this->myCluster->totalMembers << endl;
+                    file << "Size: " << size << endl;*/
+                }
 
                 this->previousData = curData.back();
 
@@ -307,7 +320,20 @@ void Sensor::handleMessage(cMessage *msg) {
                     this->previousData = curData.front();
                 }
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
+
                 int size = code.size() + sizeof(curData);
+
+                if(this->currentRound % 256 == 0){
+                    ofstream file;
+                    file.open("Compression.txt", ios::app);
+                    file << this->currentRound << "\t" << this->getId() -1 << "\t"
+                            << this->myCluster->totalMembers << "\t" << size << endl;
+                    /*file << "Round: " << this->currentRound << endl;
+                    file << "HEAD: " << this->getId() -1 << endl;
+                    file << "So thanh vien: " << this->myCluster->totalMembers << endl;
+                    file << "Size: " << size << endl;*/
+                }
+
                 encodeMsg->setCode(code.c_str());
                 this->previousData = curData.back();
                 encodeMsg->setKind(DATA_TO_BS);

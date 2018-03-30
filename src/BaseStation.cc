@@ -26,6 +26,7 @@
 #include <time.h>
 #include <ctime>
 #include <algorithm>
+#include <iomanip>
 
 using namespace std;
 
@@ -467,7 +468,7 @@ void BaseStation::printLimit(){
 
         for(int m = 0; m < this->myClusters[i]->totalMembers; m++){
             Sensor *sm = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[m]);
-            limitJentropy << sm->getId() - 2 << " ";
+            limitJentropy << sm->getId() - 1 << "\t";
         }
         limitJentropy << endl;
 
@@ -477,7 +478,7 @@ void BaseStation::printLimit(){
         for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
             Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
             double nodeH = ex.entropy(this->DataList[s2->getId() - 2]);
-            limitJentropy << nodeH << "\t";
+            limitJentropy << fixed << setprecision(3) << nodeH << "\t";
             if (hMax < nodeH)
                 hMax = nodeH;
             if (hMin > nodeH)
@@ -494,7 +495,7 @@ void BaseStation::printLimit(){
             for (int k = 0; k < j; k++){
                 Sensor * s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
                 double entropy = ex.entropy(this->DataList[s1->getId()-2]);
-                limitJentropy << s1->getId() - 2 << ", ";
+                limitJentropy << s1->getId() - 1 << ", ";
 
                 data.push_back(this->DataList[s1->getId() - 2]);
                 hMax = max(hMax, entropy);
@@ -519,6 +520,7 @@ void BaseStation::printLimit(){
             UpBound = kMax * hMax;
             LowBound = kMin * hMin;
 
+            limitJentropy.precision(3);
             limitJentropy << hMin << "\t" << hMax << "\t" << rMin << "\t" << rMax << "\t";
             limitJentropy << JEntropy << "\t" << UpBound << "\t" << LowBound << endl;
 
@@ -529,6 +531,7 @@ void BaseStation::printLimit(){
             for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
                Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
+               limitJentropy.precision(3);
                limitJentropy << ecc << "\t" ;
                if (ecc == 1)
                    continue;
