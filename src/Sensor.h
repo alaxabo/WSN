@@ -35,6 +35,7 @@ class Sensor: public cSimpleModule
         void sendMessage(cMessage *cmsg, int destination);
         void energyLostIn_CH(double l_receive, double dToBS, double l_send);
         void energyLostIn_NonCH(double l, double dToCH);
+        void energyLostAggreIn_CH(double codeSize);
         double getDistance(Sensor *s1, Sensor *s2);
 
         Clusters *myCluster;
