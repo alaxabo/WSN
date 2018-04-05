@@ -71,16 +71,16 @@ void BaseStation::createConnection(cModule *c1, cModule *c2) {
 void BaseStation::initNode() {
 
     std::ifstream Position("../xy.txt");
-    float temp[4][54];
-    //float temp[3][54];
+    //float temp[4][54];
+    float temp[3][54];
     int j = 0;
     std::string s;
     cout << "Read position file." << endl;
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-        for (int i = 0; i < 4; i++) {
-        //for (int i = 0; i < 3; i++) {
+        //for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
         }
@@ -91,19 +91,19 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
-        name[i + 2] = temp[3][i];
+        //name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
-            s->name = name[i];
+            //s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
-            s->getDisplayString().setTagArg("t", 0, s->name);
+            //s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
 

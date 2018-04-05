@@ -1,83 +1,68 @@
 Round 256:
-Group 1 Got Member: 39 41 23 3 19 22 28 Node Energy Remain: 
-39 1.78226e+08
-41 2.31686e+08
-23 2.48866e+08
-3 2.80477e+08
-19 2.33384e+08
-22 1.8833e+08
-28 2.73163e+08
+Group 1 Got Member: 25 51 7 40 31 48 Node Energy Remain: 
+25 9.14455e+07
+51 8.54295e+07
+7 8.63296e+07
+40 9.2326e+07
+31 9.19468e+07
+48 6.06824e+07
 
 If m = 1Then 
-D is: 0.614316
+D is: 0.574346
 If m = 2Then 
-D is: 0.425348
+D is: 0.378665
 If m = 3Then 
-D is: 0.284571
+D is: 0.235845
 If m = 4Then 
-D is: 0.179696
+D is: 0.131607
 If m = 5Then 
-D is: 0.101566
+D is: 0.0555273
 If m = 6Then 
-D is: 0.0433613
-If m = 7Then 
 D is: 0
-representative nodes numbers: 5
+representative nodes numbers: 4
 Round 256:
-Group 5 Got Member: 26 27 37 7 25 6 29 14 12 10 31 30 16 8 17 5 15 24 Node Energy Remain: 
-26 1.31652e+08
-27 1.78174e+08
-37 1.38783e+08
-7 1.11747e+08
-25 1.2597e+08
-6 1.12478e+08
-29 1.51523e+08
-14 1.05e+08
-12 2.21237e+08
-10 8.24943e+07
-31 1.40412e+08
-30 9.93011e+07
-16 1.91269e+08
-8 9.2372e+07
-17 1.34774e+08
-5 1.29194e+08
-15 2.52127e+08
-24 1.49224e+08
+Group 6 Got Member: 29 54 27 10 26 9 23 11 13 21 14 20 17 16 Node Energy Remain: 
+29 6.94923e+07
+54 8.96342e+07
+27 7.26677e+07
+10 9.30984e+07
+26 9.18158e+07
+9 7.73738e+07
+23 6.95809e+07
+11 8.87097e+07
+13 7.27389e+07
+21 7.49427e+07
+14 4.55367e+07
+20 9.01041e+07
+17 8.11199e+07
+16 8.61218e+07
 
 If m = 1Then 
-D is: 0.943645
+D is: -nan
 If m = 2Then 
-D is: 0.88746
+D is: -nan
 If m = 3Then 
-D is: 0.831361
+D is: -nan
 If m = 4Then 
-D is: 0.775346
+D is: -nan
 If m = 5Then 
-D is: 0.719417
+D is: -nan
 If m = 6Then 
-D is: 0.663572
+D is: -nan
 If m = 7Then 
-D is: 0.607812
+D is: -nan
 If m = 8Then 
-D is: 0.552137
+D is: -nan
 If m = 9Then 
-D is: 0.496545
+D is: -nan
 If m = 10Then 
-D is: 0.441038
+D is: -nan
 If m = 11Then 
-D is: 0.385616
+D is: -nan
 If m = 12Then 
-D is: 0.330277
+D is: -nan
 If m = 13Then 
-D is: 0.275022
+D is: -nan
 If m = 14Then 
-D is: 0.21985
-If m = 15Then 
-D is: 0.164763
-If m = 16Then 
-D is: 0.109758
-If m = 17Then 
-D is: 0.0548376
-If m = 18Then 
-D is: 0
-representative nodes numbers: 16
+D is: -nan
+representative nodes numbers: 10
