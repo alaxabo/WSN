@@ -239,15 +239,15 @@ void HuffmanTree::reBalance(TreeNode *tree) {
     buildCode(tree);
 }
 
-void HuffmanTree::printTree(TreeNode *tree) {
+string HuffmanTree::printTree(TreeNode *tree) {
     //if(tree->l_child == NULL && tree->r_child == NULL)
-    cout << tree->flag << " " << tree->group.group << " " << tree->weight
-            << endl;
+    std::stringstream ss;
+    ss << tree->flag << " " << tree->group.group << " " << tree->weight << endl;
     if (tree->l_child != NULL)
-        printTree(tree->l_child);
+        ss << printTree(tree->l_child);
     if (tree->r_child != NULL)
-        printTree(tree->r_child);
-
+        ss << printTree(tree->r_child);
+    return ss.str();
 }
 
 float* HuffmanTree::createDiffArr(std::vector<float> currentData, float previousData) {

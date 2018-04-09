@@ -40,7 +40,7 @@ public:
     void addNode(TreeNode *tree, float diff);
     int reBalance_Step(TreeNode *tree);
     void reBalance(TreeNode *tree);
-    void printTree(TreeNode *tree);
+    string printTree(TreeNode *tree);
     float* createDiffArr(std::vector<float> currentData, float previousData);
     string encoder(std::vector<float> Data, TreeNode *root, float previousData);
     std::vector<float> decoder(string code, TreeNode *root, float preData);

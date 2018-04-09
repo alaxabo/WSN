@@ -264,9 +264,10 @@ void BaseStation::handleMessage(cMessage *msg) {
                         this->myClusters[i]->root = root;
                     }
                     cout << "Reclustering" << endl;
+                    printLimit();
                     reClustering();
                     update_DataMsgLength();
-                    printLimit();
+
                     cout << "Finding Cluster Head" << endl;
                     for (unsigned int i = 0; i < 54; i++) {
                         this->DataList[i].clear();
@@ -463,8 +464,15 @@ void BaseStation::printLimit(){
         double rMin = 9999;
         double hMax;
         double hMin;
+        double encodeSize = 0;
 
-        limitJentropy << "Group "<< i + 1 <<" Got Member: ";
+        limitJentropy << "Group "<< i + 1 <<" Got " << this->myClusters[i]->totalMembers << " Members: ";
+
+        for (int j = 0; j < this->myClusters[i]->encodeSize.size(); j++){
+            encodeSize += this->myClusters[i]->encodeSize[j];
+        }
+
+        limitJentropy << encodeSize << endl;
 
         for(int m = 0; m < this->myClusters[i]->totalMembers; m++){
             Sensor *sm = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[m]);
@@ -728,7 +736,7 @@ void BaseStation::reClustering() {
         Clusters *cluster = this->myClusters[i];
         cluster->color = color[i];
 
-        this->setPriority(i);
+        //this->setPriority(i);
         for (int j = 0; j < cluster->totalMembers; j++){
             Sensor *s = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
             cout << "Node " << i + 1 << "Priority " << s->priority << endl;

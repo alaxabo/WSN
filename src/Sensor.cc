@@ -231,17 +231,19 @@ void Sensor::handleMessage(cMessage *msg) {
                 encodeMsg->setKind(DATA_TO_BS);
 
                 int size = code.size() + sizeof(curData);
+                int encodeSize = code.size();
+                this->myCluster->encodeSize.push_back(encodeSize);
 
-                if(this->currentRound % 256 == 0){
+                /*if((this->currentRound + 1) % 256 == 0){
                     ofstream file;
                     file.open("Compression.txt", ios::app);
                     file << this->currentRound << "\t" << this->getId() -1 << "\t"
-                            << this->myCluster->totalMembers << "\t" << size << endl;
-                    /*file << "Round: " << this->currentRound << endl;
+                            << this->myCluster->totalMembers << "\t" << encodeSize << endl;
+                    file << "Round: " << this->currentRound << endl;
                     file << "HEAD: " << this->getId() -1 << endl;
                     file << "So thanh vien: " << this->myCluster->totalMembers << endl;
-                    file << "Size: " << size << endl;*/
-                }
+                    file << "Size: " << size << endl;
+                }*/
 
                 this->previousData = curData.back();
 
@@ -322,17 +324,19 @@ void Sensor::handleMessage(cMessage *msg) {
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
 
                 int size = code.size() + sizeof(curData);
+                int encodeSize = code.size();
+                this->myCluster->encodeSize.push_back(encodeSize);
 
-                if(this->currentRound % 256 == 0){
+                /*if((this->currentRound + 1) % 256 == 0){
                     ofstream file;
                     file.open("Compression.txt", ios::app);
                     file << this->currentRound << "\t" << this->getId() -1 << "\t"
-                            << this->myCluster->totalMembers << "\t" << size << endl;
-                    /*file << "Round: " << this->currentRound << endl;
+                            << this->myCluster->totalMembers << "\t" << encodeSize << endl;
+                    file << "Round: " << this->currentRound << endl;
                     file << "HEAD: " << this->getId() -1 << endl;
                     file << "So thanh vien: " << this->myCluster->totalMembers << endl;
-                    file << "Size: " << size << endl;*/
-                }
+                    file << "Size: " << size << endl;
+                }*/
 
                 encodeMsg->setCode(code.c_str());
                 this->previousData = curData.back();

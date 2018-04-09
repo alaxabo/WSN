@@ -28,6 +28,7 @@ public:
     int clusterhead;
     char* color;
     TreeNode *root;
+    std::vector<float> encodeSize;
 
 //    int iActiveSleep[64][64];
 //    int totalActiveSleep;
