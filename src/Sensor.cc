@@ -199,7 +199,7 @@ void Sensor::handleMessage(cMessage *msg) {
                 for(int i = 0; i < this->notConnect.size(); i++){
                     int a = this->notConnect[i];
                     Sensor *s1 = (Sensor *)simulation.getModule(a);
-                    Sensor *s2 = (Sensor *)simulation.getModule(s1->max_corr_node+2);
+                    Sensor *s2 = (Sensor *)simulation.getModule(s1->max_corr_node);
                     DataMessage *temp2 = new DataMessage();
                     cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s2->getId()-2 << endl;
                     temp2->setSource(s1->getId());
@@ -287,9 +287,10 @@ void Sensor::handleMessage(cMessage *msg) {
                 for(int i = 0; i < this->notConnect.size(); i++){
                     int a = this->notConnect[i];
                     Sensor *s1 = (Sensor *)simulation.getModule(a);
-                    Sensor *s2 = (Sensor *)simulation.getModule(s1->max_corr_node+2);
+                    cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s1->max_corr_node << endl;
+                    Sensor *s2 = (Sensor *)simulation.getModule(s1->max_corr_node);
                     DataMessage *temp2 = (DataMessage*) msg;
-                    cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s2->getId()-2 << endl;
+                    //cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s2->getId()-2 << endl;
                     temp2->setSource(s1->getId());
                     temp2->setData(s2->messageList.begin()->getData());
                     temp2->setKind(DATA_TO_CH);

@@ -901,26 +901,46 @@ void BaseStation::distortion(){
         }
     }
     cout << "Set max correlation coefficient node." << endl;
-        for (int i = 2; i < simulation.getLastModuleId(); i++) {
-            Sensor *s1 = (Sensor *) simulation.getModule(i);
-            cout << "Max corr node: " << s1->getId() - 2 << endl;
+
+    for (int i = 0; i < this->clusterNumber; i++){
+        Clusters * cluster = this->myClusters[i];
+        cout << "Nhom " << i + 1 << endl;
+        for (int j = 0; j < cluster->totalMembers; j++){
+            Sensor * s1 = (Sensor *) simulation.getModule(cluster->memberNodes[j]);
             double max_corr = 0;
-            for (int j = 0; j < 54; j++) {
-                Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
-                if (j == i - 2 || s2->isDead == true || s1->isDead == true)
-                    continue;
-                else {
-                    double ecc = ex.EntropyCorrelationCoefficient(this->DataList[i - 2], this->DataList[j]);
-                    if (max_corr < ecc) {
-                        if (find_Node(s1, j)) {
-                            max_corr = ecc;
-                            s1->max_corr_node = j;
-                        }
+
+            for (int k = 0; k < cluster->totalMembers; k++){
+                if(k == j) continue;
+                Sensor * s2 = (Sensor *) simulation.getModule(cluster->memberNodes[k]);
+                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId() - 2]);
+                cout << s1->getId() << " " << s2->getId() << " " << ecc << " " << max_corr << endl;
+                if (max_corr < ecc){
+                    max_corr = ecc;
+                    s1->max_corr_node = s2->getId();
+                }
+            }
+        }
+    }
+    /*for (int i = 2; i < simulation.getLastModuleId(); i++) {
+        Sensor *s1 = (Sensor *) simulation.getModule(i);
+        cout << "Max corr node: " << s1->getId() - 2 << endl;
+        double max_corr = 0;
+        for (int j = 0; j < 54; j++) {
+            Sensor *s2 = (Sensor *) simulation.getModule(j + 2);
+            if (j == i - 2 || s2->isDead == true || s1->isDead == true)
+                continue;
+            else {
+                double ecc = ex.EntropyCorrelationCoefficient(this->DataList[i - 2], this->DataList[j]);
+                if (max_corr < ecc) {
+                    if (find_Node(s1, j)) {
+                        max_corr = ecc;
+                        s1->max_corr_node = j;
                     }
                 }
             }
-            cout << s1->max_corr_node << endl;
         }
+        cout << s1->max_corr_node << endl;
+    }*/
 
 }
 
