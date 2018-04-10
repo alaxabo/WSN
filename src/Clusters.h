@@ -26,6 +26,7 @@ public:
     int memberNodes[64];
     int totalMembers;
     int clusterhead;
+    int repreNum;
     char* color;
     TreeNode *root;
 

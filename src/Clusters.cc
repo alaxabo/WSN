@@ -30,6 +30,7 @@ Clusters::~Clusters() {
 void Clusters::addNode(int id)
 {
     this->memberNodes[this->totalMembers] = id;
+    this->repreNum = 0;
     this->totalMembers += 1;
 }
 

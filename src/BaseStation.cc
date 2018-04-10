@@ -852,12 +852,24 @@ void BaseStation::distortion(){
             double D = 1 - (kM/kN);
             cout << "If m = " << m << "Then " << endl;
             cout << "D is: " << D << endl;
-            if (D <= 0.15){
+            if (D <= 0.1){
                 repreNum = m;
                 //repreNum = 0;
                 break;
             }
         }
+
+/*        for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
+            Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
+            s->repreNum = repreNum;
+        }*/
+
+        if (i == this->clusterNumber -1 || i == this->clusterNumber -2){
+            this->myClusters[i]->repreNum = 0;
+        } else {
+            this->myClusters[i]->repreNum = repreNum;
+        }
+
         //print distortion
         if (i == 0 || (i == this->clusterNumber - 1)){
             std::ofstream distortion;
@@ -888,16 +900,7 @@ void BaseStation::distortion(){
                 distortion << "representative nodes numbers: " << repreNum << endl;
                 distortion.close();
             }
-            for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
-                Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
-                s->repreNum = repreNum;
-            }
-        }
-        else{
-            for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
-                Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
-                s->repreNum = repreNum;
-            }
+
         }
     }
     cout << "Set max correlation coefficient node." << endl;
@@ -1085,6 +1088,7 @@ void BaseStation::setUpClusterHead(int i) {
                 this->myClusters[i]->memberNodes[j]);
 
         s->isCH = false;
+        s->isLiveThisRound = true;
     }
 
     this->findClusterHead(i);

@@ -47,7 +47,6 @@ void Sensor::initialize() {
     this->connect = 0;
     this->DataMsg_Length=4000;
     this->CHrecvDataMsg_Length = 4000;
-    this->repreNum = 0;
     HandleDataMessage s;
         this->messageList = s.createDataMsgList(this->getId()-1);
     if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
@@ -68,6 +67,7 @@ void Sensor::handleMessage(cMessage *msg) {
             temp->setKind(DATA_TO_CH);
             temp->setSource(this->getId());
             temp->setData(this->messageList.begin()->getData());
+            this->currentData = this->messageList.begin()->getData();
             sendMessage(temp, this->clusterheadId);
             if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                 this->isDead = true;
@@ -104,7 +104,7 @@ void Sensor::handleMessage(cMessage *msg) {
                 //cout << "Priority node " << s->getId()-2 << ": " << s->priority << endl;
                 //s->random = rand();
                 if(s->getId() != this->getId()){
-                    if (this->repreNum != 0){
+                    if (this->myCluster->repreNum != 0){
 //                        if (this->myCluster->totalMembers < this->repreNum){
 //                            this->connect += 1;
 //                            s->getDisplayString().setTagArg("i",1,this->myCluster->color);
@@ -113,9 +113,10 @@ void Sensor::handleMessage(cMessage *msg) {
 //                        else
 //                        {
 
-                            double threshold = clusterMembersEnergy[this->myCluster->totalMembers - this->repreNum - 1];
+                            int index = this->myCluster->totalMembers - this->myCluster->repreNum;
+                            double threshold = clusterMembersEnergy[index];
                             double energy = s->energy - s->energyLost;
-                            if(energy <= threshold){
+                            if(energy < threshold){
                                 this->connect += 0;
                                 this->notConnect.push_back(s->getId());
                                 s->getDisplayString().setTagArg("i",1,"gray");
@@ -203,7 +204,11 @@ void Sensor::handleMessage(cMessage *msg) {
                     DataMessage *temp2 = new DataMessage();
                     cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s2->getId()-2 << endl;
                     temp2->setSource(s1->getId());
-                    temp2->setData(s2->messageList.begin()->getData());
+                    if(s2->isLiveThisRound){
+                        temp2->setData(s2->messageList.begin()->getData());
+                    } else {
+                        temp2->setData(s1->currentData);
+                    }
                     temp2->setKind(DATA_TO_CH);
                     //cout << temp2->getData() << endl;
                     this->messageListToBS.push_back(*temp2);
@@ -287,12 +292,16 @@ void Sensor::handleMessage(cMessage *msg) {
                 for(int i = 0; i < this->notConnect.size(); i++){
                     int a = this->notConnect[i];
                     Sensor *s1 = (Sensor *)simulation.getModule(a);
-                    cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s1->max_corr_node << endl;
                     Sensor *s2 = (Sensor *)simulation.getModule(s1->max_corr_node);
                     DataMessage *temp2 = (DataMessage*) msg;
                     //cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s2->getId()-2 << endl;
                     temp2->setSource(s1->getId());
-                    temp2->setData(s2->messageList.begin()->getData());
+                    if(s2->isLiveThisRound){
+                        temp2->setData(s2->messageList.begin()->getData());
+                    } else {
+                        temp2->setData(s1->currentData);
+                    }
+
                     temp2->setKind(DATA_TO_CH);
                     //cout << temp2->getData() << endl;
                     this->messageListToBS.push_back(*temp2);

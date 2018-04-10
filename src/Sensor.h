@@ -65,9 +65,9 @@ class Sensor: public cSimpleModule
         double energyLost;
         int roundDead;
         float previousData;
+        float currentData;
         double DataMsg_Length;
         double CHrecvDataMsg_Length;
-        int repreNum;
 };
 
 #endif /* SENSOR_H_ */
