@@ -41,7 +41,7 @@ Sensor::~Sensor() {
 }
 
 void Sensor::initialize() {
-    this->energy = 100000000;
+    this->energy = 1000000000;
     this->energyLost = 0;
     this->timeslot = 100;
     this->connect = 0;
@@ -62,9 +62,10 @@ void Sensor::handleMessage(cMessage *msg) {
         if (msg->getKind() == SELF_DATA_TO_CH) {
             double distance = this->getDistance(this, this->clusterhead);
             //this->energySend(DataMsg_Length, distance);
-            this->energyLostIn_NonCH(DataMsg_Length, distance); //Nang luong tieu thu khi truyen tin toi CH cua non-CH
+            this->energyLostIn_NonCH(DataMsgLength, distance); //Nang luong tieu thu khi truyen tin toi CH cua non-CH
             DataMessage *temp = new DataMessage("Data to CH");
             temp->setKind(DATA_TO_CH);
+            cout << "id: " << this->getId() << " data: " << this->messageList.begin()->getData() << endl;
             temp->setSource(this->getId());
             temp->setData(this->messageList.begin()->getData());
             this->currentData = this->messageList.begin()->getData();
@@ -204,11 +205,12 @@ void Sensor::handleMessage(cMessage *msg) {
                     DataMessage *temp2 = new DataMessage();
                     cout << "Data from disconnect node " << s1->getId()-2 << " is data of node " << s2->getId()-2 << endl;
                     temp2->setSource(s1->getId());
-                    if(s2->isLiveThisRound){
-                        temp2->setData(s2->messageList.begin()->getData());
-                    } else {
-                        temp2->setData(s1->currentData);
-                    }
+//                    if(s2->isLiveThisRound){
+//                        temp2->setData(s2->messageList.begin()->getData());
+//                    } else {
+//                        temp2->setData(s1->currentData);
+//                    }
+                    temp2->setData(s1->currentData);
                     temp2->setKind(DATA_TO_CH);
                     //cout << temp2->getData() << endl;
                     this->messageListToBS.push_back(*temp2);
@@ -235,7 +237,7 @@ void Sensor::handleMessage(cMessage *msg) {
                 }
 
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
-                int size = code.size() + sizeof(curData);
+                int size = code.size();
                 encodeMsg->setCode(code.c_str());
 
                 encodeMsg->setKind(DATA_TO_BS);
@@ -251,8 +253,9 @@ void Sensor::handleMessage(cMessage *msg) {
                 double distanceToBS = sqrt(xlength * xlength + ylength * ylength);
                 //this->energySend(DataMsg_Length, distance);DataMsg_Length * (this->connect+1)
 
-                this->energyLostAggreIn_CH(code.size()); // Aggregation Data
-                this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, size); //Encode On
+                //this->energyLostAggreIn_CH(code.size()); // Aggregation Data
+                cout <<"Connect: " << this->connect << " " << DataMsgLength << endl;
+                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength); //Encode On
                 //this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, DataMsg_Length);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
@@ -325,7 +328,7 @@ void Sensor::handleMessage(cMessage *msg) {
                     this->previousData = curData.front();
                 }
                 code = tree->encoder(curData, this->myCluster->root, this->previousData);
-                int size = code.size() + sizeof(curData);
+                int size = code.size();
 
 //                std::ofstream sizeEncode;
 //                sizeEncode.open("sizeEncode.txt", ios::app);
@@ -346,8 +349,9 @@ void Sensor::handleMessage(cMessage *msg) {
                 double distanceToBS = sqrt(xlength * xlength + ylength * ylength);
                 //this->energySend(DataMsg_Length, distance);DataMsg_Length * (this->connect+1)
 
-                this->energyLostAggreIn_CH(code.size()); // Aggregation Data
-                this->energyLostIn_CH(CHrecvDataMsg_Length, distanceToBS, size); // Encode On
+                //this->energyLostAggreIn_CH(code.size()); // Aggregation Data
+                cout << this->connect << " " << DataMsgLength << endl;
+                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength); //Encode On
                // this->energyLostIn_CH(CHrecvDataMsg_Length, distanceToBS, DataMsg_Length);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
@@ -415,6 +419,7 @@ void Sensor::energyLostIn_CH(double l_receive, double dToBS, double l_send) {
     ("energyLostIn_CH");
     // l bit
     double lostE = l_receive * Eelec + l_send * Efs * (dToBS * dToBS) + l_send * Eelec; // = energy dissipated in the CH
+    cout << "Nang luong mat di CH: " << lostE << endl;
     this->energyLost += lostE;
 
 }
@@ -425,6 +430,7 @@ void Sensor::energyLostIn_NonCH(double l, double dToCH) {
     ("energyLostIn_NonCH");
     // l bit
     double lostE = l * Eelec + l * Efs * (dToCH * dToCH); // = energy dissipated in the non-CH
+    cout << "Nang luong mat di o non CH: " << lostE << endl;
     this->energyLost += lostE;
 
 }

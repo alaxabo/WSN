@@ -71,16 +71,16 @@ void BaseStation::createConnection(cModule *c1, cModule *c2) {
 void BaseStation::initNode() {
 
     std::ifstream Position("../xy.txt");
-    //float temp[4][54];
-    float temp[3][54];
+    float temp[4][54];
+//    float temp[3][54];
     int j = 0;
     std::string s;
     cout << "Read position file." << endl;
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-        //for (int i = 0; i < 4; i++) {
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 4; i++) {
+//        for (int i = 0; i < 3; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
         }
@@ -91,19 +91,19 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
-        //name[i + 2] = temp[3][i];
+        name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
-            //s->name = name[i];
+            s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
-            //s->getDisplayString().setTagArg("t", 0, s->name);
+            s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
 
@@ -264,9 +264,9 @@ void BaseStation::handleMessage(cMessage *msg) {
                     }
                     cout << "Reclustering" << endl;
                     reClustering();
-                    update_DataMsgLength();
-                    printLimit();
+                    //update_DataMsgLength();
                     distortion();
+                    printLimit();
                     cout << "Finding Cluster Head" << endl;
                     for (unsigned int i = 0; i < 54; i++) {
                         this->DataList[i].clear();
@@ -282,7 +282,7 @@ void BaseStation::handleMessage(cMessage *msg) {
                     for (int i = 0; i < this->clusterNumber; i++) {
                         setUpClusterHead(i);
                     }
-                    update_DataMsgLength();
+                    //update_DataMsgLength();
                     int tmp = this->currentRound / 20;
                     int mod = this->currentRound - 20 * tmp;
                     this->T = 0.05 / (1 - 0.05 * mod);
@@ -555,6 +555,8 @@ void BaseStation::printLimit(){
             limitJentropy << sm->getId() - 1 << "\t";
         }
         limitJentropy << endl;
+
+        limitJentropy << "Representation node count: " << this->myClusters[i]->repreNum << endl;
 
         Sensor *s = (Sensor *) simulation.getModule(this->myClusters[i]->clusterhead);
         hMax = ex.entropy(this->DataList[s->getId() - 2]);
@@ -853,8 +855,8 @@ void BaseStation::distortion(){
             cout << "If m = " << m << "Then " << endl;
             cout << "D is: " << D << endl;
             if (D <= 0.1){
-                repreNum = m;
-                //repreNum = 0;
+               //repreNum = m;
+               repreNum = 0;
                 break;
             }
         }
@@ -1158,7 +1160,7 @@ void BaseStation::finish() {
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor *) simulation.getModule(i);
         if (s->isDead == false) cout << "--ndead " << s->getId();
-        deadNode << i - 1 << " " << s->roundDead << endl;
+        deadNode << i - 1 << "\t" << s->roundDead << endl;
         if (s->roundDead >= 0) first_dead = min(first_dead, s->roundDead );
     }
     deadNode.close();

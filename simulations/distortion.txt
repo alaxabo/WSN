@@ -1,68 +1,50 @@
 Round 256:
-Group 1 Got Member: 25 51 7 40 31 48 Node Energy Remain: 
-25 9.14455e+07
-51 8.54295e+07
-7 8.63296e+07
-40 9.2326e+07
-31 9.19468e+07
-48 6.06824e+07
+Group 1 Got Member: 8 23 6 24 28 30 31 Node Energy Remain: 
+8 1.3525e+008
+23 2.93073e+008
+6 1.73662e+008
+24 2.04535e+008
+28 1.89975e+008
+30 1.48139e+008
+31 1.56585e+008
 
 If m = 1Then 
-D is: 0.574346
+D is: 0.607296
 If m = 2Then 
-D is: 0.378665
+D is: 0.418525
 If m = 3Then 
-D is: 0.235845
+D is: 0.278769
 If m = 4Then 
-D is: 0.131607
+D is: 0.175301
 If m = 5Then 
-D is: 0.0555273
+D is: 0.0986991
 If m = 6Then 
-D is: 0
-representative nodes numbers: 4
-Round 256:
-Group 6 Got Member: 29 54 27 10 26 9 23 11 13 21 14 20 17 16 Node Energy Remain: 
-29 6.94923e+07
-54 8.96342e+07
-27 7.26677e+07
-10 9.30984e+07
-26 9.18158e+07
-9 7.73738e+07
-23 6.95809e+07
-11 8.87097e+07
-13 7.27389e+07
-21 7.49427e+07
-14 4.55367e+07
-20 9.01041e+07
-17 8.11199e+07
-16 8.61218e+07
-
-If m = 1Then 
-D is: -nan
-If m = 2Then 
-D is: -nan
-If m = 3Then 
-D is: -nan
-If m = 4Then 
-D is: -nan
-If m = 5Then 
-D is: -nan
-If m = 6Then 
-D is: -nan
+D is: 0.0419868
 If m = 7Then 
-D is: -nan
-If m = 8Then 
-D is: -nan
-If m = 9Then 
-D is: -nan
-If m = 10Then 
-D is: -nan
-If m = 11Then 
-D is: -nan
-If m = 12Then 
-D is: -nan
-If m = 13Then 
-D is: -nan
-If m = 14Then 
-D is: -nan
-representative nodes numbers: 10
+D is: 0
+representative nodes numbers: 0
+Round 256:
+Group 8 Got Member: 19 35 52 20 11 34 4 Node Energy Remain: 
+19 3.54334e+008
+35 2.84093e+008
+52 3.0805e+008
+20 2.30297e+008
+11 2.88069e+008
+34 4.49534e+008
+4 5.46415e+008
+
+If m = 1Then 
+D is: 0.742251
+If m = 2Then 
+D is: 0.562739
+If m = 3Then 
+D is: 0.41047
+If m = 4Then 
+D is: 0.281312
+If m = 5Then 
+D is: 0.171755
+If m = 6Then 
+D is: 0.0788256
+If m = 7Then 
+D is: 0
+representative nodes numbers: 0

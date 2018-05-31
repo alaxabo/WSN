@@ -15,8 +15,8 @@
 #define Eda 5 //nJ data aggregation
 
 //Message Length
-#define HeadMsgLength 200 //bit = 25bytes
-#define DataMsgLength 4000 //bit = 500bytes
+#define HeadMsgLength 100 //bit = 25bytes
+#define DataMsgLength 500 //bit = 500bytes
 
 //node status
 
