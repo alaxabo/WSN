@@ -786,8 +786,8 @@ void BaseStation::distortion(){
             cout << "If m = " << m << "Then " << endl;
             cout << "D is: " << D << endl;
             if (D <= 0.1){
-               //repreNum = m;
-               repreNum = 0;
+               repreNum = m;
+               //repreNum = 0;
                 break;
             }
         }
@@ -1086,7 +1086,7 @@ void BaseStation::finish() {
     cout << "Init Energy:" << s2->energy << endl;
     cout << "Round: " << this->currentRound << endl;
     recordScalar("TotalEnergy: ", this->totalEnergyLost);
-    int first_dead = 1000;
+    int first_dead = 10000;
     std::ofstream deadNode;
     deadNode.open("DeadNode.txt");
     for (int i = 2; i < simulation.getLastModuleId(); i++) {

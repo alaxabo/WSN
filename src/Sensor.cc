@@ -261,8 +261,9 @@ void Sensor::handleMessage(cMessage *msg) {
 
                 //this->energyLostAggreIn_CH(code.size()); // Aggregation Data
                 cout <<"Connect: " << this->connect << " " << DataMsgLength << endl;
-                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength); //Encode On
-                //this->energyLostIn_CH(DataMsg_Length*this->connect, distanceToBS, DataMsg_Length);
+                // this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength); //Encode Off
+                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength+size-32*this->connect); //Encode On
+
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;
                     this->roundDead = currentRound;
@@ -357,7 +358,8 @@ void Sensor::handleMessage(cMessage *msg) {
 
                 //this->energyLostAggreIn_CH(code.size()); // Aggregation Data
                 cout << this->connect << " " << DataMsgLength << endl;
-                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength); //Encode On
+                //this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength); //Encode Off
+                this->energyLostIn_CH(DataMsgLength*this->connect, distanceToBS, DataMsgLength+size-32*this->connect); // encode on
                // this->energyLostIn_CH(CHrecvDataMsg_Length, distanceToBS, DataMsg_Length);
                 if ((this->energy - this->energyLost) <= 201000.0||this->isDead == true) {
                     this->isDead = true;

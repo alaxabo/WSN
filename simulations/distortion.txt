@@ -1,71 +1,71 @@
 Round 256:
-Group 1 Got Member: 23 28 31 45 47 48 Node Energy Remain: 
-23 5.45585e+007
-28 6.62899e+007
-31 7.5576e+007
-45 5.25198e+007
-47 6.16654e+007
-48 3.97991e+007
+Group 1 Got Member: 31 45 47 48 51 52 Node Energy Remain: 
+31 8.13928e+07
+45 6.12799e+07
+47 7.17269e+07
+48 4.39595e+07
+51 7.03859e+07
+52 5.30589e+07
 
 If m = 1Then 
-D is: 0.417433
+D is: 0.426624
 If m = 2Then 
-D is: 0.250177
+D is: 0.257044
 If m = 3Then 
-D is: 0.142539
+D is: 0.147176
 If m = 4Then 
-D is: 0.0732681
+D is: 0.0759947
 If m = 5Then 
-D is: 0.0286889
+D is: 0.029878
 If m = 6Then 
 D is: 0
-representative nodes numbers: 0
+representative nodes numbers: 4
 Round 256:
-Group 6 Got Member: 13 42 41 14 38 36 15 34 29 32 19 17 20 22 26 Node Energy Remain: 
-13 4.32254e+007
-42 6.80337e+007
-41 6.01802e+007
-14 2.59428e+007
-38 5.40775e+007
-36 8.58915e+007
-15 5.06919e+007
-34 7.53851e+007
-29 5.31795e+007
-32 6.04295e+007
-19 6.12082e+007
-17 4.63005e+007
-20 6.71267e+007
-22 8.31215e+007
-26 7.77018e+007
+Group 6 Got Member: 42 41 35 38 36 15 34 19 17 27 23 20 22 26 25 Node Energy Remain: 
+42 7.82355e+07
+41 6.91212e+07
+35 6.73547e+07
+38 6.12757e+07
+36 8.56815e+07
+15 5.98586e+07
+34 8.1535e+07
+19 7.10536e+07
+17 5.35423e+07
+27 6.01122e+07
+23 6.20409e+07
+20 7.25e+07
+22 8.35772e+07
+26 8.34918e+07
+25 8.62877e+07
 
 If m = 1Then 
-D is: 0.744759
+D is: 0.810274
 If m = 2Then 
-D is: 0.590447
+D is: 0.676483
 If m = 3Then 
-D is: 0.466645
+D is: 0.562414
 If m = 4Then 
-D is: 0.36732
+D is: 0.465161
 If m = 5Then 
-D is: 0.287632
+D is: 0.382243
 If m = 6Then 
-D is: 0.2237
+D is: 0.311549
 If m = 7Then 
-D is: 0.172408
+D is: 0.251275
 If m = 8Then 
-D is: 0.131257
+D is: 0.199887
 If m = 9Then 
-D is: 0.0982427
+D is: 0.156074
 If m = 10Then 
-D is: 0.0717554
+D is: 0.118719
 If m = 11Then 
-D is: 0.050505
+D is: 0.0868708
 If m = 12Then 
-D is: 0.0334561
+D is: 0.0597173
 If m = 13Then 
-D is: 0.0197779
+D is: 0.0365666
 If m = 14Then 
-D is: 0.00880413
+D is: 0.0168285
 If m = 15Then 
 D is: 0
-representative nodes numbers: 0
+representative nodes numbers: 11
