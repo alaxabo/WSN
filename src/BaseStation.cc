@@ -71,16 +71,16 @@ void BaseStation::createConnection(cModule *c1, cModule *c2) {
 void BaseStation::initNode() {
 
     std::ifstream Position("../xy.txt");
-    float temp[4][54];
-//    float temp[3][54];
+//    float temp[4][54];
+    float temp[3][54];
     int j = 0;
     std::string s;
     cout << "Read position file." << endl;
     while (std::getline(Position, s)) {
         lib l;
         std::vector<string> str = l.splitString_C(s, " ");
-        for (int i = 0; i < 4; i++) {
-//        for (int i = 0; i < 3; i++) {
+//        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 3; i++) {
             temp[i][j] = strtof(str[i].c_str(), NULL);
             cout << temp[i][j] << " ";
         }
@@ -91,19 +91,19 @@ void BaseStation::initNode() {
     for (int i = 0; i < 54; i++) {
         posX[i + 2] = temp[1][i] * 2;
         posY[i + 2] = temp[2][i] * 2;
-        name[i + 2] = temp[3][i];
+//        name[i + 2] = temp[3][i];
 
     }
     cout << "Position" << endl;
     for (int i = 2; i < simulation.getLastModuleId(); i++) {
         Sensor *s = (Sensor*) simulation.getModule(i);
         if (this->getId() != s->getId()) {
-            s->name = name[i];
+//            s->name = name[i];
             s->xpos = posX[i];
             s->ypos = posY[i];
             s->getDisplayString().setTagArg("p", 0, s->xpos);
             s->getDisplayString().setTagArg("p", 1, s->ypos);
-            s->getDisplayString().setTagArg("t", 0, s->name);
+//            s->getDisplayString().setTagArg("t", 0, s->name);
             cout << s->xpos << " " << s->ypos << endl;
             createConnection(this, s);
 
@@ -263,7 +263,9 @@ void BaseStation::handleMessage(cMessage *msg) {
                         this->myClusters[i]->root = root;
                     }
                     cout << "Reclustering" << endl;
+
                     reClustering();
+
                     //update_DataMsgLength();
                     distortion();
                     printLimit();
@@ -459,77 +461,6 @@ void BaseStation::update_DataMsgLength(){
         }
     }
 }
-
-//void BaseStation::printLimit(){
-//    lib ex;
-//    std::ofstream limitJentropy;
-//    if (this->currentRound == 256){
-//        limitJentropy.open("limitJentropy.txt");
-//        limitJentropy << "Round 256:" << endl;
-//
-//    }
-//    else{
-//        limitJentropy.open("limitJentropy.txt", ios::app);
-//        limitJentropy << "Round " << this->currentRound << ":" << endl;
-//    }
-//    for (int i = 0; i < this->clusterNumber; i++){
-//        double rMax = 0;
-//        double rMin = 9999;
-//        double hMax = 0;
-//        double hMin = 9999;
-//
-//        limitJentropy << "Group "<< i + 1 <<" Got Member: " << endl;
-//
-//        for(int m = 0; m < this->myClusters[i]->totalMembers; m++){
-//            Sensor *sm = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[m]);
-//            limitJentropy << sm->getId() - 1 << " ";
-//        }
-//        limitJentropy << endl;
-//
-//        vector<vector<double>> data;
-//
-//        for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
-//            Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
-//            double nodeH = ex.entropy(this->DataList[s2->getId() - 2]);
-//            if (hMax < nodeH)
-//                hMax = nodeH;
-//            if (hMin > nodeH)
-//                hMin = nodeH;
-//        }
-//        limitJentropy << "Group " << i + 1 << " Got Hmax: " << hMax << " And Hmin: " << hMin <<endl;
-//        for (int k = 0; k < this->myClusters[i]->totalMembers; k++){
-//            Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[k]);
-//            for (int j = 0; j < this->myClusters[i]->totalMembers; j++) {
-//               Sensor *s2 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
-//               if (s1->getId() == s2->getId())
-//                   continue;
-//               double ecc = ex.EntropyCorrelationCoefficient(this->DataList[s1->getId() - 2], this->DataList[s2->getId()-2]);
-//               if (rMax < ecc)
-//                   rMax = ecc;
-//               if (rMin > ecc)
-//                   rMin = ecc;
-//            }
-//        }
-//        limitJentropy << "Group " << i + 1 << " Got Rmax: " << rMax << " And Rmin: " << rMin <<endl;
-//
-//        int n = this->myClusters[i]->totalMembers;
-//        double bMin = 2 - rMax;
-//        double kMin = ex.findK(bMin, n);
-//        double bMax = 2 - rMin;
-//        double kMax =  ex.findK(bMax, n);
-//
-//        limitJentropy << "Group " << i + 1 << " Got Down Limit: " << kMin * hMin << " And Up Limit: " << kMax * hMax << endl;
-//
-//        for (int j = 0; j < this->myClusters[i]->totalMembers; j++){
-//            Sensor *s1 = (Sensor *) simulation.getModule(this->myClusters[i]->memberNodes[j]);
-//            data.push_back(this->DataList[s1->getId() - 2]);
-//        }
-//        double temp_je = ex.jEntropyGroup(data);
-//        limitJentropy << "Group " << i + 1 << " Got Joint Entropy: " << temp_je << endl;
-//
-//    }
-//    limitJentropy.close();
-//}
 
 void BaseStation::printLimit(){
     lib ex;
@@ -871,6 +802,7 @@ void BaseStation::distortion(){
         } else {
             this->myClusters[i]->repreNum = repreNum;
         }
+        //this->myClusters[i]->repreNum = repreNum;
 
         //print distortion
         if (i == 0 || (i == this->clusterNumber - 1)){

@@ -41,7 +41,7 @@ Sensor::~Sensor() {
 }
 
 void Sensor::initialize() {
-    this->energy = 1000000000;
+    this->energy = 100000000;
     this->energyLost = 0;
     this->timeslot = 100;
     this->connect = 0;
@@ -115,7 +115,13 @@ void Sensor::handleMessage(cMessage *msg) {
 //                        {
 
                             int index = this->myCluster->totalMembers - this->myCluster->repreNum;
-                            double threshold = clusterMembersEnergy[index];
+                            double threshold;
+                            if (index < 0){
+                               threshold = clusterMembersEnergy[0];
+                            } else {
+                               threshold = clusterMembersEnergy[index];
+                            }
+
                             double energy = s->energy - s->energyLost;
                             if(energy < threshold){
                                 this->connect += 0;
