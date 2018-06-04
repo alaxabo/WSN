@@ -786,8 +786,8 @@ void BaseStation::distortion(){
             cout << "If m = " << m << "Then " << endl;
             cout << "D is: " << D << endl;
             if (D <= 0.1){
-               //repreNum = m;
-               repreNum = 0;
+               repreNum = m;
+//               repreNum = 0;
                 break;
             }
         }

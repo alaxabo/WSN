@@ -29,14 +29,14 @@ O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
 OBJS = \
-    $O/BaseStation.o \
-    $O/Clusters.o \
-    $O/HandleDataMessage.o \
-    $O/lib.o \
     $O/Sensor.o \
+    $O/Clusters.o \
+    $O/lib.o \
+    $O/BaseStation.o \
+    $O/HandleDataMessage.o \
+    $O/Compression/TreeNode.o \
     $O/Compression/Group.o \
     $O/Compression/HuffmanTree.o \
-    $O/Compression/TreeNode.o \
     $O/Message_m.o
 
 # Message files

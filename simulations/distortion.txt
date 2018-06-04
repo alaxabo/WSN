@@ -1,71 +1,74 @@
 Round 256:
-Group 1 Got Member: 23 28 31 45 47 48 Node Energy Remain: 
-23 5.45585e+007
-28 6.62899e+007
-31 7.5576e+007
-45 5.25198e+007
-47 6.16654e+007
-48 3.97991e+007
+Group 1 Got Member: 28 31 45 47 48 51 52 Node Energy Remain: 
+28 7.60551e+07
+31 8.13952e+07
+45 6.13539e+07
+47 7.17968e+07
+48 4.39602e+07
+51 7.08236e+07
+52 5.30546e+07
 
 If m = 1Then 
-D is: 0.417433
+D is: 0.44032
 If m = 2Then 
-D is: 0.250177
+D is: 0.273346
 If m = 3Then 
-D is: 0.142539
+D is: 0.164951
 If m = 4Then 
-D is: 0.0732681
+D is: 0.0945844
 If m = 5Then 
-D is: 0.0286889
+D is: 0.0489045
 If m = 6Then 
-D is: 0
-representative nodes numbers: 0
-Round 256:
-Group 6 Got Member: 13 42 41 14 38 36 15 34 29 32 19 17 20 22 26 Node Energy Remain: 
-13 4.32254e+007
-42 6.80337e+007
-41 6.01802e+007
-14 2.59428e+007
-38 5.40775e+007
-36 8.58915e+007
-15 5.06919e+007
-34 7.53851e+007
-29 5.31795e+007
-32 6.04295e+007
-19 6.12082e+007
-17 4.63005e+007
-20 6.71267e+007
-22 8.31215e+007
-26 7.77018e+007
-
-If m = 1Then 
-D is: 0.744759
-If m = 2Then 
-D is: 0.590447
-If m = 3Then 
-D is: 0.466645
-If m = 4Then 
-D is: 0.36732
-If m = 5Then 
-D is: 0.287632
-If m = 6Then 
-D is: 0.2237
+D is: 0.0192505
 If m = 7Then 
-D is: 0.172408
-If m = 8Then 
-D is: 0.131257
-If m = 9Then 
-D is: 0.0982427
-If m = 10Then 
-D is: 0.0717554
-If m = 11Then 
-D is: 0.050505
-If m = 12Then 
-D is: 0.0334561
-If m = 13Then 
-D is: 0.0197779
-If m = 14Then 
-D is: 0.00880413
-If m = 15Then 
 D is: 0
-representative nodes numbers: 0
+representative nodes numbers: 4
+Round 256:
+Group 6 Got Member: 13 42 41 35 38 36 15 34 19 17 27 23 20 22 26 Node Energy Remain: 
+13 5.8248e+07
+42 7.82373e+07
+41 6.93351e+07
+35 6.73526e+07
+38 6.10782e+07
+36 8.56815e+07
+15 5.98667e+07
+34 8.15348e+07
+19 7.10602e+07
+17 5.35432e+07
+27 6.01164e+07
+23 6.19259e+07
+20 7.25021e+07
+22 8.36101e+07
+26 8.34921e+07
+
+If m = 1Then 
+D is: -nan
+If m = 2Then 
+D is: -nan
+If m = 3Then 
+D is: -nan
+If m = 4Then 
+D is: -nan
+If m = 5Then 
+D is: -nan
+If m = 6Then 
+D is: -nan
+If m = 7Then 
+D is: -nan
+If m = 8Then 
+D is: -nan
+If m = 9Then 
+D is: -nan
+If m = 10Then 
+D is: -nan
+If m = 11Then 
+D is: -nan
+If m = 12Then 
+D is: -nan
+If m = 13Then 
+D is: -nan
+If m = 14Then 
+D is: -nan
+If m = 15Then 
+D is: -nan
+representative nodes numbers: 11
